@@ -1,0 +1,37 @@
+*{
+    margin:0;
+    padding:0; 
+}
+
+.ngo-navbar{
+    background : #B7B9B9;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+
+.ngo-navbar ul{
+
+    display: inline-flex;
+    list-style: none;
+    color :  #050404;
+}
+
+.ngo-navbar ul li {
+    width: 150px ;
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+.ngo-navbar ul li a {
+    text-decoration: none;
+    color: #050404;
+
+}
+
+
+.ngo-navbar ul li:hover{
+    background: #6F7878;
+    border-radius: 3px;
+}
