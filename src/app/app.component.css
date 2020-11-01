@@ -17,21 +17,27 @@ body {
     display: flex;
 }
 
-.headercol {
-    padding: 15px;
-    text-align: center;
-  }
 
-
-.headercol img{
+.headerrow img{
     border: 2px solid gray;
 }
 
+.headercol2{
+    width: 90%;
+    text-align: center;
+}
 
-.headercol h1{
+.headercol1{
+    float: left;
+}
+.headercol3{
+    float: right;
+
+}
+
+
+.headercol2 h1{
     padding-top: 20px;
-    padding-left: 245px ;
-    padding-right: 245px;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     color: #191A1A ;
@@ -39,9 +45,11 @@ body {
 
 }
 
+
 .topnav-bar{
     background : #127E7A ;
     text-align: center;
+    overflow: hidden;
 }
 
 .topnav-bar ul{
