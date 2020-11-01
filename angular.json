@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "womenempowerstep"
+    }
+  },
+  "defaultProject": "womenempowerstep",
+  "cli": {
+    "analytics": "f25e2a55-de4b-4cac-989a-4e807d4bc71d"
+  }
 }
