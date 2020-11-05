@@ -20,7 +20,7 @@
 }
 
 .ngo-navbar ul li {
-    width: 150px ;
+    width: 120px ;
     margin: 5px;
     padding: 5px 10px;
 }
@@ -36,3 +36,33 @@
     background: #6F7878;
     border-radius: 3px;
 }
+
+.ngo-Orgs{
+    background-color: beige;
+    text-align: center;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+
+
+.ngo-Orgs ul{
+
+    display: inline-flex;
+    list-style: none;
+    color :  #050404;
+    
+}
+
+.ngo-Orgs ul li {
+    width: 130px ;
+    margin: 5px;
+    padding: 5px 5px;
+}
+
+.ngo-Orgs ul li a {
+    text-decoration: none;
+    color: #050404;
+
+}
+
