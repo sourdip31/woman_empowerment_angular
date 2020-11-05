@@ -66,3 +66,7 @@
 
 }
 
+.ngo-Orgs ul li:hover{
+    background: burlywood;
+    border-radius: 3px;
+}
