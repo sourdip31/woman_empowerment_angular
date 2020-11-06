@@ -7,7 +7,6 @@ import { StephomeComponent } from './stephome/stephome.component';
 import { NgohomeComponent } from './ngohome/ngohome.component';
 import { AdminhomeComponent } from './adminhome/adminhome.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
-import { CoursesComponent } from './courses/courses.component';
 
 
 @NgModule({
@@ -17,7 +16,6 @@ import { CoursesComponent } from './courses/courses.component';
     NgohomeComponent,
     AdminhomeComponent,
     AdminloginComponent,
-    CoursesComponent
  
   ],
   imports: [

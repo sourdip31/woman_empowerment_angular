@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { NgohomeComponent } from './ngohome/ngohome.component';
 import{StephomeComponent} from './stephome/stephome.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
-import { CoursesComponent } from './courses/courses.component';
+
 
 
 const routes: Routes = [
