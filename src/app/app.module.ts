@@ -7,6 +7,7 @@ import { StephomeComponent } from './stephome/stephome.component';
 import { NgohomeComponent } from './ngohome/ngohome.component';
 import { AdminhomeComponent } from './adminhome/adminhome.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
+import { NgologinComponent } from './ngologin/ngologin.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { AdminloginComponent } from './adminlogin/adminlogin.component';
     NgohomeComponent,
     AdminhomeComponent,
     AdminloginComponent,
+    NgologinComponent
  
   ],
   imports: [
