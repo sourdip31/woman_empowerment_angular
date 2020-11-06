@@ -1,8 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 *{
     margin:0;
     padding:0; 
+    
 }
 
+html, body, div{
+    font-family: 'Roboto',sans-serif;
+    height: 100%;
+    width: 100%;
+}
 .ngo-navbar{
     background : #B7B9B9;
     text-align: center;
@@ -20,7 +28,7 @@
 }
 
 .ngo-navbar ul li {
-    width: 120px ;
+    width: 140px ;
     margin: 5px;
     padding: 5px 10px;
 }
@@ -37,36 +45,48 @@
     border-radius: 3px;
 }
 
-.ngo-Orgs{
-    background-color: beige;
-    text-align: center;
-    font-size: 18px;
-    overflow: hidden;
+div.img{
+    background-image: url("/assets/images/Ngo.jpeg");
+    height: 100vh;
+    width: 97.3vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 140%,100%;
 }
 
 
-
-.ngo-Orgs ul{
-
-    display: inline-flex;
-    list-style: none;
-    color :  #050404;
+h1{
+    color: floralwhite;
+    padding: 0px 150px;
     
 }
 
-.ngo-Orgs ul li {
-    width: 130px ;
-    margin: 5px;
-    padding: 5px 5px;
+
+
+p{
+    color: azure;
+    font-family: 'Font Awesome\ 5 Free';
+    border: 1px ;
+    width: 500px;
+    float: left;
+    font-size: 30px;
+    
 }
 
-.ngo-Orgs ul li a {
-    text-decoration: none;
-    color: #050404;
-
+.but{
+    background-color: #1c6288;
+    font-family: 'Font Awesome\ 5 Free';
+    color: honeydew;
+	font-size: 14px;
+	border-radius: 1px;
+	padding: 4px 0px;
+	border: 1px solid #daf1ff;
+    float: right;
+    margin-top: 100px;
+    margin-right: 80px;
 }
 
-.ngo-Orgs ul li:hover{
-    background: burlywood;
-    border-radius: 3px;
+.but:hover{
+    background-color: #13445e;
 }
+
