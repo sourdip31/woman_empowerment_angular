@@ -16,7 +16,7 @@ import { RegisteruserService } from './registeruser.service';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { NgologinComponent } from './ngologin/ngologin.component';
 import { AdminloginfailComponent } from './adminloginfail/adminloginfail.component';
-import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -35,13 +35,10 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-<<<<<<< HEAD
-    FormsModule
-=======
+   
     RouterModule,
     FormsModule,
     HttpClientModule
->>>>>>> 47286976e7ec484243527f4792fea53aafa16bcd
   ],
   providers: [UserloginService, RegisteruserService],
   bootstrap: [AppComponent]
