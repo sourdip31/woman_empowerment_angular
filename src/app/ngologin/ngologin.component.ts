@@ -10,9 +10,7 @@ export class NgologinComponent implements OnInit {
 
   constructor(private router:Router) { }
 
-  public login(){
-    this.router.navigate(['ngologinLink']);
-  }
+
 
   ngOnInit(): void {
   }

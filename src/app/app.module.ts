@@ -8,6 +8,7 @@ import { NgohomeComponent } from './ngohome/ngohome.component';
 import { AdminhomeComponent } from './adminhome/adminhome.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { NgologinComponent } from './ngologin/ngologin.component';
+import { NgoAboutusComponent } from './ngo-aboutus/ngo-aboutus.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { NgologinComponent } from './ngologin/ngologin.component';
     NgohomeComponent,
     AdminhomeComponent,
     AdminloginComponent,
-    NgologinComponent
+    NgologinComponent,
+    NgoAboutusComponent
  
   ],
   imports: [

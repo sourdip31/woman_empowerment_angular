@@ -6,7 +6,7 @@ import { AdminloginComponent } from './adminlogin/adminlogin.component';
 
 import { NgohomeComponent } from './ngohome/ngohome.component';
 import { NgologinComponent } from './ngologin/ngologin.component';
-
+import {NgoAboutusComponent } from './ngo-aboutus/ngo-aboutus.component';
 
 
 
@@ -16,7 +16,7 @@ const routes: Routes = [
   {path: 'ngohomeLink', component:NgohomeComponent},
   {path:'adminloginLink',component:AdminloginComponent},
   {path:'ngologinLink',component:NgologinComponent},
-  
+  {path:'ngoaboutusLink',component:NgoAboutusComponent}  
 ];
 
 @NgModule({
