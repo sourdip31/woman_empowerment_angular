@@ -1,0 +1,33 @@
+<div class="logindiv">
+    <div class="logincontainer">
+        <div class="login-box">
+            <div class="userimage">
+            </div>
+            <h1>User Login</h1>
+            <form  #form="ngForm" (ngSubmit)="checkLoginUser()">
+                <p>Email</p>
+                <input type="text" #userEmail="ngModel" name="useremail" placeholder="Enter Username" [(ngModel)]=login.email pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                <div *ngIf = "userEmail.invalid && (userEmail.dirty || userEmail.touched)">
+                    <div *ngIf = "userEmail.errors.required" style="color: red;"> Email is required</div>
+                    <div *ngIf = "userEmail.errors.pattern" style="color: red;"> Invalid Email</div>
+                </div>
+                <p>Password</p>
+                <input type="password" #password="ngModel" name="password" placeholder="Enter Password" [(ngModel)]=login.password pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                <div *ngIf = "password.invalid && (password.dirty || password.touched)">
+                    <div *ngIf = "password.errors.required" style="color: red;"> Password is required</div>
+                    <div *ngIf = "password.errors.pattern" style="color: red;"> Invalid Password</div>
+                    </div>
+
+                <input type="submit" name="submit" value="Login">
+                <div class="forgotpass">
+                <a href="#">Forget Password ?</a>
+                </div>
+                <div class= "signup">
+                    New User ? <a [routerLink]="['/userRegister']">Sign up Now!!!</a>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+</div>

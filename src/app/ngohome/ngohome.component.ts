@@ -10,9 +10,15 @@ export class NgohomeComponent implements OnInit {
 
   constructor(private router:Router) { }
 
+
   public login():void{
     this.router.navigateByUrl('/ngologinLink');
   }  
+
+ 
+ 
+  
+
 
   ngOnInit(): void {
   }

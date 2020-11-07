@@ -1,0 +1,60 @@
+<div class="registerdiv">
+    <div class="registercontainer">
+        <div class="register-box">
+            <h1>User Registration</h1>
+            <form  #userregform="ngForm" (ngSubmit)="registerUser()">
+                <p>Name</p>
+                <input class="nameinput" type="text"  #userName="ngModel" name="username" placeholder="Enter Name" [(ngModel)]=user.userName required>
+
+                <p class="gender"> <label class="genderlabel"> Gender </label>
+                <input type="radio"  name="usergender" value="female" #userGender="ngModel" [(ngModel)]=user.userGender checked > <span>Female</span>
+                <input type="radio"  name="usergender" value="male"  #userGender="ngModel" [(ngModel)]=user.userGender > <span>Male</span>
+                <input type="radio"  name="usergender" value="other"  #userGender="ngModel" [(ngModel)]=user.userGender > <span>Other</span>
+                </p>
+
+
+                <p> Date Of Birth </p>
+                <input type="date"  name="userdob" placeholder="Enter Date of Birth"  #userDOB="ngModel" [(ngModel)]=user.userDOB required>
+
+                <p class="nationality"> 
+                <label class="nationalitylabel">  Nationality </label>
+              
+                <input type="radio"  name="usernationality" value="Indian"  #userNationality="ngModel" checked [(ngModel)]=user.userNationality> <span>Indian</span>
+                <input type="radio"  name="usernationality" value="othercontry" #userNationality="ngModel"  [(ngModel)]=user.userNationality > <span>Other</span>
+                
+                </p>
+
+               
+
+                <p>Address</p>
+                <textarea name="address"  #userAddress="ngModel" [(ngModel)]=user.userAddress></textarea>
+
+                <div class="marital"> 
+                    <label class="maritallabel"> Marital Status </label>
+                    <div>
+                        <select class="maritalstatus" name="m-status" #userMaritalStatus="ngModel"  [(ngModel)]=user.userMaritalStatus>
+                            <option  disabled="disabled" selected="selected">--Choose Option--</option>
+                            <option  value="single">Single</option>
+                            <option  value="married">Married</option>
+                            <option  value="widowed">Widowed</option>
+                            <option  value="divorced">Divorced</option>
+                            <option  value="seperated">Seperated</option>
+                            
+                          </select>
+                    </div>
+                </div>
+
+                <p>  Email </p>
+                <input type="text"  name="useremail" #userEmail="ngModel"   placeholder="Enter Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" [(ngModel)]=user.userEmail required>
+               
+                <p>  Password </p>
+                <input type="password" name="password" #userPassword="ngModel"  placeholder="Enter Password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" [(ngModel)]=user.userPassword required>
+                
+                <input type="submit" name="submit" [disabled] = "!userregform.valid?true:false" value="Register">
+                
+            </form>
+
+
+        </div>
+    </div>
+</div>
