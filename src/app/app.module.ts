@@ -6,19 +6,31 @@ import { AppComponent } from './app.component';
 import { StephomeComponent } from './stephome/stephome.component';
 import { NgohomeComponent } from './ngohome/ngohome.component';
 import { AdminhomeComponent } from './adminhome/adminhome.component';
+import { UserloginComponent } from './userlogin/userlogin.component';
+import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+import { UserloginService } from './userlogin.service';
+import { UserRegisterComponent } from './user-register/user-register.component';
+import { RegisteruserService } from './registeruser.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     StephomeComponent,
     NgohomeComponent,
-    AdminhomeComponent
+    AdminhomeComponent,
+    UserloginComponent,
+    UserRegisterComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [UserloginService, RegisteruserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
