@@ -9,7 +9,12 @@ import { Router } from '@angular/router';
 export class NgohomeComponent implements OnInit {
 
   constructor(private router:Router) { }
-
+ 
+  public login():void {
+    this.router.navigateByUrl('/ngologinLink');
+    //this.router.navigate([`${NgologinComponent}`]);
+   // this.route.navigate(['./ngologinLink']);
+  }
   
 
   ngOnInit(): void {
