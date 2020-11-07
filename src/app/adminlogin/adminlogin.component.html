@@ -30,7 +30,8 @@
         </div>
 
         <div class="col-12 form-input">
-          <form >
+          <form (ngSubmit)="checkLogin()">
+          <!--#form="ngForm" (ngSubmit)="checkLogin()">-->
             <div class="form-group">
               <input type="email" class="form-control" placeholder="Enter Email">
             </div>

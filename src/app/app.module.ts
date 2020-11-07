@@ -8,6 +8,8 @@ import { NgohomeComponent } from './ngohome/ngohome.component';
 import { AdminhomeComponent } from './adminhome/adminhome.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { NgologinComponent } from './ngologin/ngologin.component';
+import { AdminloginfailComponent } from './adminloginfail/adminloginfail.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -17,12 +19,14 @@ import { NgologinComponent } from './ngologin/ngologin.component';
     NgohomeComponent,
     AdminhomeComponent,
     AdminloginComponent,
-    NgologinComponent
+    NgologinComponent,
+    AdminloginfailComponent
  
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
