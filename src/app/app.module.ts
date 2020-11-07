@@ -17,6 +17,7 @@ import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { NgologinComponent } from './ngologin/ngologin.component';
 import { AdminloginfailComponent } from './adminloginfail/adminloginfail.component';
 
+import { NgoAboutusComponent } from './ngo-aboutus/ngo-aboutus.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { AdminloginfailComponent } from './adminloginfail/adminloginfail.compone
     UserRegisterComponent,
     AdminloginComponent,
     NgologinComponent,
-    AdminloginfailComponent
+    AdminloginfailComponent,
+    NgoAboutusComponent
  
   ],
   imports: [

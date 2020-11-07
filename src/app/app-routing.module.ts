@@ -10,23 +10,43 @@ import { AdminloginfailComponent } from './adminloginfail/adminloginfail.compone
 import{StephomeComponent} from './stephome/stephome.component';
 import { UserRegisterComponent } from './user-register/user-register.component';
 import { UserloginComponent } from './userlogin/userlogin.component';
-import {NgologinComponent} from './ngologin/ngologin.component' ;
-import {AdminloginComponent} from './adminlogin/adminlogin.component' ;
+
+import { AdminloginComponent } from './adminlogin/adminlogin.component';
+import { NgologinComponent } from './ngologin/ngologin.component';
+import {NgoAboutusComponent } from './ngo-aboutus/ngo-aboutus.component';
+
+
+
+
+
+
+
 
 
 const routes: Routes = [
   {path: '',component: StephomeComponent},
  {path:'failLink',component:AdminloginfailComponent},
   {path:'stephomeLink', component: StephomeComponent},
+  
   {path: 'userloginLink', component: UserloginComponent},
   {path:'ngohomeLink', component:NgohomeComponent},
   {path:'adminhomeLink',component:AdminhomeComponent},
+ 
+  {path: 'userRegister',component: UserRegisterComponent},
+
+  
+  {path:'adminloginLink',component:AdminloginComponent},
+  {path:'ngologinLink',component:NgologinComponent},
+
+  {path:'ngoaboutusLink',component:NgoAboutusComponent},
+
+
   {path: 'ngohomeLink', component:NgohomeComponent},
   {path:'adminloginLink',component:AdminloginComponent},
   {path:'ngologinLink',component:NgologinComponent},
   {path: 'userRegister',component: UserRegisterComponent}
 
-  
+
 ];
 
 @NgModule({
