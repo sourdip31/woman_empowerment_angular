@@ -1,0 +1,46 @@
+<div class="registerdiv">
+    <div class="registercontainer">
+        <div class="register-box">
+            <h1>NGO Registration</h1>
+            <form  #ngoregform="ngForm" (ngSubmit)="registerNgo()">
+                <p>NGO Name</p>
+                <input class="nameinput" type="text"  #ngoName="ngModel" name="ngoname" placeholder="Enter NGO Name" [(ngModel)]=ngo.ngoName required>
+                
+                <p class="ngoRegNo"> <label class="reglabel"> NGO Registration No. </label>
+                <input type="number"  name="ngoReg" value="female" #ngoRegistrationNumber="ngModel" placeholder="Enter NGO Registration No." [(ngModel)]=ngo.ngoReg required > 
+                </p>
+
+
+                <p> NGO User Name </p>
+                <input type="text"  name="ngoUserName" placeholder="Enter NGO User Name"  #ngoUserName="ngModel" [(ngModel)]=ngo.ngoUserName required>
+
+                
+                <div class="ngoLoc"> 
+                    <label class="ngoLocationLabel"> NGO Location </label>
+                    <div>
+                        <select class="location" name="m-status" #ngoLocation="ngModel"  [(ngModel)]=ngo.ngoLocation required>
+                            <option  disabled="disabled" selected="selected">--Choose City--</option>
+                            <option  value="kolkata">Kolkata</option>
+                            <option  value="mumbai">Mumbai</option>
+                            <option  value="hyderabad">Hyderabad</option>
+                            <option  value="bangalore">Bangalore</option>
+                            <option  value="pune">Pune</option>
+                            
+                          </select>
+                    </div>
+                </div>
+
+                <p> NGO Email </p>
+                <input type="email"  name="ngoemail" #ngoEmail="ngModel"   placeholder="Enter NGO Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" [(ngModel)]=ngo.ngoEmail required>
+               
+                <p>  Password </p>
+                <input type="password" name="password" #ngoPassword="ngModel"  placeholder="Enter Password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" [(ngModel)]=ngo.ngoPassword required>
+                
+                <input type="submit" name="submit" [disabled] = "!ngoregform.valid?true:false" value="ngoRegister">
+                
+            </form>
+
+
+        </div>
+    </div>
+</div>

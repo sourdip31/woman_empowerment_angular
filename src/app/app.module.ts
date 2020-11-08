@@ -16,6 +16,7 @@ import { RegisteruserService } from './registeruser.service';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { NgologinComponent } from './ngologin/ngologin.component';
 import { NgoAboutusComponent } from './ngo-aboutus/ngo-aboutus.component';
+import { NgoRegisterComponent } from './ngo-register/ngo-register.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { NgoAboutusComponent } from './ngo-aboutus/ngo-aboutus.component';
     UserRegisterComponent,
     AdminloginComponent,
     NgologinComponent,
-    NgoAboutusComponent
+    NgoAboutusComponent,
+    NgoRegisterComponent
  
   ],
   imports: [

@@ -10,14 +10,7 @@ import { UserloginComponent } from './userlogin/userlogin.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { NgologinComponent } from './ngologin/ngologin.component';
 import {NgoAboutusComponent } from './ngo-aboutus/ngo-aboutus.component';
-
-
-
-
-
-
-
-
+import{NgoRegisterComponent} from './ngo-register/ngo-register.component';
 
 const routes: Routes = [
   {path: '',component: StephomeComponent},
@@ -25,21 +18,16 @@ const routes: Routes = [
   {path: 'userloginLink', component: UserloginComponent},
   {path:'ngohomeLink', component:NgohomeComponent},
   {path:'adminhomeLink',component:AdminhomeComponent},
- 
+  {path:'ngoRegisterLink',component:NgoRegisterComponent},
   {path: 'userRegister',component: UserRegisterComponent},
-
   
   {path:'adminloginLink',component:AdminloginComponent},
   {path:'ngologinLink',component:NgologinComponent},
 
   {path:'ngoaboutusLink',component:NgoAboutusComponent},
 
-
-  {path: 'ngohomeLink', component:NgohomeComponent},
-  {path:'adminloginLink',component:AdminloginComponent},
-  {path:'ngologinLink',component:NgologinComponent},
-  {path: 'userRegister',component: UserRegisterComponent}
-
+  {path: 'userRegister',component: UserRegisterComponent},
+  {path: 'ngologinLink',component:NgologinComponent},
 
 ];
 

@@ -3,5 +3,4 @@ export class UserLoginStatus {
     message: string;
     userId: number;
     userName: string;
-     
  }
