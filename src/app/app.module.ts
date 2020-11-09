@@ -16,8 +16,11 @@ import { RegisteruserService } from './registeruser.service';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { NgologinComponent } from './ngologin/ngologin.component';
 import { NgoAboutusComponent } from './ngo-aboutus/ngo-aboutus.component';
+import { StepAboutUsComponent } from './step-about-us/step-about-us.component';
+import { StepTrainingSectorsComponent } from './step-training-sectors/step-training-sectors.component';
 
 
+import{ ViewCourseBySectorService } from './view-course-by-sector.service' ;
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +31,9 @@ import { NgoAboutusComponent } from './ngo-aboutus/ngo-aboutus.component';
     UserRegisterComponent,
     AdminloginComponent,
     NgologinComponent,
-    NgoAboutusComponent
+    NgoAboutusComponent,
+    StepAboutUsComponent,
+    StepTrainingSectorsComponent
  
   ],
   imports: [
@@ -38,7 +43,7 @@ import { NgoAboutusComponent } from './ngo-aboutus/ngo-aboutus.component';
     FormsModule,
     HttpClientModule
   ],
-  providers: [UserloginService, RegisteruserService],
+  providers: [UserloginService, RegisteruserService , ViewCourseBySectorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

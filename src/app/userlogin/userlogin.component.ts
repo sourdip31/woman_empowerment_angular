@@ -26,7 +26,7 @@ export class UserloginComponent {
         //let obj = {id : customerId, name : customerName};
         sessionStorage.setItem('userId', String(userId));
         sessionStorage.setItem('userName', userName);
-        this.router.navigate(['stephomeLink']);
+        this.router.navigate(['stepAboutUsLink']);
       }
       else {
         this.message = data.message;
