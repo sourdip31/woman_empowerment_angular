@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Philosopher&display=swap');
+
+
+*{
+    margin:0;
+    padding:0; 
+}
+
+.admin-navbar{
+    background : #B7B9B9;
+    text-align: center;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+
+
+.admin-navbar ul{
+
+    display: inline-flex;
+    list-style: none;
+    color :  #050404;
+}
+
+.admin-navbar ul li {
+    width: 150px ;
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+.admin-navbar ul li a {
+    text-decoration: none;
+    color: #050404;
+
+}
+
+
+.admin-navbar ul li:hover{
+    background: #6F7878;
+    border-radius: 3px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {background-color:  #6F7878;}
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 800px; /* Should be removed. Only for demonstration */
+    text-align: center;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .column a {
+    
+    color: white;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #1c8adb;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    border-radius: 20px;
+    width: 200px;
+    display:inline-block;
+  }
+  h2{
+    font-family: 'Acme', sans-serif;
+    font-family: 'Philosopher', sans-serif;
+  }
+  h1{
+    font-family: 'Acme', sans-serif;
+  }
+  div.img{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS3Jy4PfAjkpQOGxpjj9I74rbiVRHtHm-wq6Q&usqp=CAU");
+    height: 100vh;
+    width: 97.8vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 140%,100%;
+}

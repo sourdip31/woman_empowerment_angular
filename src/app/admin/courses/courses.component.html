@@ -1,0 +1,42 @@
+<div class="admin-navbar">
+
+    <ul>
+      <li><a [routerLink]="['/adminhomeLink']">NGO</a></li>
+   
+      <li><a [routerLink]="'/admin/courses'">Courses</a></li>
+      <li><a [routerLink]="'/admin/users'">Users</a></li>
+      <li><a [routerLink]="'/admin/accomodation'">Accomodation</a></li>
+      <li><a [routerLink]="'/admin/accomodation'">Change Password</a></li>
+      <li><a [routerLink]="['/adminloginLink']">Logout</a></li>
+    </ul>
+    </div>
+    <div class="img">
+    <div class="row">
+      <div class="column" >
+        <h1>Functionality</h1><br><br>
+        <h2>View_Course</h2><br><br><br><br><br>
+       
+        <h2>View_Enrollments</h2><br><br><br><br>
+        <h2>Approve_Enrollments</h2>
+      </div>
+      <div class="column" >
+        <h1>Description</h1><br><br>
+        <h2>The function returns the list of courses provided by NGO's</h2><br><br><br>
+       
+        <h2>The function provides all the enrollment details of users</h2><br><br><br>
+         
+        <h2>The function approves the requests of users who wish to enroll themselves in a course</h2>
+      </div>
+      <div class="column" >
+        <h1>Links</h1><br><br>
+        <a [routerLink]="'/admin/courses/coursesview'">View</a><br><br><br><br>
+       
+        <a [routerLink]="'/admin/courses/viewenrollments'">View</a><br><br><br><br>
+        <a [routerLink]="'/admin/courses/approveenrollments'">Approve</a>
+        
+      </div>
+    </div>
+  </div>
+  
+    
+

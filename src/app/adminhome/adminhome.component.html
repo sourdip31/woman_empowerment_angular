@@ -2,43 +2,39 @@
 <div class="admin-navbar">
 
   <ul>
-   <li><a href="#">NGO</a></li>
-  <li><a href="#">Trainee</a></li>
-  <li><a href="#">Courses</a></li>
-  <li><a href="#">Users</a></li>
+    <li><a [routerLink]="['/adminhomeLink']">NGO</a></li>
+   
+    <li><a [routerLink]="'/admin/courses'">Courses</a></li>
+    <li><a [routerLink]="'/admin/users'">Users</a></li>
+    <li><a [routerLink]="'/admin/accomodation'">Accomodation</a></li>
+    <li><a [routerLink]="'/admin/accomodation'">Change Password</a></li>
+    <li><a [routerLink]="['/adminloginLink']">Logout</a></li>
   </ul>
   </div>
+
   
-  <table>
-    <tr>
-    <th>First Name</th>
-    <th>Last Name</th>
-    <th>Points</th>
-    </tr>
-    <tr>
-    <td>Peter</td>
-    <td>Griffin</td>
-    <td>$100</td>
-    </tr>
-    <tr>
-    <td>Lois</td>
-    <td>Griffin</td>
-    <td>$150</td>
-    </tr>
-    <tr>
-    <td>Joe</td>
-    <td>Swanson</td>
-    <td>$300</td>
-    </tr>
-    <tr>
-    <td>Cleveland</td>
-    <td>Brown</td>
-    <td>$250</td>
-    </tr>
-  </table>
-  
-  <!--<table class="table"><tr><td>
-   <a class="btn btn-primary " href="/">test</a>
-  </td></tr><table>-->
+    <div class="img">
+    <div class="row">
+      <div class="column" >
+        <h1>Functionality</h1><br><br>
+        <h2>View_NGO</h2><br><br><br><br><br>
+        <h2>Approve_NGO</h2>
+     
+      </div>
+      <div class="column" >
+        <h1>Description</h1><br><br>
+        <h2>The function returns the list of registered NGO's</h2><br><br><br>
+        <h2>The function approves all the NGO requests who wants to register themselves in the portal</h2>
+       
+      </div>
+      <div class="column" >
+        <h1>Links</h1><br><br>
+        <a [routerLink]="'/admin/ngo/view'">View</a><br><br><br><br>
+        <a [routerLink]="'/admin/ngo/approve'">Approve</a><br><br><br><br>
+    
+        
+      </div>
+    </div>
+  </div>
   
     

@@ -1,6 +1,6 @@
-export class Users{
+export class AdminLogin{
     constructor(
        public email:string,
-    public psw:string
+    public password:string
     ){}
 }
