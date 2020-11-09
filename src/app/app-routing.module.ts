@@ -20,6 +20,7 @@ import { StepTrainingSectorsComponent } from './step-training-sectors/step-train
 
 
 
+import{NgoRegisterComponent} from './ngo-register/ngo-register.component';
 
 const routes: Routes = [
   {path: '',component: StephomeComponent},
@@ -27,9 +28,8 @@ const routes: Routes = [
   {path: 'userloginLink', component: UserloginComponent},
   {path:'ngohomeLink', component:NgohomeComponent},
   {path:'adminhomeLink',component:AdminhomeComponent},
- 
+  {path:'ngoRegisterLink',component:NgoRegisterComponent},
   {path: 'userRegister',component: UserRegisterComponent},
-
   
   {path:'adminloginLink',component:AdminloginComponent},
   {path:'ngologinLink',component:NgologinComponent},
@@ -37,14 +37,9 @@ const routes: Routes = [
   {path:'ngoaboutusLink',component:NgoAboutusComponent},
 
 
-  {path: 'ngohomeLink', component:NgohomeComponent},
-  {path:'adminloginLink',component:AdminloginComponent},
-  {path:'ngologinLink',component:NgologinComponent},
-  {path: 'userRegister',component: UserRegisterComponent},
 
   {path:'stepAboutUsLink' , component:StepAboutUsComponent},
   {path: 'trainingSectorsLink' , component:StepTrainingSectorsComponent}
-
 
 ];
 

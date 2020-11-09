@@ -18,6 +18,7 @@ import { NgologinComponent } from './ngologin/ngologin.component';
 import { NgoAboutusComponent } from './ngo-aboutus/ngo-aboutus.component';
 import { StepAboutUsComponent } from './step-about-us/step-about-us.component';
 import { StepTrainingSectorsComponent } from './step-training-sectors/step-training-sectors.component';
+import { NgoRegisterComponent } from './ngo-register/ngo-register.component';
 
 
 import{ ViewCourseBySectorService } from './view-course-by-sector.service' ;
@@ -33,7 +34,8 @@ import{ ViewCourseBySectorService } from './view-course-by-sector.service' ;
     NgologinComponent,
     NgoAboutusComponent,
     StepAboutUsComponent,
-    StepTrainingSectorsComponent
+    StepTrainingSectorsComponent,
+    NgoRegisterComponent
  
   ],
   imports: [
