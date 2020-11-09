@@ -7,18 +7,18 @@
                 <input class="nameinput" type="text"  #ngoName="ngModel" name="ngoname" placeholder="Enter NGO Name" [(ngModel)]=ngo.ngoName required>
                 
                 <p class="ngoRegNo"> <label class="reglabel"> NGO Registration No. </label>
-                <input type="number"  name="ngoReg" value="female" #ngoRegistrationNumber="ngModel" placeholder="Enter NGO Registration No." [(ngModel)]=ngo.ngoReg required > 
+                <input type="number"  name="ngoReg"  #ngoRegistrationNumber="ngModel" placeholder="Enter NGO Registration No." [(ngModel)]=ngo.ngoRegistrationNumber required > 
                 </p>
 
 
                 <p> NGO User Name </p>
                 <input type="text"  name="ngoUserName" placeholder="Enter NGO User Name"  #ngoUserName="ngModel" [(ngModel)]=ngo.ngoUserName required>
 
-                
+               
                 <div class="ngoLoc"> 
                     <label class="ngoLocationLabel"> NGO Location </label>
                     <div>
-                        <select class="location" name="m-status" #ngoLocation="ngModel"  [(ngModel)]=ngo.ngoLocation required>
+                        <select class="location" name="loc" #ngoLocation="ngModel"  [(ngModel)]=ngo.ngoLocation required>
                             <option  disabled="disabled" selected="selected">--Choose City--</option>
                             <option  value="kolkata">Kolkata</option>
                             <option  value="mumbai">Mumbai</option>
@@ -36,7 +36,7 @@
                 <p>  Password </p>
                 <input type="password" name="password" #ngoPassword="ngModel"  placeholder="Enter Password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" [(ngModel)]=ngo.ngoPassword required>
                 
-                <input type="submit" name="submit" [disabled] = "!ngoregform.valid?true:false" value="ngoRegister">
+                <input type="submit" name="submit" [disabled] = "!ngoregform.valid?true:false" value="Register">
                 
             </form>
 

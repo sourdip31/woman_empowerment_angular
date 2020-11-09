@@ -1,6 +1,6 @@
 .registerdiv{
     padding: 10px;
-    background-image: url(../images/usr-reg-backgroud.png);
+    background-image: url(/assets/images/ngoReg2.jpg);
     background-repeat: no-repeat;
 	background-size: auto;
     background-position: center;
@@ -33,13 +33,14 @@ h1{
     padding: 0 0 20px;
     text-align: center;
     font-size: 22px;
+    color: silver;
 }
 
-.register-box input[type="text"], input[type="password"],input[type="submit"] ,input[type="date"] {
+.register-box input[type="text"],input[type="number"],input[type="email"], input[type="password"],input[type="submit"] ,input[type="date"] {
     width: 100% ;
     margin-bottom: 20px;
 }
-.register-box input[type="text"], input[type="password"]
+.register-box input[type="text"],input[type="email"], input[type="password"],input[type="number"]
 {
     margin: 10px 0px 10px 0px;
     border: none;
@@ -50,6 +51,8 @@ h1{
     color: grey;
     font-size: 16px;
 }
+
+
 
 
 .register-box input[type="date"]
@@ -93,19 +96,6 @@ h1{
 
 
 
-.genderlabel , .nationalitylabel{
-    padding-right: 50px ;
-}
-
-.gender span{
-    padding-right: 20px;
-}
-
-.nationality span{
-    padding-right: 40px;
-}
-
-
 
 
 textarea{
@@ -114,24 +104,21 @@ textarea{
     font-size: 15px;
 }
 
-.marital{
-    padding-bottom: 20px;
-    padding-top: 20px;
+.ngoLoc{
+    padding-bottom: 5px;
+    padding-top: 5px;
     margin-top: 20px;
-    margin-bottom: 20px;
-
-}
-
-.marital div{
-    margin-top: 10px;
     margin-bottom: 10px;
 
 }
 
-.marital label{
+
+
+.ngoLoc label{
     font-weight: bold;
 }
-.marital select{
+
+.ngoLoc select{
     width: 100%;
     border-radius: 5px;
     outline: none;

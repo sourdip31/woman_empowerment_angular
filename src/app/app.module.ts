@@ -17,6 +17,11 @@ import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { NgologinComponent } from './ngologin/ngologin.component';
 import { NgoAboutusComponent } from './ngo-aboutus/ngo-aboutus.component';
 import { NgoRegisterComponent } from './ngo-register/ngo-register.component';
+import { NgocriteriaComponent } from './ngocriteria/ngocriteria.component';
+import { NgofaqComponent } from './ngofaq/ngofaq.component';
+import { NgoaddcoursesComponent } from './ngoaddcourses/ngoaddcourses.component';
+import { NgologinService } from './ngologin.service';
+import { RegisterngoService } from './registerngo.service';
 
 
 @NgModule({
@@ -30,7 +35,10 @@ import { NgoRegisterComponent } from './ngo-register/ngo-register.component';
     AdminloginComponent,
     NgologinComponent,
     NgoAboutusComponent,
-    NgoRegisterComponent
+    NgoRegisterComponent,
+    NgocriteriaComponent,
+    NgofaqComponent,
+    NgoaddcoursesComponent
  
   ],
   imports: [
@@ -40,7 +48,7 @@ import { NgoRegisterComponent } from './ngo-register/ngo-register.component';
     FormsModule,
     HttpClientModule
   ],
-  providers: [UserloginService, RegisteruserService],
+  providers: [UserloginService, RegisteruserService,NgologinService,RegisterngoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

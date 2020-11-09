@@ -11,6 +11,9 @@ import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { NgologinComponent } from './ngologin/ngologin.component';
 import {NgoAboutusComponent } from './ngo-aboutus/ngo-aboutus.component';
 import{NgoRegisterComponent} from './ngo-register/ngo-register.component';
+import { NgocriteriaComponent } from './ngocriteria/ngocriteria.component';
+import { NgofaqComponent } from './ngofaq/ngofaq.component';
+import { NgoaddcoursesComponent } from './ngoaddcourses/ngoaddcourses.component';
 
 const routes: Routes = [
   {path: '',component: StephomeComponent},
@@ -20,12 +23,12 @@ const routes: Routes = [
   {path:'adminhomeLink',component:AdminhomeComponent},
   {path:'ngoRegisterLink',component:NgoRegisterComponent},
   {path: 'userRegister',component: UserRegisterComponent},
-  
+  {path:'ngofaqLink',component:NgofaqComponent},
   {path:'adminloginLink',component:AdminloginComponent},
   {path:'ngologinLink',component:NgologinComponent},
-
+  {path:'ngocriteriaLink',component:NgocriteriaComponent},
   {path:'ngoaboutusLink',component:NgoAboutusComponent},
-
+  {path:'addcoursesLink',component:NgoaddcoursesComponent},
   {path: 'userRegister',component: UserRegisterComponent},
   {path: 'ngologinLink',component:NgologinComponent},
 

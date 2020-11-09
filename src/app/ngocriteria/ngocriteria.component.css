@@ -43,9 +43,9 @@
 }
 
 div.img{
-    background-image: url("/assets/images/Ngo.jpeg");
+    background-image: url("/assets/images/ngoCriteria.jpg");
     height: 100vh;
-    width: 97.3vw;
+    width: 97.65vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 140%,100%;
@@ -54,18 +54,19 @@ div.img{
 
 h1{
     color: floralwhite;
-    padding: 0px 150px;
+    padding: 0px 290px;
     
 }
 
 
 
 p{
-    color: azure;
+    color:snow;
+   
     font-family: 'Montserrat',sans-serif;
     border: 1px ;
-    width: 500px;
+    width: 800px;
     float: left;
-    font-size: 28px;
-    padding-left: 15px;
+    font-size: 27px;
+    padding-left: 20px;
 }
