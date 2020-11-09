@@ -1,6 +1,6 @@
 .logindiv{
     padding: 200px;
-	background-image: url(../images/userlogin-bgi.jpg);
+	background-image: url(/assets/images/ngoLogin.jpg);
 	background-size: auto;
     background-position: center;
     font-family: sans-serif;
@@ -26,18 +26,7 @@
     border-radius: 50%;
 }
 
-.userimage {
-    background-image: url(../images/face.png);
-    background-repeat: no-repeat;
 
-
-	width: 100px;
-    height: 100px;
-    margin-left: 125px;
-    margin-right: 125px;
-    margin-top: -120px ;
-    margin-bottom: 30px;
-}
 
 
 

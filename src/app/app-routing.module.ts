@@ -37,6 +37,9 @@ import { StepTrainingSectorsComponent } from './step-training-sectors/step-train
 
 
 import{NgoRegisterComponent} from './ngo-register/ngo-register.component';
+import { NgocriteriaComponent } from './ngocriteria/ngocriteria.component';
+import { NgofaqComponent } from './ngofaq/ngofaq.component';
+import { NgoaddcoursesComponent } from './ngoaddcourses/ngoaddcourses.component';
 
 const routes: Routes = [
   {path: '',component: StephomeComponent},
@@ -71,6 +74,19 @@ const routes: Routes = [
 {path:'adminFPLink',component:AdminforgotpasswordComponent},
   {path:'ngoRegisterLink',component:NgoRegisterComponent},
   {path: 'userRegister',component: UserRegisterComponent},
+  {path:'ngoRegisterLink',component:NgoRegisterComponent},
+  {path: 'userRegister',component: UserRegisterComponent},
+  {path:'ngofaqLink',component:NgofaqComponent},
+  {path:'adminloginLink',component:AdminloginComponent},
+  {path:'ngologinLink',component:NgologinComponent},
+  {path:'ngocriteriaLink',component:NgocriteriaComponent},
+  {path:'ngoaboutusLink',component:NgoAboutusComponent},
+  {path:'addcoursesLink',component:NgoaddcoursesComponent},
+  {path: 'userRegister',component: UserRegisterComponent},
+  {path: 'ngologinLink',component:NgologinComponent},
+
+
+
   {path:'stepAboutUsLink' , component:StepAboutUsComponent},
   {path: 'trainingSectorsLink' , component:StepTrainingSectorsComponent}
 

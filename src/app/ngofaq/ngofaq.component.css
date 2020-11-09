@@ -43,9 +43,9 @@
 }
 
 div.img{
-    background-image: url("/assets/images/Ngo.jpeg");
+    background-image: url("/assets/images/ngoFaq.jpg");
     height: 100vh;
-    width: 97.3vw;
+    width: 97.65vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 140%,100%;
@@ -53,19 +53,29 @@ div.img{
 
 
 h1{
-    color: floralwhite;
-    padding: 0px 150px;
+    color: solid black;
+    padding: 0px 400px;
     
 }
 
+span{
+    font-weight: bolder;
+    font-size: 27px;
+    color: black;
+}
 
 
 p{
-    color: azure;
+    color:darkgreen;
     font-family: 'Montserrat',sans-serif;
     border: 1px ;
-    width: 500px;
+    width: 900px;
     float: left;
-    font-size: 28px;
-    padding-left: 15px;
+    font-size: 20px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.p1{
+    padding-top: 20px;
 }

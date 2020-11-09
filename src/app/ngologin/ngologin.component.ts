@@ -10,26 +10,26 @@ import{ NgologinService } from '../ngologin.service';
 })
 export class NgologinComponent  {
 
-  login: NgoLogin = new NgoLogin();
+  login1: NgoLogin = new NgoLogin();
   message: string;
   
   constructor(private ngoLoginService: NgologinService, private router: Router) { }
 
 
-  checkLoginUser() {
-    alert(JSON.stringify(this.login));
-    this.ngoLoginService.login(this.login).subscribe(data => {
-      alert(JSON.stringify(data));
-      if(data.status == 'SUCCESS') {
-        let userId = data.userId;
-        let userName = data.userName;
+  checkLoginNgo() {
+    alert(JSON.stringify(this.login1));
+    this.ngoLoginService.login1(this.login1).subscribe(data1 => {
+      alert(JSON.stringify(data1));
+      if(data1.status == 'SUCCESS') {
+        let ngoId = data1.ngoId;
+        let ngoName = data1.ngoName;
         //let obj = {id : customerId, name : customerName};
-        sessionStorage.setItem('userId', String(userId));
-        sessionStorage.setItem('userName', userName);
-        this.router.navigate(['stephomeLink']);
+       // sessionStorage.setItem('ngoId', String(ngoId));
+        //sessionStorage.setItem('ngoName', ngoName);
+        this.router.navigate(['addcoursesLink']);
       }
       else {
-        this.message = data.message;
+        this.message = data1.message;
       }
     })
 

@@ -35,6 +35,11 @@ import { AdminforgotpasswordComponent } from './adminforgotpassword/adminforgotp
 import { StepAboutUsComponent } from './step-about-us/step-about-us.component';
 import { StepTrainingSectorsComponent } from './step-training-sectors/step-training-sectors.component';
 import { NgoRegisterComponent } from './ngo-register/ngo-register.component';
+import { NgocriteriaComponent } from './ngocriteria/ngocriteria.component';
+import { NgofaqComponent } from './ngofaq/ngofaq.component';
+import { NgoaddcoursesComponent } from './ngoaddcourses/ngoaddcourses.component';
+import { NgologinService } from './ngologin.service';
+import { RegisterngoService } from './registerngo.service';
 
 
 import{ ViewCourseBySectorService } from './view-course-by-sector.service' ;
@@ -67,8 +72,13 @@ import{ ViewCourseBySectorService } from './view-course-by-sector.service' ;
     UpdateaccomodationComponent,
     AdminforgotpasswordComponent,
    StepAboutUsComponent,
+    NgoRegisterComponent,
+    NgocriteriaComponent,
+    NgofaqComponent,
+    NgoaddcoursesComponent,
+    StepAboutUsComponent,
     StepTrainingSectorsComponent,
-    NgoRegisterComponent
+   
  
   ],
   imports: [
@@ -78,7 +88,7 @@ import{ ViewCourseBySectorService } from './view-course-by-sector.service' ;
     FormsModule,
     HttpClientModule
   ],
-  providers: [UserloginService, RegisteruserService , ViewCourseBySectorService],
+  providers: [UserloginService, RegisteruserService , ViewCourseBySectorService,NgologinService,RegisterngoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
