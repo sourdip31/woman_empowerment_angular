@@ -26,7 +26,17 @@ import { ApproveaccomodationComponent } from './admin/accomodation/approveaccomo
 import { ViewaccomodationComponent } from './admin/accomodation/viewaccomodation/viewaccomodation.component';
 import { UpdateaccomodationComponent } from './admin/accomodation/updateaccomodation/updateaccomodation.component';
 import { AdminforgotpasswordComponent } from './adminforgotpassword/adminforgotpassword.component';
+import { StepAboutUsComponent } from './step-about-us/step-about-us.component';
+import { StepTrainingSectorsComponent } from './step-training-sectors/step-training-sectors.component';
 
+
+
+
+
+
+
+
+import{NgoRegisterComponent} from './ngo-register/ngo-register.component';
 
 const routes: Routes = [
   {path: '',component: StephomeComponent},
@@ -58,9 +68,11 @@ const routes: Routes = [
 {path:'admin/accomodation/addaccomodation',component:AddaccomodationComponent},
 {path:'admin/accomodation/updateaccomodation',component:UpdateaccomodationComponent},
 {path:'admin/accomodation/viewaccomodation',component:ViewaccomodationComponent},
-{path:'adminFPLink',component:AdminforgotpasswordComponent}
-
-
+{path:'adminFPLink',component:AdminforgotpasswordComponent},
+  {path:'ngoRegisterLink',component:NgoRegisterComponent},
+  {path: 'userRegister',component: UserRegisterComponent},
+  {path:'stepAboutUsLink' , component:StepAboutUsComponent},
+  {path: 'trainingSectorsLink' , component:StepTrainingSectorsComponent}
 
 ];
 

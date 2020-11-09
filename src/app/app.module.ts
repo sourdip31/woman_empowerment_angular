@@ -33,8 +33,12 @@ import { ApproveaccomodationComponent } from './admin/accomodation/approveaccomo
 import { ViewaccomodationComponent } from './admin/accomodation/viewaccomodation/viewaccomodation.component';
 import { UpdateaccomodationComponent } from './admin/accomodation/updateaccomodation/updateaccomodation.component';
 import { AdminforgotpasswordComponent } from './adminforgotpassword/adminforgotpassword.component';
+import { StepAboutUsComponent } from './step-about-us/step-about-us.component';
+import { StepTrainingSectorsComponent } from './step-training-sectors/step-training-sectors.component';
+import { NgoRegisterComponent } from './ngo-register/ngo-register.component';
 
 
+import{ ViewCourseBySectorService } from './view-course-by-sector.service' ;
 @NgModule({
   declarations: [
     AppComponent,
@@ -63,7 +67,11 @@ import { AdminforgotpasswordComponent } from './adminforgotpassword/adminforgotp
     ApproveaccomodationComponent,
     ViewaccomodationComponent,
     UpdateaccomodationComponent,
-    AdminforgotpasswordComponent
+    AdminforgotpasswordComponent,
+    NgoAboutusComponent,
+    StepAboutUsComponent,
+    StepTrainingSectorsComponent,
+    NgoRegisterComponent
  
   ],
   imports: [
@@ -73,7 +81,7 @@ import { AdminforgotpasswordComponent } from './adminforgotpassword/adminforgotp
     FormsModule,
     HttpClientModule
   ],
-  providers: [UserloginService, RegisteruserService],
+  providers: [UserloginService, RegisteruserService , ViewCourseBySectorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
