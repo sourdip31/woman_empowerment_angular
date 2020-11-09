@@ -16,6 +16,8 @@ import { RegisteruserService } from './registeruser.service';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { NgologinComponent } from './ngologin/ngologin.component';
 import { NgoAboutusComponent } from './ngo-aboutus/ngo-aboutus.component';
+import { StepAboutUsComponent } from './step-about-us/step-about-us.component';
+import { StepTrainingSectorsComponent } from './step-training-sectors/step-training-sectors.component';
 import { NgoRegisterComponent } from './ngo-register/ngo-register.component';
 import { NgocriteriaComponent } from './ngocriteria/ngocriteria.component';
 import { NgofaqComponent } from './ngofaq/ngofaq.component';
@@ -24,6 +26,7 @@ import { NgologinService } from './ngologin.service';
 import { RegisterngoService } from './registerngo.service';
 
 
+import{ ViewCourseBySectorService } from './view-course-by-sector.service' ;
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +41,10 @@ import { RegisterngoService } from './registerngo.service';
     NgoRegisterComponent,
     NgocriteriaComponent,
     NgofaqComponent,
-    NgoaddcoursesComponent
+    NgoaddcoursesComponent,
+    StepAboutUsComponent,
+    StepTrainingSectorsComponent,
+   
  
   ],
   imports: [
@@ -48,7 +54,7 @@ import { RegisterngoService } from './registerngo.service';
     FormsModule,
     HttpClientModule
   ],
-  providers: [UserloginService, RegisteruserService,NgologinService,RegisterngoService],
+  providers: [UserloginService, RegisteruserService , ViewCourseBySectorService,NgologinService,RegisterngoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

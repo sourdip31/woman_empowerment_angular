@@ -10,6 +10,16 @@ import { UserloginComponent } from './userlogin/userlogin.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { NgologinComponent } from './ngologin/ngologin.component';
 import {NgoAboutusComponent } from './ngo-aboutus/ngo-aboutus.component';
+import { StepAboutUsComponent } from './step-about-us/step-about-us.component';
+import { StepTrainingSectorsComponent } from './step-training-sectors/step-training-sectors.component';
+
+
+
+
+
+
+
+
 import{NgoRegisterComponent} from './ngo-register/ngo-register.component';
 import { NgocriteriaComponent } from './ngocriteria/ngocriteria.component';
 import { NgofaqComponent } from './ngofaq/ngofaq.component';
@@ -31,6 +41,11 @@ const routes: Routes = [
   {path:'addcoursesLink',component:NgoaddcoursesComponent},
   {path: 'userRegister',component: UserRegisterComponent},
   {path: 'ngologinLink',component:NgologinComponent},
+
+
+
+  {path:'stepAboutUsLink' , component:StepAboutUsComponent},
+  {path: 'trainingSectorsLink' , component:StepTrainingSectorsComponent}
 
 ];
 
