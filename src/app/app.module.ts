@@ -66,8 +66,7 @@ import{ ViewCourseBySectorService } from './view-course-by-sector.service' ;
     ViewaccomodationComponent,
     UpdateaccomodationComponent,
     AdminforgotpasswordComponent,
-    NgoAboutusComponent,
-    StepAboutUsComponent,
+   StepAboutUsComponent,
     StepTrainingSectorsComponent,
     NgoRegisterComponent
  
