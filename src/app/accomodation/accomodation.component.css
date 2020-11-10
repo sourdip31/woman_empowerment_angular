@@ -1,0 +1,246 @@
+.applydiv{
+    padding: 10px;
+    background-image: url(../images/usr-reg-backgroud.png);
+    background-repeat: repeat-y;
+	background-size: auto;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.applycontainer{
+	width: 100%;
+    margin-top: auto;
+}
+.apply-box{
+    width: 450px;
+    height: 1400px;
+    background: rgba(0, 0, 0, 0.7);
+	color: #fff;
+    box-sizing: border-box;
+	padding: 70px 30px;
+    margin: auto;
+    border-radius: 5%;
+}
+
+.apply-box p{
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    font-weight: bold;
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.apply-box input[type="text"], input[type="password"],input[type="submit"] ,input[type="date"] {
+    width: 100% ;
+    margin-bottom: 20px;
+}
+.apply-box input[type="text"], input[type="password"]
+{
+    margin: 10px 0px 10px 0px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-radius: 5px;
+    outline: none;
+    height: 30px;
+    color: grey;
+    font-size: 16px;
+}
+
+
+.apply-box input[type="date"]
+{
+    margin: 10px 0px 10px 0px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-radius: 5px;
+    outline: none;
+    height: 30px;
+    color: grey;
+    font-size: 16px;
+}
+.apply-box input[type="submit"]
+{
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: grey;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.apply-box input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+
+.apply-box a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+.apply-box a:hover
+{
+    color: #39dc79;
+}
+
+
+
+.genderlabel , .nationalitylabel{
+    padding-right: 50px ;
+}
+
+.gender span{
+    padding-right: 20px;
+}
+
+.nationality span{
+    padding-right: 40px;
+}
+
+
+
+
+textarea{
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+}
+
+.area{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.area div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.area label{
+    font-weight: bold;
+}
+.area select{
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    height: 30px;
+    color: grey;
+    font-size: 16px;
+}
+
+.caste{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.caste div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.caste label{
+    font-weight: bold;
+}
+.caste select{
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    height: 30px;
+    color: grey;
+    font-size: 16px;
+}
+
+.phychallenge{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.phychallenge div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.phychallenge label{
+    font-weight: bold;
+}
+.phychallenge select{
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    height: 30px;
+    color: grey;
+    font-size: 16px;
+}
+
+.daycare{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.daycare div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.daycare label{
+    font-weight: bold;
+}
+.daycare select{
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    height: 30px;
+    color: grey;
+    font-size: 16px;
+}
+
+.employment{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.employment div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.employment label{
+    font-weight: bold;
+}
+.employment select{
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    height: 30px;
+    color: grey;
+    font-size: 16px;
+}

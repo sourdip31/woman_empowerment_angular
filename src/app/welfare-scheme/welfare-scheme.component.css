@@ -1,0 +1,186 @@
+*{
+    margin:0;
+    padding:0; 
+}
+
+.step-navbar{
+    background : #B7B9B9;
+    text-align: center;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+
+
+.step-navbar ul{
+
+    display: inline-flex;
+    list-style: none;
+    color :  #050404;
+}
+
+.step-navbar ul li {
+    width: 130px ;
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+.step-navbar ul li a {
+    text-decoration: none;
+    color: #050404;
+
+}
+
+.step-navbar ul li:hover{
+    background: #6F7878;
+    border-radius: 3px;
+}
+
+.heading{
+    width: 100%;
+    text-align: center;
+    color: brown;
+    padding: 20px;
+}
+
+
+.trainingSectors{
+    padding: 5px;
+	background-color:#fff;
+   
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+div.sector-box{
+    background-color: #fff;
+    box-sizing: border-box;
+    margin: 24px;
+    padding: 2px 2px 2px 2px;
+    height: 250px;
+}
+
+.divlabel{
+    border-top: 1px solid #C5C8CE;
+    border-bottom: 1px solid #C5C8CE;
+    padding : 5px 0px 5px 0px ;
+
+}
+
+
+label{
+    text-align: center;
+    font-size: 28px ;
+    font-weight: 500;
+
+}
+
+p{
+    padding-top: 30px;
+    font-size: 19px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.imagediv{
+    padding-top: 90px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+.viewCoursesBtn{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: green;
+    padding: 5px 30px;
+    border-radius: 5px ;
+    color: white;
+
+}
+
+.contentdiv{
+    padding-bottom: 100px;
+}
+
+.tablediv{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.tablecourse{
+    border: 3px solid #BDC0C4;
+}
+.tablecourse th{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #BDC0C4;
+    color:black;
+    text-align: center;
+}
+
+.tablecourse td{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.accdiv a{
+    color: white;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    background: cornflowerblue;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    border-radius: 20px;
+    width: 200px;
+    display:inline-block
+}
+
+.accdiv2 a{
+    color: white;
+    padding: 1em 2em;
+    text-decoration: none;
+    background: cornflowerblue;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    border-radius: 20px;
+    width: 220px;
+    display:inline-block
+}

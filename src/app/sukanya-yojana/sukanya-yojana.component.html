@@ -1,0 +1,28 @@
+<div class="applydiv">
+    <div class="applycontainer">
+        <div class="apply-box">
+            <h1>Application for Sukanya Yojana</h1>
+            <form  #applyaccform="ngForm" (ngSubmit)="applySukanya()">
+
+                <div class="area"> 
+                    <label class="arealabel"> Nationality of Applicant </label>
+                    <div>
+                        <select class="areastatus" name="a-status" #girlChildNationality="ngModel"  [(ngModel)]=sukanya.girlChildNationality>
+                            <option  disabled="disabled" selected="selected">--Choose Option--</option>
+                            <option  value="Indian">Indian</option>
+                            <option  value="Others">Others</option>   
+                        </select>
+                    </div>
+                </div>
+                <p>Applicant Age</p>
+                <input class="daughterage" type="number"  #girlChildAge="ngModel" name="daughterage" placeholder="Enter applicant age" [(ngModel)]=sukanya.girlChildAge required>
+                <p>Initial Deposit Amount For Scheme</p>
+                <input class="deposit" type="number"  #initialDepositAmount="ngModel" name="deposit" placeholder="Enter deposit amount" [(ngModel)]=sukanya.initialDepositAmount required>
+                
+                <input type="submit" name="submit" [disabled] = "!applyaccform.valid?true:false" value="Apply">
+                
+            </form>
+        </div>
+    </div>
+</div>
+

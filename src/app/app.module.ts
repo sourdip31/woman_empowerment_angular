@@ -42,9 +42,17 @@ import { NgologinService } from './ngologin.service';
 import { RegisterngoService } from './registerngo.service';
 
 
-import{ ViewCourseBySectorService } from './view-course-by-sector.service' ;
 import { AdminService } from './admin.service';
 import { ChangepasswordComponent } from './changepassword/changepassword.component';
+import{ ViewCourseBySectorService } from './view-course-by-sector.service';
+import { EnrollForCourseComponent } from './enroll-for-course/enroll-for-course.component' ;
+import { ViewNGOsService } from './view-ngos.service';
+import { WeEmpowerHomeComponent } from './we-empower-home/we-empower-home.component';
+import { CourseEnrollmentFormComponent } from './course-enrollment-form/course-enrollment-form.component';
+import { WelfareSchemeComponent } from './welfare-scheme/welfare-scheme.component';
+
+import { SukanyayojnaComponent } from './sukanyayojna/sukanyayojna.component';
+import { SukanyaYojanaComponent } from './sukanya-yojana/sukanya-yojana.component' ;
 @NgModule({
   declarations: [
     AppComponent,
@@ -81,6 +89,14 @@ import { ChangepasswordComponent } from './changepassword/changepassword.compone
     StepAboutUsComponent,
     StepTrainingSectorsComponent,
     ChangepasswordComponent,
+    NgoRegisterComponent,
+    EnrollForCourseComponent,
+    WeEmpowerHomeComponent,
+    CourseEnrollmentFormComponent,
+    WelfareSchemeComponent,
+    AccomodationComponent,
+    SukanyayojnaComponent,
+    SukanyaYojanaComponent,
    
  
   ],
@@ -91,7 +107,7 @@ import { ChangepasswordComponent } from './changepassword/changepassword.compone
     FormsModule,
     HttpClientModule
   ],
-  providers: [UserloginService, RegisteruserService , ViewCourseBySectorService,NgologinService,RegisterngoService,AdminService],
+  providers: [UserloginService, RegisteruserService , ViewCourseBySectorService,NgologinService,RegisterngoService, ViewNGOsService,AdminService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

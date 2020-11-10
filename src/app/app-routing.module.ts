@@ -21,22 +21,23 @@ import { ViewsyComponent } from './admin/users/viewsy/viewsy.component';
 import { ApproveenrollmentsComponent } from './admin/courses/approveenrollments/approveenrollments.component';
 import { AddaccomodationComponent } from './admin/accomodation/addaccomodation/addaccomodation.component';
 
-import { AccomodationComponent } from './admin/accomodation/accomodation.component';
+
 import { ApproveaccomodationComponent } from './admin/accomodation/approveaccomodation/approveaccomodation.component';
 import { ViewaccomodationComponent } from './admin/accomodation/viewaccomodation/viewaccomodation.component';
 import { UpdateaccomodationComponent } from './admin/accomodation/updateaccomodation/updateaccomodation.component';
 import { AdminforgotpasswordComponent } from './adminforgotpassword/adminforgotpassword.component';
 import { StepAboutUsComponent } from './step-about-us/step-about-us.component';
 import { StepTrainingSectorsComponent } from './step-training-sectors/step-training-sectors.component';
-
-
-
-
-
+import{WeEmpowerHomeComponent} from './we-empower-home/we-empower-home.component' ;
+import {CourseEnrollmentFormComponent} from './course-enrollment-form/course-enrollment-form.component' ;
+import { WelfareSchemeComponent } from './welfare-scheme/welfare-scheme.component';
+import { AccomodationComponent } from './accomodation/accomodation.component';
+import { SukanyaYojanaComponent} from './sukanya-yojana/sukanya-yojana.component';
 
 
 
 import{NgoRegisterComponent} from './ngo-register/ngo-register.component';
+import { EnrollForCourseComponent } from './enroll-for-course/enroll-for-course.component';
 import { NgocriteriaComponent } from './ngocriteria/ngocriteria.component';
 import { NgofaqComponent } from './ngofaq/ngofaq.component';
 import { NgoaddcoursesComponent } from './ngoaddcourses/ngoaddcourses.component';
@@ -47,14 +48,18 @@ const routes: Routes = [
  {path:'failLink',component:AdminloginfailComponent},
   {path:'stephomeLink', component: StephomeComponent},
 {path: 'userloginLink', component: UserloginComponent},
+
+  {path: '',component: WeEmpowerHomeComponent},
+  {path: 'weEmpowerHomeLink' , component: WeEmpowerHomeComponent } ,
+  {path: 'userloginLink', component: UserloginComponent},
   {path:'ngohomeLink', component:NgohomeComponent},
   {path:'adminhomeLink',component:AdminhomeComponent},
-{path: 'userRegister',component: UserRegisterComponent},
- {path:'adminloginLink',component:AdminloginComponent},
-  {path:'ngologinLink',component:NgologinComponent},
+
+ 
+  
 {path:'ngoaboutusLink',component:NgoAboutusComponent},
- {path: 'ngohomeLink', component:NgohomeComponent},
-  {path:'adminloginLink',component:AdminloginComponent},
+
+  
   {path:'ngologinLink',component:NgologinComponent},
   {path: 'userRegister',component: UserRegisterComponent},
   {path:'admin/ngo/view',component:ViewComponent},
@@ -74,22 +79,27 @@ const routes: Routes = [
 {path:'admin/accomodation/viewaccomodation',component:ViewaccomodationComponent},
 {path:'adminFPLink',component:AdminforgotpasswordComponent},
   {path:'ngoRegisterLink',component:NgoRegisterComponent},
-  {path: 'userRegister',component: UserRegisterComponent},
-  {path:'ngoRegisterLink',component:NgoRegisterComponent},
-  {path: 'userRegister',component: UserRegisterComponent},
+ 
+ ,
+ 
   {path:'ngofaqLink',component:NgofaqComponent},
   {path:'adminloginLink',component:AdminloginComponent},
-  {path:'ngologinLink',component:NgologinComponent},
+ 
   {path:'ngocriteriaLink',component:NgocriteriaComponent},
   {path:'ngoaboutusLink',component:NgoAboutusComponent},
   {path:'addcoursesLink',component:NgoaddcoursesComponent},
   {path: 'userRegister',component: UserRegisterComponent},
-  {path: 'ngologinLink',component:NgologinComponent},
+ 
 {path:'changepwdLink',component:ChangepasswordComponent},
 
 
   {path:'stepAboutUsLink' , component:StepAboutUsComponent},
-  {path: 'trainingSectorsLink' , component:StepTrainingSectorsComponent}
+  {path: 'trainingSectorsLink' , component:StepTrainingSectorsComponent},
+  {path : 'stepEnrollLink' , component:EnrollForCourseComponent},
+  {path : 'couserEnrollFormLink' , component : CourseEnrollmentFormComponent }, 
+  {path: 'welfareSchemesLink' , component:WelfareSchemeComponent},
+  {path: 'accomodationLink' , component:AccomodationComponent},
+  {path: 'sukanyaLink' , component:SukanyaYojanaComponent}
 
 ];
 

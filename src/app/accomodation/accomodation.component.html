@@ -1,0 +1,85 @@
+<div class="applydiv">
+    <div class="applycontainer">
+        <div class="apply-box">
+            <h1>Application for Accomodation</h1>
+            <form  #applyaccform="ngForm" (ngSubmit)="applyAccomodation()">
+
+                <div class="area"> 
+                    <label class="arealabel"> Area of Residence </label>
+                    <div>
+                        <select class="areastatus" name="a-status" #areaOfResidence="ngModel"  [(ngModel)]=accomodation.areaOfResidence>
+                            <option  disabled="disabled" selected="selected">--Choose Option--</option>
+                            <option  value="Metropolitan">Metropolitan</option>
+                            <option  value="Urban">Urban</option>
+                            <option  value="Sub-Urban">Sub-urban</option>
+                            <option  value="Sub-Rural">Sub-rural</option>
+                            <option  value="Rural">Rural</option>   
+                        </select>
+                    </div>
+                </div>
+                <p>Gross Income Per Month</p>
+                <input class="grossincomeinput" type="text"  #grossIncome="ngModel" name="grossincome" placeholder="Enter Per Month Income" [(ngModel)]=accomodation.grossIncomePerMonth required>
+                <div class="caste"> 
+                    <label class="castelabel"> Caste </label>
+                    <div>
+                        <select class="castestatus" name="c-status" #caste="ngModel"  [(ngModel)]=accomodation.caste required>
+                            <option  disabled="disabled" selected="selected">--Choose Option--</option>
+                            <option  value="ST">ST</option>
+                            <option  value="SC">SC</option>
+                            <option  value="OBC">OBC</option>
+                            <option  value="EWS">EWS</option>
+                            <option  value="General">General</option>   
+                        </select>
+                    </div>
+                </div>
+                <p>Husband Residence City</p>
+                <input class="husbandcity" type="text"  #husbandResidenceName="ngModel" name="husbandresidencename" placeholder="Enter Husband Residence City" [(ngModel)]=accomodation.husbandResidenceName required>
+                <p>User Residence City</p>
+                <input class="usercity" type="text"  #userResidenceName="ngModel" name="userresidencename" placeholder="Enter User Residence City" [(ngModel)]=accomodation.userResidenceName required>
+                <p>Number Of Daughter Below 18 years</p>
+                <input class="daughternum" type="number"  #numberOfGirlChildBelow18="ngModel" name="daughternum" placeholder="Enter number of daughters" [(ngModel)]=accomodation.numberOfGirlChildBelow18 required>
+                <p>Number Of Son Below 5 years</p>
+                <input class="sonnum" type="number"  #numberOfBoyChildBelow5="ngModel" name="sonnum" placeholder="Enter number of sons" [(ngModel)]=accomodation.numberOfBoyChildBelow5 required>
+
+                <div class="phychallenge"> 
+                    <label class="phychallengelabel"> Any Physical Challenges? </label>
+                    <div>
+                        <select class="phychallengestatus" name="p-status" #phychallenge="ngModel"  [(ngModel)]=accomodation.anyPhysicalChallenges required>
+                            <option  disabled="disabled" selected="selected">--Choose Option--</option>
+                            <option  value="Yes">Yes</option>
+                            <option  value="No">No</option>   
+                        </select>
+                    </div>
+                </div>
+
+                <div class="daycare"> 
+                    <label class="daycarelabel"> Any Day-Care Requirements </label>
+                    <div>
+                        <select class="daycarestatus" name="d-status" #daycare="ngModel"  [(ngModel)]=accomodation.dayCareRequirements required>
+                            <option  disabled="disabled" selected="selected">--Choose Option--</option>
+                            <option  value="Yes">Yes</option>
+                            <option  value="No">No</option>  
+                        </select>
+                    </div>
+                </div>
+
+                <div class="employment"> 
+                    <label class="employmentlabel"> Caste </label>
+                    <div>
+                        <select class="employmentstatus" name="e-status" #employment="ngModel"  [(ngModel)]=accomodation.employmentStatus required>
+                            <option  disabled="disabled" selected="selected">--Choose Option--</option>
+                            <option  value="Employed">Employed</option>
+                            <option  value="Unemployed">Unemployed</option>   
+                        </select>
+                    </div>
+                </div>
+
+                <p>Required Accomodation City</p>
+                <input class="accomodationcity" type="text"  #accomodationCity="ngModel" name="accomodationcity" placeholder="Enter Accomodation City" [(ngModel)]=accomodation.accomodationCity required>
+                
+                <input type="submit" name="submit" [disabled] = "!applyaccform.valid?true:false" value="Apply">
+                
+            </form>
+        </div>
+    </div>
+</div>
