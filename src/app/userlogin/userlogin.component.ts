@@ -21,8 +21,8 @@ export class UserloginComponent {
     this.userLoginService.login(this.login).subscribe(data => {
       alert(JSON.stringify(data));
       if(data.status == 'SUCCESS') {
-        let userId = data.userId;
-        let userName = data.userName;
+        let userId = data.id;
+        let userName = data.name;
         //let obj = {id : customerId, name : customerName};
         sessionStorage.setItem('userId', String(userId));
         sessionStorage.setItem('userName', userName);
