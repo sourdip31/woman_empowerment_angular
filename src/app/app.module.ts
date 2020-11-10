@@ -19,6 +19,11 @@ import { NgoAboutusComponent } from './ngo-aboutus/ngo-aboutus.component';
 import { StepAboutUsComponent } from './step-about-us/step-about-us.component';
 import { StepTrainingSectorsComponent } from './step-training-sectors/step-training-sectors.component';
 import { NgoRegisterComponent } from './ngo-register/ngo-register.component';
+import { NgocriteriaComponent } from './ngocriteria/ngocriteria.component';
+import { NgofaqComponent } from './ngofaq/ngofaq.component';
+import { NgoaddcoursesComponent } from './ngoaddcourses/ngoaddcourses.component';
+import { NgologinService } from './ngologin.service';
+import { RegisterngoService } from './registerngo.service';
 
 
 import{ ViewCourseBySectorService } from './view-course-by-sector.service';
@@ -26,6 +31,9 @@ import { EnrollForCourseComponent } from './enroll-for-course/enroll-for-course.
 import { ViewNGOsService } from './view-ngos.service';
 import { WeEmpowerHomeComponent } from './we-empower-home/we-empower-home.component';
 import { CourseEnrollmentFormComponent } from './course-enrollment-form/course-enrollment-form.component';
+import { WelfareSchemeComponent } from './welfare-scheme/welfare-scheme.component';
+import { AccomodationComponent } from './accomodation/accomodation.component';
+import { SukanyayojnaComponent } from './sukanyayojna/sukanyayojna.component' ;
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,12 +45,20 @@ import { CourseEnrollmentFormComponent } from './course-enrollment-form/course-e
     AdminloginComponent,
     NgologinComponent,
     NgoAboutusComponent,
+    NgoRegisterComponent,
+    NgocriteriaComponent,
+    NgofaqComponent,
+    NgoaddcoursesComponent,
     StepAboutUsComponent,
     StepTrainingSectorsComponent,
     NgoRegisterComponent,
     EnrollForCourseComponent,
     WeEmpowerHomeComponent,
-    CourseEnrollmentFormComponent
+    CourseEnrollmentFormComponent,
+    WelfareSchemeComponent,
+    AccomodationComponent,
+    SukanyayojnaComponent,
+   
  
   ],
   imports: [
@@ -52,7 +68,7 @@ import { CourseEnrollmentFormComponent } from './course-enrollment-form/course-e
     FormsModule,
     HttpClientModule
   ],
-  providers: [UserloginService, RegisteruserService , ViewCourseBySectorService , ViewNGOsService],
+  providers: [UserloginService, RegisteruserService , ViewCourseBySectorService,NgologinService,RegisterngoService, ViewNGOsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
