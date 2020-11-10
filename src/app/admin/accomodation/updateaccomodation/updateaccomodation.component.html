@@ -1,1 +1,24 @@
-<p>updateaccomodation works!</p>
+<div class="img">
+    <div class="registerdiv">
+        <div class="registercontainer">
+            <div class="register-box">
+       
+            <h1>update Accomodation</h1>
+            <form  #form="ngForm" (ngSubmit)="update()">
+                <p> City ID </p>
+                <input type="number" name="cityId" #cityId="ngModel"  placeholder="Enter City ID"   [(ngModel)]=updateaccomodation.cityId required>
+                 <p>City</p>
+                <input type="text"  name="city" #city="ngModel"   placeholder="Enter City" [(ngModel)]=updateaccomodation.city required>
+               
+                <p> Number of Rooms </p>
+                <input type="number" name="numberOfRooms" #noOfRooms="ngModel"  placeholder="Enter Number of rooms"   [(ngModel)]=updateaccomodation.numberOfRooms required>
+                
+                <input type="submit" name="submit" [disabled] = "!form.valid?true:false" value="Update">
+                
+               
+            </form>
+</div>
+</div>
+</div>
+</div>
+

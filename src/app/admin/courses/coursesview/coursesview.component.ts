@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {AdminService} from '../../../admin.service';
+import {Course} from '../../../course';
 
 @Component({
   selector: 'app-coursesview',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./coursesview.component.css']
 })
 export class CoursesviewComponent implements OnInit {
-
-  constructor() { }
+course: Array<Course>=[];
+  constructor(private adminService:AdminService) { }
 
   ngOnInit(): void {
+    this.adminService. viewCourses().subscribe(data=>{
+      this.course = data;
+    })
   }
 
 }

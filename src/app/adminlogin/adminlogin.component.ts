@@ -12,7 +12,7 @@ import { AdminloginfailComponent } from '../adminloginfail/adminloginfail.compon
 })
 export class AdminloginComponent implements OnInit {
 
- adminlogin=new AdminLogin("Muthu@lti.com","muthu");
+ adminlogin:AdminLogin=new AdminLogin();
 
   constructor(private router:Router) { }
 
@@ -21,7 +21,8 @@ export class AdminloginComponent implements OnInit {
 
   
   checkLogin(){
-     if(this.adminlogin.email=="Muthu@lti.com" && this.adminlogin.password=="muthu"){
+     if(this.adminlogin.email=="souradip2.bubun@gmail.com" && this.adminlogin.password=="Souradip@123"){
+      sessionStorage.setItem('adminemail', String(this.adminlogin.email));
  //redirect to success html
  this.router.navigate(['/adminhomeLink']);
     }

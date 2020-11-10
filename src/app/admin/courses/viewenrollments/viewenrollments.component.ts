@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {AdminService} from '../../../admin.service';
+import {ViewEnrollments } from '../../../enroll';
 
 @Component({
   selector: 'app-viewenrollments',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./viewenrollments.component.css']
 })
 export class ViewenrollmentsComponent implements OnInit {
-
-  constructor() { }
+  enroll: Array<ViewEnrollments>=[];
+  constructor(private adminService:AdminService) { }
 
   ngOnInit(): void {
+    this.adminService.  viewEnrollments().subscribe(data=>{
+      this.enroll = data;
+    })
   }
 
 }

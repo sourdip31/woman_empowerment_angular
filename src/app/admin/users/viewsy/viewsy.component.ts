@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {AdminService} from '../../../admin.service';
+import {ViewSY} from './sukanyayojna';
 
 @Component({
   selector: 'app-viewsy',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./viewsy.component.css']
 })
 export class ViewsyComponent implements OnInit {
-
-  constructor() { }
+  sukanyayojna: Array<ViewSY>=[];
+  constructor(private adminService:AdminService) { }
 
   ngOnInit(): void {
+    this.adminService.viewSY().subscribe(data=>{
+      this.sukanyayojna = data;
+    })
   }
 
 }

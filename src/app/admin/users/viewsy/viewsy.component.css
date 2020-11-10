@@ -1,0 +1,36 @@
+.tablediv{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.tablecourse{
+    border: 3px solid #BDC0C4;
+}
+.tablecourse th{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #BDC0C4;
+    color:black;
+    text-align: center;
+}
+
+.tablecourse td{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+div.img{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS3Jy4PfAjkpQOGxpjj9I74rbiVRHtHm-wq6Q&usqp=CAU");
+    height: 100vh;
+    width: 97.8vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 140%,100%;
+}

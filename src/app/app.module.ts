@@ -43,6 +43,8 @@ import { RegisterngoService } from './registerngo.service';
 
 
 import{ ViewCourseBySectorService } from './view-course-by-sector.service' ;
+import { AdminService } from './admin.service';
+import { ChangepasswordComponent } from './changepassword/changepassword.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -78,6 +80,7 @@ import{ ViewCourseBySectorService } from './view-course-by-sector.service' ;
     NgoaddcoursesComponent,
     StepAboutUsComponent,
     StepTrainingSectorsComponent,
+    ChangepasswordComponent,
    
  
   ],
@@ -88,7 +91,7 @@ import{ ViewCourseBySectorService } from './view-course-by-sector.service' ;
     FormsModule,
     HttpClientModule
   ],
-  providers: [UserloginService, RegisteruserService , ViewCourseBySectorService,NgologinService,RegisterngoService],
+  providers: [UserloginService, RegisteruserService , ViewCourseBySectorService,NgologinService,RegisterngoService,AdminService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

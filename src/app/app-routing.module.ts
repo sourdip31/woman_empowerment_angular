@@ -40,6 +40,7 @@ import{NgoRegisterComponent} from './ngo-register/ngo-register.component';
 import { NgocriteriaComponent } from './ngocriteria/ngocriteria.component';
 import { NgofaqComponent } from './ngofaq/ngofaq.component';
 import { NgoaddcoursesComponent } from './ngoaddcourses/ngoaddcourses.component';
+import { ChangepasswordComponent } from './changepassword/changepassword.component';
 
 const routes: Routes = [
   {path: '',component: StephomeComponent},
@@ -84,7 +85,7 @@ const routes: Routes = [
   {path:'addcoursesLink',component:NgoaddcoursesComponent},
   {path: 'userRegister',component: UserRegisterComponent},
   {path: 'ngologinLink',component:NgologinComponent},
-
+{path:'changepwdLink',component:ChangepasswordComponent},
 
 
   {path:'stepAboutUsLink' , component:StepAboutUsComponent},

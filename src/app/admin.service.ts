@@ -1,54 +1,67 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
-import { Accomodation  } from "./accomodation";
+import { AddAccomodation  } from "./addaccomodation";
 import { Observable } from 'rxjs';
 import {AccomodationStatus} from './accomodationstatus';
 import {ViewAccomodation} from './viewaccomodations';
-import {ViewCourses} from './courses';
+import {UpdateAccomodation} from './updateaccomodation';
+import {Course} from './course';
 import {ViewEnrollments} from './enroll';
 import {ViewNGO} from './ngo';
-import {ViewSY} from './sukanyayojna';
+import {ViewSY} from './admin/users/viewsy/sukanyayojna';
+import { Users } from './users';
+import{EnrollmentStatus} from './enrollmentstatus';
 @Injectable({
   providedIn: 'root'
 })
 export class AdminService {
 
   constructor(private http:HttpClient) { }
- addAccomodation(accomodation:Accomodation):Observable<AccomodationStatus>{
-    let url='http://localhost:8080/addAccomodation';
+ addAccomodation(accomodation:AddAccomodation):Observable<AccomodationStatus>{
+    let url='http://localhost:8080/addHome';
     return this.http.post<AccomodationStatus>(url,accomodation);
   }
 
-  updateAccomodation(accomodation:Accomodation):Observable<AccomodationStatus>{
-    let url='http://localhost:8080/updateAccomodation';
+  updateAccomodation(accomodation:UpdateAccomodation):Observable<AccomodationStatus>{
+    let url='http://localhost:8080/updateHome';
     return this.http.post<AccomodationStatus>(url,accomodation);
   }
 
-  viewAccomodation(viewaccomodation:ViewAccomodation):Observable<any>{
-    let url='http://localhost:8080/deleteAccomodation';
-    return this.http.get<any>(url);
+  viewAccomodation():Observable<UpdateAccomodation[]>{
+    let url='http://localhost:8080/viewAllHomes';
+    return this.http.get<UpdateAccomodation[]>(url);
   }
 
-  viewCourses(viewcourses:ViewCourses):Observable<any>{
-    let url='https://localhost:8080/viewAllCourses';
-    return this.http.get<any>(url);
+  viewCourses():Observable<Course[]>{
+    let url='http://localhost:8080/viewAllCourses';
+    return this.http.get<Course[]>(url);
   }
 
-  viewEnrollments(viewcourses:ViewEnrollments):Observable<any>{
-    let url='https://localhost:8080/viewAllEnrollments';
-    return this.http.get<any>(url);
+  viewEnrollments():Observable<ViewEnrollments[]>{
+    let url='http://localhost:8080/viewAllEnrollments';
+    return this.http.get<ViewEnrollments[]>(url);
   }
 
-  viewNGO(viewngo:ViewNGO):Observable<any>{
-    let url='https://localhost:8080/viewAllNGOs';
-    return this.http.get<any>(url);
+  viewNGO():Observable<ViewNGO[]>{
+    let url='http://localhost:8080/viewAllNGOs';
+    return this.http.get<ViewNGO[]>(url);
   }
 
-  viewSY(viewsy:ViewSY):Observable<any>{
-    let url='https://localhost:8080/viewAllEnrollments';
-    return this.http.get<any>(url);
+  viewSY():Observable<ViewSY[]>{
+    let url='http://localhost:8080/viewAllSukanyas';
+    return this.http.get<ViewSY[]>(url);
   }
 
+  viewUsers():Observable<Users[]>{
+    let url='http://localhost:8080/viewAllUsers';
+    return this.http.get<Users[]>(url);
+  }
 
+approveEnrollments():Observable<EnrollmentStatus>{
+  let url='http://localhost:8080/approveEnroll';
+  return this.http.get<EnrollmentStatus>(url);
+
+  
+}
 
 }
