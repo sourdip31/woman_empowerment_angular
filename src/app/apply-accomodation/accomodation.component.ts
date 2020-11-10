@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   templateUrl: './accomodation.component.html',
   styleUrls: ['./accomodation.component.css']
 })
-export class AccomodationComponent implements OnInit {
+export class ApplyAccomodationComponent implements OnInit {
   accomodation : Accomodation = new Accomodation() ;
   constructor(private accomodationService : AccomodationServiceService , private router:Router) { }
 

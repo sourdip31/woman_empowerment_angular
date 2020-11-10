@@ -27,6 +27,7 @@ import { ViewsyComponent } from './admin/users/viewsy/viewsy.component';
 import { ViewenrollmentsComponent } from './admin/courses/viewenrollments/viewenrollments.component';
 import { ApproveenrollmentsComponent } from './admin/courses/approveenrollments/approveenrollments.component';
 import { AccomodationComponent } from './admin/accomodation/accomodation.component';
+import{ApplyAccomodationComponent} from './apply-accomodation/accomodation.component' ;
 import { AddaccomodationComponent } from './admin/accomodation/addaccomodation/addaccomodation.component';
 import { ApproveaccomodationComponent } from './admin/accomodation/approveaccomodation/approveaccomodation.component';
 import { ViewaccomodationComponent } from './admin/accomodation/viewaccomodation/viewaccomodation.component';
@@ -94,7 +95,7 @@ import { SukanyaYojanaComponent } from './sukanya-yojana/sukanya-yojana.componen
     WeEmpowerHomeComponent,
     CourseEnrollmentFormComponent,
     WelfareSchemeComponent,
-    AccomodationComponent,
+    ApplyAccomodationComponent,
     SukanyayojnaComponent,
     SukanyaYojanaComponent,
    

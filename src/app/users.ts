@@ -4,7 +4,7 @@ export class Users{
 	 userPassword:string;
 	 userName:string;
 	 userGender:string;
-	 userDateOfBirth:string;
+	 userDateOfBirth:Date;
 	 userEmail:string;
 	 userAddress:string;
 	 userMaritalStatus:string;

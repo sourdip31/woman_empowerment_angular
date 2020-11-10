@@ -31,7 +31,8 @@ import { StepTrainingSectorsComponent } from './step-training-sectors/step-train
 import{WeEmpowerHomeComponent} from './we-empower-home/we-empower-home.component' ;
 import {CourseEnrollmentFormComponent} from './course-enrollment-form/course-enrollment-form.component' ;
 import { WelfareSchemeComponent } from './welfare-scheme/welfare-scheme.component';
-import { AccomodationComponent } from './accomodation/accomodation.component';
+import { ApplyAccomodationComponent } from './apply-accomodation/accomodation.component';
+import {AccomodationComponent} from './admin/accomodation/accomodation.component';
 import { SukanyaYojanaComponent} from './sukanya-yojana/sukanya-yojana.component';
 
 
@@ -51,7 +52,6 @@ const routes: Routes = [
 
   {path: '',component: WeEmpowerHomeComponent},
   {path: 'weEmpowerHomeLink' , component: WeEmpowerHomeComponent } ,
-  {path: 'userloginLink', component: UserloginComponent},
   {path:'ngohomeLink', component:NgohomeComponent},
   {path:'adminhomeLink',component:AdminhomeComponent},
 
@@ -86,9 +86,8 @@ const routes: Routes = [
   {path:'adminloginLink',component:AdminloginComponent},
  
   {path:'ngocriteriaLink',component:NgocriteriaComponent},
-  {path:'ngoaboutusLink',component:NgoAboutusComponent},
+
   {path:'addcoursesLink',component:NgoaddcoursesComponent},
-  {path: 'userRegister',component: UserRegisterComponent},
  
 {path:'changepwdLink',component:ChangepasswordComponent},
 
@@ -98,7 +97,7 @@ const routes: Routes = [
   {path : 'stepEnrollLink' , component:EnrollForCourseComponent},
   {path : 'couserEnrollFormLink' , component : CourseEnrollmentFormComponent },
   {path: 'welfareSchemesLink' , component:WelfareSchemeComponent},
-  {path: 'accomodationLink' , component:AccomodationComponent},
+  {path: 'accomodationLink' , component:ApplyAccomodationComponent},
   {path: 'sukanyaLink' , component:SukanyaYojanaComponent}
 
 ];
