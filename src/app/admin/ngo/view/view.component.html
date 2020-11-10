@@ -1,0 +1,32 @@
+<div class="img">
+    <div class="tablediv">
+        <table class="tablecourse" border = 1>
+            <tr>
+                
+            <th> NGO_Id </th>
+            <th>NGO Application Status </th>
+            <th> NGO Name </th>
+            <th> NGO Registration Number </th>
+            <th> NGO Username </th>
+            <th> NGO Password </th>
+            <th>NGO Location</th>
+            <th>NGO Email</th>
+
+           
+            </tr>
+            
+        <tr *ngFor = 'let n of ngo;' >
+            <td> {{n.ngoId}} </td>
+            <td> {{n.ngoApplicationStatus}} </td>
+            <td> {{n.ngoName}} </td>
+            <td> {{n.ngoRegistrationNumber}} </td>
+            <td> {{n.ngoUserName}} </td>
+            <td> {{n.ngoPassword}} </td>
+            <td> {{n.ngoLocation}} </td>
+            <td> {{n.ngoEmail}} </td>
+           
+            </tr>
+        
+            </table>
+    </div>
+</div>

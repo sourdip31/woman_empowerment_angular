@@ -1,7 +1,40 @@
+
 <div class="admin-navbar">
-    <ul>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">NGO</a></li>
-      <li><a href="#">Trainee</a></li>
-    </ul>
-</div>
+
+  <ul>
+    <li><a [routerLink]="['/adminhomeLink']">NGO</a></li>
+   
+    <li><a [routerLink]="'/admin/courses'">Courses</a></li>
+    <li><a [routerLink]="'/admin/users'">Users</a></li>
+    <li><a [routerLink]="'/admin/accomodation'">Accomodation</a></li>
+   
+    <li><a [routerLink]="['/adminloginLink']">Logout</a></li>
+  </ul>
+  </div>
+
+  
+    <div class="img">
+    <div class="row">
+      <div class="column" >
+        <h1>Functionality</h1><br><br>
+        <h2>View_NGO</h2><br><br><br><br><br>
+        <h2>Approve_NGO</h2>
+     
+      </div>
+      <div class="column" >
+        <h1>Description</h1><br><br>
+        <h2>The function returns the list of registered NGO's</h2><br><br><br>
+        <h2>The function approves all the NGO requests who wants to register themselves in the portal</h2>
+       
+      </div>
+      <div class="column" >
+        <h1>Links</h1><br><br>
+        <a [routerLink]="'/admin/ngo/view'">View</a><br><br><br><br>
+        <a [routerLink]="'/admin/ngo/approve'">Approve</a><br><br><br><br>
+    
+        
+      </div>
+    </div>
+  </div>
+  
+    

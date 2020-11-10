@@ -1,0 +1,34 @@
+<div class ="img">
+    <div class="tablediv">
+    <table class="tablecourse" border = 1>
+        <tr>
+        <th> User ID </th>
+        <th> User Name </th>
+        <th> User Password </th>
+        <th> user Gender </th>
+        <th> User Date _Of_Birth </th>
+        <th> User Email </th>
+        <th> User Address </th>
+        <th>User Marital Status</th>
+        <th>User Nationality</th>
+
+       
+        </tr>
+       
+    
+        <tr *ngFor = 'let u of user;' >
+        <td> {{u. userId}} </td>
+        <td> {{u. userName}} </td>
+        <td> {{u. userPassword}} </td>
+        <td> {{u. userGender}} </td>
+        <td> {{u.userDateOfBirth}} </td>
+        <td> {{u.userEmail}} </td>
+        <td> {{u. userAddress}} </td>
+        <td> {{u. userMaritalStatus}} </td>
+        <td> {{u. userNationality}} </td>
+       
+        </tr>
+    
+        </table>
+</div>
+</div>

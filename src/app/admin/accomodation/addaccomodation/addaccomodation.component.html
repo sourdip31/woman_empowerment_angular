@@ -1,0 +1,21 @@
+<div class="img">
+    <div class="registerdiv">
+        <div class="registercontainer">
+            <div class="register-box">
+       
+            <h1>Add Accomodation</h1>
+            <form  #form="ngForm" (ngSubmit)="add()">
+                 <p>City</p>
+                <input type="text"  name="city" #city="ngModel"   placeholder="Enter City" [(ngModel)]=addaccomodation.city required>
+               
+                <p> Number of Rooms </p>
+                <input type="number" name="numberOfRooms" #noOfRooms="ngModel"  placeholder="Enter Number of rooms"   [(ngModel)]=addaccomodation.numberOfRooms required>
+                
+                <input type="submit" name="submit" [disabled] = "!form.valid?true:false" value="Add">
+                
+               
+            </form>
+</div>
+</div>
+</div>
+</div>
