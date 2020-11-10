@@ -49,7 +49,7 @@ const routes: Routes = [
   {path:'stepAboutUsLink' , component:StepAboutUsComponent},
   {path: 'trainingSectorsLink' , component:StepTrainingSectorsComponent},
   {path : 'stepEnrollLink' , component:EnrollForCourseComponent},
-  {path : 'couserEnrollFormLink' , component : CourseEnrollmentFormComponent } 
+  {path : 'couserEnrollFormLink' , component : CourseEnrollmentFormComponent },
   {path: 'welfareSchemesLink' , component:WelfareSchemeComponent},
   {path: 'accomodationLink' , component:AccomodationComponent},
   {path: 'sukanyaLink' , component:SukanyayojnaComponent}
