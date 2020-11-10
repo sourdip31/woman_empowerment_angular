@@ -5,7 +5,7 @@
         <li><a href="#">Registration</a></li>
         <li><a href="#">NGOs</a></li>
         <li><a [routerLink]="['/trainingSectorsLink']">Training Sectors</a></li>
-        <li><a [routerLink]="['/welfareSchemesLink']">Welfare Schemes</a></li>
+        <li><a href="#">Welfare Schemes</a></li>
         <li><a href="#">Status</a></li>
         <li><a href="#">FAQ</a></li>
 
@@ -15,14 +15,14 @@
 
 <div class="trainingSectors">
     <div class="heading">
-        <h1>Training Sectors</h1>
+        <h1>Welfare Schemes</h1>
     </div>
     <div class="row">
         <div class="col-7">
             <div class="sector-box">
 
                 <div class="divlabel">
-                    <label>Agriculture : </label>
+                    <label>Accomodation : </label>
                 </div>
                 <div class="contentdiv">
                     <p>Indian is an agriculture based country, where more than 50% of
@@ -33,68 +33,27 @@
                         agriculture sector accounts for 18 per cent of India's gross domestic
                         product (GDP) and provides employment to 50% of the countries
                         workforce. India is the world’s largest producer of pulses, rice, wheat,
-                        spices and spice products. </p>
-
-                    <button class="viewCoursesBtn" (click)= "viewCoursesAgriculture()">View Courses</button>
-
+                        spices and spice products. 
+                    </p>
+                    <div class="accdiv">
+                           <br> <a [routerLink]="['/accomodationLink']">Apply for Accomodation</a>
+                    </div>
                 </div>
             </div>
-
-
         </div>
         <div class="col-5">
             <div class="imagediv">
-                <img src="../../assets/images/women_agriculture.jpg">
+                <img src="../../assets/images/slider_2_9884_74zdfv67ny_3.jpg">
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-12">
-            <div *ngIf = "isAgriculture then thenBlock">
-            </div>
-          
-          
-            <ng-template #thenBlock>
-                <div class="tablediv">
-                    <table class="tablecourse" border = 1>
-                        <tr>
-                        <th> Course ID </th>
-                        <th> Course Name </th>
-                        <th> Course Start Date </th>
-                        <th> Course End Date </th>
-                        <th> Course Providing NGO </th>
-                        <th> Course Benifits </th>
-                        <th>Training Sector</th>
-
-                       
-                        </tr>
-                    
-                    
-                        <tr *ngFor = 'let cour of courses;' >
-                        <td> {{cour.courseId}} </td>
-                        <td> {{cour.courseName}} </td>
-                        <td> {{cour.courseStartDate}} </td>
-                        <td> {{cour.courseEndDate}} </td>
-                        <td> {{cour.courseProvidingNGO}} </td>
-                        <td> {{cour.courseBenefits}} </td>
-                        <td> {{cour.trainingSector}} </td>
-                       
-                        </tr>
-                    
-                        </table>
-                </div>
-            </ng-template> 
-        </div>
-    </div>
-
-
 
     <div class="row">
         <div class="col-7">
             <div class="sector-box">
 
                 <div class="divlabel">
-                    <label>Food Processing : </label>
+                    <label>Sukanya Yojana Scheme : </label>
                 </div>
                 <div class="contentdiv">
                     <p>India has made vast progress overtime in
@@ -106,68 +65,26 @@
                         which has the potential to add value to farm output,
                         create alternate employment opportunities, improve
                         exports and strengthen the domestic supply chain.
-                        India, with about 11.2 per cent of total arable land in
-                        the world, is ranked first in the production of milk,
-                        pulses and jute, second in fruits and vegetables and
-                        third in cereals (Government of India, 2019). It is also
-                        the sixth largest food and grocery market in the world. </p>
-
-                    <button  class="viewCoursesBtn" (click)= "viewCoursesFoodProcessing()">View Courses</button>
-
+                     </p>
                 </div>
+                <div class="accdiv2">
+                    <a [routerLink]="['/sukanyaLink']">Apply for Sukanya Yojana</a>
+                 </div>
             </div>
 
 
         </div>
         <div class="col-5">
             <div class="imagediv">
-                <img src="../../assets/images/food-sector.jpg">
+                <img src="../../assets/images/Girl-Child-Education-through-UMEED-1000-Cyclothon-2019.jpeg">
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-12">
-            <div *ngIf = "isFoodProcessing then thenBlock">
-            </div>
-          
-          
-            <ng-template #thenBlock>
-                <div>
-                    <table class="tablecourse" border = 1>
-                        <tr>
-                        <th> Course ID </th>
-                        <th> Course Name </th>
-                        <th> Course Start Date </th>
-                        <th> Course End Date </th>
-                        <th> Course Providing NGO </th>
-                        <th> Course Benifits </th>
-                        <th>Training Sector</th>
-
-                       
-                        </tr>
-                    
-                    
-                        <tr *ngFor = 'let cour of courses;' >
-
-                        <td> {{cour.courseId}} </td>
-                        <td> {{cour.courseName}} </td>
-                        <td> {{cour.courseStartDate}} </td>
-                        <td> {{cour.courseEndDate}} </td>
-                        <td> {{cour.courseProvidingNGO}} </td>
-                        <td> {{cour.courseBenefits}} </td>
-                        <td> {{cour.trainingSector}} </td>
-                       
-                        </tr>
-                    
-                        </table>
-                </div>
-            </ng-template> 
-        </div>
-    </div>
+</div>
 
 
 
-    <div class="row">
+   <!--<div class="row">
         <div class="col-7">
             <div class="sector-box">
 
@@ -452,4 +369,4 @@
             </ng-template> 
         </div>
     </div>
-</div>
+</div> -->

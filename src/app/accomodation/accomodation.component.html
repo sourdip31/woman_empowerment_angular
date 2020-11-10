@@ -1,10 +1,34 @@
 <div class="registerdiv">
     <div class="registercontainer">
         <div class="register-box">
-            <h1>User Registration</h1>
+            <h1>Application for Accomodation</h1>
             <form  #userregform="ngForm" (ngSubmit)="registerUser()">
-                <p>Name</p>
-                <input class="nameinput" type="text"  #userName="ngModel" name="username" placeholder="Enter Name" [(ngModel)]=user.userName required>
+
+                <div class="marital"> 
+                    <label class="maritallabel"> Area of Residence </label>
+                    <div>
+                        <select class="maritalstatus" name="m-status" #userMaritalStatus="ngModel"  [(ngModel)]=user.userMaritalStatus>
+                            <option  disabled="disabled" selected="selected">--Choose Option--</option>
+                            <option  value="single">Metropolitan</option>
+                            <option  value="married">Urban</option>
+                            <option  value="widowed">Sub-urban</option>
+                            <option  value="divorced">Sub-rural</option>
+                            <option  value="seperated">Rural</option>   
+                        </select>
+                    </div>
+                </div>
+                <p>Gross Income Per Month</p>
+                <input class="nameinput" type="text"  #userName="ngModel" name="username" placeholder="Enter Per Month Income" [(ngModel)]=user.userName required>
+                <p>Caste</p>
+                <input class="nameinput" type="text"  #userName="ngModel" name="username" placeholder="Enter Caste" [(ngModel)]=user.userName required>
+                <p>Husband Residence City</p>
+                <input class="nameinput" type="text"  #userName="ngModel" name="username" placeholder="Enter Husband Residence City" [(ngModel)]=user.userName required>
+                <p>User Residence City</p>
+                <input class="nameinput" type="text"  #userName="ngModel" name="username" placeholder="Enter User Residence City" [(ngModel)]=user.userName required>
+                <p>Number Of Daughter Below 18 years</p>
+                <input class="nameinput" type="text"  #userName="ngModel" name="username" placeholder="Enter number of daughters" [(ngModel)]=user.userName required>
+                <p>Number Of Son Below 5 years</p>
+                <input class="nameinput" type="text"  #userName="ngModel" name="username" placeholder="Enter number of sons" [(ngModel)]=user.userName required>
 
                 <p class="gender"> <label class="genderlabel"> Gender </label>
                 <input type="radio"  name="usergender" value="female" #userGender="ngModel" [(ngModel)]=user.userGender checked > <span>Female</span>
@@ -28,21 +52,6 @@
 
                 <p>Address</p>
                 <textarea name="address"  #userAddress="ngModel" [(ngModel)]=user.userAddress></textarea>
-
-                <div class="marital"> 
-                    <label class="maritallabel"> Marital Status </label>
-                    <div>
-                        <select class="maritalstatus" name="m-status" #userMaritalStatus="ngModel"  [(ngModel)]=user.userMaritalStatus>
-                            <option  disabled="disabled" selected="selected">--Choose Option--</option>
-                            <option  value="single">Single</option>
-                            <option  value="married">Married</option>
-                            <option  value="widowed">Widowed</option>
-                            <option  value="divorced">Divorced</option>
-                            <option  value="seperated">Seperated</option>
-                            
-                          </select>
-                    </div>
-                </div>
 
                 <p>  Email </p>
                 <input type="text"  name="useremail" #userEmail="ngModel"   placeholder="Enter Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" [(ngModel)]=user.userEmail required>

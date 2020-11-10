@@ -26,7 +26,10 @@ import { NgologinService } from './ngologin.service';
 import { RegisterngoService } from './registerngo.service';
 
 
-import{ ViewCourseBySectorService } from './view-course-by-sector.service' ;
+import{ ViewCourseBySectorService } from './view-course-by-sector.service';
+import { WelfareSchemeComponent } from './welfare-scheme/welfare-scheme.component';
+import { AccomodationComponent } from './accomodation/accomodation.component';
+import { SukanyayojnaComponent } from './sukanyayojna/sukanyayojna.component' ;
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,6 +47,9 @@ import{ ViewCourseBySectorService } from './view-course-by-sector.service' ;
     NgoaddcoursesComponent,
     StepAboutUsComponent,
     StepTrainingSectorsComponent,
+    WelfareSchemeComponent,
+    AccomodationComponent,
+    SukanyayojnaComponent,
    
  
   ],

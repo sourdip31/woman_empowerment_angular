@@ -12,7 +12,9 @@ import { NgologinComponent } from './ngologin/ngologin.component';
 import {NgoAboutusComponent } from './ngo-aboutus/ngo-aboutus.component';
 import { StepAboutUsComponent } from './step-about-us/step-about-us.component';
 import { StepTrainingSectorsComponent } from './step-training-sectors/step-training-sectors.component';
-
+import { WelfareSchemeComponent } from './welfare-scheme/welfare-scheme.component';
+import { AccomodationComponent } from './accomodation/accomodation.component';
+import { SukanyayojnaComponent} from './sukanyayojna/sukanyayojna.component';
 
 
 
@@ -45,7 +47,10 @@ const routes: Routes = [
 
 
   {path:'stepAboutUsLink' , component:StepAboutUsComponent},
-  {path: 'trainingSectorsLink' , component:StepTrainingSectorsComponent}
+  {path: 'trainingSectorsLink' , component:StepTrainingSectorsComponent},
+  {path: 'welfareSchemesLink' , component:WelfareSchemeComponent},
+  {path: 'accomodationLink' , component:AccomodationComponent},
+  {path: 'sukanyaLink' , component:SukanyayojnaComponent}
 
 ];
 
