@@ -12,7 +12,8 @@ import { NgologinComponent } from './ngologin/ngologin.component';
 import {NgoAboutusComponent } from './ngo-aboutus/ngo-aboutus.component';
 import { StepAboutUsComponent } from './step-about-us/step-about-us.component';
 import { StepTrainingSectorsComponent } from './step-training-sectors/step-training-sectors.component';
-
+import{WeEmpowerHomeComponent} from './we-empower-home/we-empower-home.component' ;
+import {CourseEnrollmentFormComponent} from './course-enrollment-form/course-enrollment-form.component' ;
 
 
 
@@ -21,10 +22,12 @@ import { StepTrainingSectorsComponent } from './step-training-sectors/step-train
 
 
 import{NgoRegisterComponent} from './ngo-register/ngo-register.component';
+import { EnrollForCourseComponent } from './enroll-for-course/enroll-for-course.component';
 
 const routes: Routes = [
-  {path: '',component: StephomeComponent},
-  
+
+  {path: '',component: WeEmpowerHomeComponent},
+  {path: 'weEmpowerHomeLink' , component: WeEmpowerHomeComponent } ,
   {path: 'userloginLink', component: UserloginComponent},
   {path:'ngohomeLink', component:NgohomeComponent},
   {path:'adminhomeLink',component:AdminhomeComponent},
@@ -39,7 +42,9 @@ const routes: Routes = [
 
 
   {path:'stepAboutUsLink' , component:StepAboutUsComponent},
-  {path: 'trainingSectorsLink' , component:StepTrainingSectorsComponent}
+  {path: 'trainingSectorsLink' , component:StepTrainingSectorsComponent},
+  {path : 'stepEnrollLink' , component:EnrollForCourseComponent},
+  {path : 'couserEnrollFormLink' , component : CourseEnrollmentFormComponent } 
 
 ];
 

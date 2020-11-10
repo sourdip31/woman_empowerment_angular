@@ -1,0 +1,151 @@
+<div class="step-navbar">
+    <ul>
+        <li><a [routerLink]="['/stepAboutUsLink']">About Us</a></li>
+        <li><a href="#">Guidelines</a></li>
+        <li><a href="#">Registration</a></li>
+        <li><a [routerLink]="['/stepEnrollLink']">Enroll</a></li>
+        <li><a [routerLink]="['/trainingSectorsLink']">Training Sectors</a></li>
+        <li><a href="#">Welfare Schemes</a></li>
+        <li><a href="#">Status</a></li>
+        <li><a href="#">FAQ</a></li>
+
+
+    </ul>
+</div>
+
+<div class="enroll-body">
+    <div class="row">
+      <div class="col-7">
+        <div class="enrollstep-box">
+  
+          <div class="divlabel">
+            <label>Enroll for a STEP Course  : </label>
+          </div>
+          <div class="contentdiv">
+            <ol>
+                <li>You need to first Enroll Yourself Under an NGO.(You cannot enroll in more than one NGO)</li>
+                <li>Choose one course provided by your NGO for which you want to Enroll. </li>
+                <li>Fill other Details to complete your Registration.</li>
+                <li>You will get a mail after completion of Registration.</li>
+            </ol>
+
+            <button  class="viewNgosBtn" (click)= "viewNGOs()">Choose A NGO</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-5">
+        <div class="imagediv">
+          <img src="../../assets/images/enroll_course_pic.jpg">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-12">
+            <div *ngIf = "isNGOView then thenBlock">
+            </div>
+          
+          
+            <ng-template #thenBlock>
+                <div class="tablediv">
+                    <table class="tablecourse" border = 1>
+                        <tr>
+                
+                            <th> NGO_Id </th>
+                            <th> NGO Name </th>
+                            <th> NGO Registration Number </th>
+                            <th>NGO Location</th>
+                            <th>NGO Email</th>
+                
+                           
+                            </tr>
+                            
+                        <tr *ngFor = 'let n of ngo;' >
+                            <ng-container *ngIf="n.ngoApplicationStatus == 'Approved' ">
+                            <td> {{n.ngoId}} </td>
+                            <td> {{n.ngoName}} </td>
+                            <td> {{n.ngoRegistrationNumber}} </td>
+                            <td> {{n.ngoLocation}} </td>
+                            <td> {{n.ngoEmail}} </td>
+                            </ng-container>
+                            </tr>
+                    
+                        </table>
+                </div>
+
+
+                <div class="NGO-input-div">
+                    <form #inputNGOform="ngForm" (ngSubmit)="registerWithAnNGO()">
+                        <input class="ngo-input" type="text" name="NGOid" #ngoId="ngModel" placeholder="Enter NGO Id" [(ngModel)]= registerUserWithNgo.ngoId required>  
+                        <input type="submit" name="submit" [disabled] = "!inputNGOform.valid?true:false" value="Choose">
+                    </form>
+                </div>
+
+
+                
+            </ng-template> 
+        </div>
+    </div>
+
+     <div class="row">
+        <div class="col-12">
+            <div *ngIf = "isShowCousebyNGO then showBlock else errorBlock">
+            </div>
+          
+          
+            <ng-template #showBlock>
+              <div> 
+                <div class="tablediv">
+                  <table class="tablecourse" border = 1>
+                      <tr>
+                      <th> Course ID </th>
+                      <th> Course Name </th>
+                      <th> Course Start Date </th>
+                      <th> Course End Date </th>
+                      <th> Course Providing NGO </th>
+                      <th> Course Benifits </th>
+                      <th>Training Sector</th>
+
+                     
+                      </tr>
+                  
+                  
+                      <tr *ngFor = 'let cour of courses;' >
+                      <td> {{cour.courseId}} </td>
+                      <td> {{cour.courseName}} </td>
+                      <td> {{cour.courseStartDate}} </td>
+                      <td> {{cour.courseEndDate}} </td>
+                      <td> {{cour.courseProvidingNGO}} </td>
+                      <td> {{cour.courseBenefits}} </td>
+                      <td> {{cour.trainingSector}} </td>
+                     
+                      </tr>
+                  
+                      </table>
+              </div>
+
+              <div class="Course-input-div">
+                <form #inputcourseform="ngForm" (ngSubmit)="getCoursAndNRedirect()">
+                    <input class="course-input" type="text" name="courseid" #ngoId="ngModel" placeholder="Enter Course Id" [(ngModel)]= 'storeCourseId' required>  
+                    <input type="submit" name="submit" [disabled] = "!inputcourseform.valid?true:false" value="Enroll">
+                </form>
+            </div>
+
+
+              </div>  
+            </ng-template>
+
+            <ng-template #errorBlock>
+              <div>{{registermessage}}</div>  
+            </ng-template>
+
+        </div>
+
+      </div>
+
+            
+
+  </div>
+
+

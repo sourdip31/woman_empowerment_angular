@@ -21,7 +21,11 @@ import { StepTrainingSectorsComponent } from './step-training-sectors/step-train
 import { NgoRegisterComponent } from './ngo-register/ngo-register.component';
 
 
-import{ ViewCourseBySectorService } from './view-course-by-sector.service' ;
+import{ ViewCourseBySectorService } from './view-course-by-sector.service';
+import { EnrollForCourseComponent } from './enroll-for-course/enroll-for-course.component' ;
+import { ViewNGOsService } from './view-ngos.service';
+import { WeEmpowerHomeComponent } from './we-empower-home/we-empower-home.component';
+import { CourseEnrollmentFormComponent } from './course-enrollment-form/course-enrollment-form.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +39,10 @@ import{ ViewCourseBySectorService } from './view-course-by-sector.service' ;
     NgoAboutusComponent,
     StepAboutUsComponent,
     StepTrainingSectorsComponent,
-    NgoRegisterComponent
+    NgoRegisterComponent,
+    EnrollForCourseComponent,
+    WeEmpowerHomeComponent,
+    CourseEnrollmentFormComponent
  
   ],
   imports: [
@@ -45,7 +52,7 @@ import{ ViewCourseBySectorService } from './view-course-by-sector.service' ;
     FormsModule,
     HttpClientModule
   ],
-  providers: [UserloginService, RegisteruserService , ViewCourseBySectorService],
+  providers: [UserloginService, RegisteruserService , ViewCourseBySectorService , ViewNGOsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
