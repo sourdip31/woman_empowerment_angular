@@ -16,7 +16,7 @@ import{WeEmpowerHomeComponent} from './we-empower-home/we-empower-home.component
 import {CourseEnrollmentFormComponent} from './course-enrollment-form/course-enrollment-form.component' ;
 import { WelfareSchemeComponent } from './welfare-scheme/welfare-scheme.component';
 import { AccomodationComponent } from './accomodation/accomodation.component';
-import { SukanyayojnaComponent} from './sukanyayojna/sukanyayojna.component';
+import { SukanyaYojanaComponent} from './sukanya-yojana/sukanya-yojana.component';
 
 
 
@@ -49,10 +49,10 @@ const routes: Routes = [
   {path:'stepAboutUsLink' , component:StepAboutUsComponent},
   {path: 'trainingSectorsLink' , component:StepTrainingSectorsComponent},
   {path : 'stepEnrollLink' , component:EnrollForCourseComponent},
-  {path : 'couserEnrollFormLink' , component : CourseEnrollmentFormComponent } 
+  {path : 'couserEnrollFormLink' , component : CourseEnrollmentFormComponent }, 
   {path: 'welfareSchemesLink' , component:WelfareSchemeComponent},
   {path: 'accomodationLink' , component:AccomodationComponent},
-  {path: 'sukanyaLink' , component:SukanyayojnaComponent}
+  {path: 'sukanyaLink' , component:SukanyaYojanaComponent}
 
 ];
 

@@ -33,7 +33,8 @@ import { WeEmpowerHomeComponent } from './we-empower-home/we-empower-home.compon
 import { CourseEnrollmentFormComponent } from './course-enrollment-form/course-enrollment-form.component';
 import { WelfareSchemeComponent } from './welfare-scheme/welfare-scheme.component';
 import { AccomodationComponent } from './accomodation/accomodation.component';
-import { SukanyayojnaComponent } from './sukanyayojna/sukanyayojna.component' ;
+import { SukanyayojnaComponent } from './sukanyayojna/sukanyayojna.component';
+import { SukanyaYojanaComponent } from './sukanya-yojana/sukanya-yojana.component' ;
 @NgModule({
   declarations: [
     AppComponent,
@@ -58,6 +59,7 @@ import { SukanyayojnaComponent } from './sukanyayojna/sukanyayojna.component' ;
     WelfareSchemeComponent,
     AccomodationComponent,
     SukanyayojnaComponent,
+    SukanyaYojanaComponent,
    
  
   ],
