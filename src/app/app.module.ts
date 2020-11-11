@@ -63,7 +63,8 @@ import { CourseEnrollmentFormComponent } from './course-enrollment-form/course-e
 import { WelfareSchemeComponent } from './welfare-scheme/welfare-scheme.component';
 
 import { SukanyayojnaComponent } from './sukanyayojna/sukanyayojna.component';
-import { SukanyaYojanaComponent } from './sukanya-yojana/sukanya-yojana.component' ;
+import { SukanyaYojanaComponent } from './sukanya-yojana/sukanya-yojana.component';
+import { NgoprofileComponent } from './ngoprofile/ngoprofile.component' ;
 @NgModule({
   declarations: [
     AppComponent,
@@ -93,7 +94,7 @@ import { SukanyaYojanaComponent } from './sukanya-yojana/sukanya-yojana.componen
     UpdateaccomodationComponent,
     AdminforgotpasswordComponent,
    StepAboutUsComponent,
-    NgoRegisterComponent,
+    
     NgocriteriaComponent,
     NgofaqComponent,
     NgoaddcoursesComponent,
@@ -114,6 +115,7 @@ import { SukanyaYojanaComponent } from './sukanya-yojana/sukanya-yojana.componen
     ApplyAccomodationComponent,
     SukanyayojnaComponent,
     SukanyaYojanaComponent,
+    NgoprofileComponent,
    
  
   ],
@@ -125,7 +127,8 @@ import { SukanyaYojanaComponent } from './sukanya-yojana/sukanya-yojana.componen
     HttpClientModule
   ],
   providers: [UserloginService, RegisteruserService , ViewCourseBySectorService,NgologinService,
-    RegisterngoService, ViewNGOsService,AdminService,NgoaddcourseService,NgoeditcourseService,NgodeletecourseService],
+    RegisterngoService, ViewNGOsService,AdminService,NgoaddcourseService,NgoeditcourseService,
+    NgodeletecourseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

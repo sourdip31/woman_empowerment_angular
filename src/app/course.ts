@@ -5,5 +5,5 @@ export class Course {
 	courseEndDate: Date;
 	courseProvidingNGO: string;
 	courseBenefits: string;
-    trainingSector: string;
+	trainingSector: string;
 }

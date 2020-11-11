@@ -49,12 +49,13 @@ import { NgodeletecourseComponent } from './ngodeletecourse/ngodeletecourse.comp
 import { NgoregisterstatusComponent } from './ngoregisterstatus/ngoregisterstatus.component';
 import { ViewallcoursesComponent } from './viewallcourses/viewallcourses.component';
 import { ChangepasswordComponent } from './changepassword/changepassword.component';
+import { NgoprofileComponent } from './ngoprofile/ngoprofile.component';
 
 const routes: Routes = [
   {path: '',component: StephomeComponent},
- {path:'failLink',component:AdminloginfailComponent},
+  {path:'failLink',component:AdminloginfailComponent},
   {path:'stephomeLink', component: StephomeComponent},
-{path: 'userloginLink', component: UserloginComponent},
+  {path: 'userloginLink', component: UserloginComponent},
 
   {path: '',component: WeEmpowerHomeComponent},
   {path: 'weEmpowerHomeLink' , component: WeEmpowerHomeComponent } ,
@@ -63,30 +64,30 @@ const routes: Routes = [
 
  
   
-{path:'ngoaboutusLink',component:NgoAboutusComponent},
+  {path:'ngoaboutusLink',component:NgoAboutusComponent},
 
   
   {path:'ngologinLink',component:NgologinComponent},
   {path: 'userRegister',component: UserRegisterComponent},
   {path:'admin/ngo/view',component:ViewComponent},
   {path:'admin/ngo/approve',component:ApproveComponent},
-{path:'admin/courses',component:CoursesComponent},
- {path:'admin/courses/coursesview',component:CoursesviewComponent},
- {path:'admin/courses/viewenrollments',component:ViewenrollmentsComponent},
- {path:'admin/courses/approveenrollments',component:ApproveenrollmentsComponent},
-{path:'admin/users',component:UsersComponent},
- {path:'admin/users/usersview',component:UsersviewComponent},
+  {path:'admin/courses',component:CoursesComponent},
+  {path:'admin/courses/coursesview',component:CoursesviewComponent},
+  {path:'admin/courses/viewenrollments',component:ViewenrollmentsComponent},
+  {path:'admin/courses/approveenrollments',component:ApproveenrollmentsComponent},
+  {path:'admin/users',component:UsersComponent},
+  {path:'admin/users/usersview',component:UsersviewComponent},
   {path:'admin/users/approve-sy',component:ApproveSYComponent},
   {path:'admin/users/viewsy',component:ViewsyComponent},
   {path:'admin/accomodation',component:AccomodationComponent},
   {path:'admin/accomodation/approveaccomodation',component:ApproveaccomodationComponent},
-{path:'admin/accomodation/addaccomodation',component:AddaccomodationComponent},
-{path:'admin/accomodation/updateaccomodation',component:UpdateaccomodationComponent},
-{path:'admin/accomodation/viewaccomodation',component:ViewaccomodationComponent},
-{path:'adminFPLink',component:AdminforgotpasswordComponent},
+  {path:'admin/accomodation/addaccomodation',component:AddaccomodationComponent},
+  {path:'admin/accomodation/updateaccomodation',component:UpdateaccomodationComponent},
+  {path:'admin/accomodation/viewaccomodation',component:ViewaccomodationComponent},
+  {path:'adminFPLink',component:AdminforgotpasswordComponent},
   {path:'ngoRegisterLink',component:NgoRegisterComponent},
  
- ,
+ 
  
   {path:'ngofaqLink',component:NgofaqComponent},
   {path:'adminloginLink',component:AdminloginComponent},
@@ -101,14 +102,14 @@ const routes: Routes = [
   {path:'ngoeditcourseLink',component:NgoeditcourseComponent},
   {path:'ngodeletecourseLink',component:NgodeletecourseComponent},
   {path:'ngoregisterstatusLink',component:NgoregisterstatusComponent},
-  {path:'stepAboutUsLink' , component:StepAboutUsComponent},
-  {path: 'trainingSectorsLink' , component:StepTrainingSectorsComponent},
+  
+ 
   {path:'ngoviewallcoursesLink',component:ViewallcoursesComponent},
 
   {path:'addcoursesLink',component:NgoaddcoursesComponent},
  
-{path:'changepwdLink',component:ChangepasswordComponent},
-
+  {path:'changepwdLink',component:ChangepasswordComponent},
+  {path:'ngoprofileLink',component:NgoprofileComponent},
 
   {path:'stepAboutUsLink' , component:StepAboutUsComponent},
   {path: 'trainingSectorsLink' , component:StepTrainingSectorsComponent},

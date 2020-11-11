@@ -54,7 +54,7 @@ div.img{
 
 h1{
     color: floralwhite;
-    padding-top : 80px;
+    padding-top : 30px;
     padding-left: 150px;
     padding-right: 150px;
     
@@ -68,6 +68,6 @@ p{
     border: 1px ;
     width: 500px;
     float: left;
-    font-size: 28px;
+    font-size: 25px;
     padding-left: 15px;
 }
