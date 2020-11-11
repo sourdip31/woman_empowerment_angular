@@ -1,0 +1,38 @@
+<div class="ngo-navbar">
+    <ul>
+      <li><a [routerLink] = "['/ngoaboutusLink']">About Us</a></li>
+      <li><a [routerLink] = "['/ngocriteriaLink']">Criteria</a></li>
+      <li><a [routerLink] = "['/ngoOrganizationsLink']">Organizations</a></li>
+      <li><a [routerLink] = "['/ngoregisterstatusLink']">Register Status</a></li>
+      <li><a [routerLink] = "['/ngologinLink']">NGO Dashboard</a></li>
+      <li><a [routerLink] = "['/ngoRegisterLink']">Register</a></li>
+      <li><a [routerLink] = "['/ngofaqLink']">FAQ</a></li>
+      
+    </ul>
+
+</div>
+
+<div class="img">
+    <div class="registerdiv">
+        <div class="registercontainer">
+            <div class="register-box">
+                <h1>Delete Course</h1>
+                <form  #deletecourseform="ngForm" (ngSubmit)="deletecourse()">
+
+                    <p>Course ID</p>
+                    <input type="number" #courseId="ngModel" name="courseId" placeholder="Enter Course ID" [(ngModel)]=delcourse.courseId required>
+                    
+                    <p>Course Providing NGO Email </p>
+                    <input type="email"  name="ngoemail" #ngoEmail="ngModel"   placeholder="Enter NGO Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" [(ngModel)]=delcourse.ngoEmail required>
+                   
+                    <input type="submit" name="submit" [disabled] = "!deletecourseform.valid?true:false" value="Delete Course">
+                </form>
+    
+    
+            </div>
+        </div>
+</div>
+
+<div>
+    <router-outlet></router-outlet>
+</div>

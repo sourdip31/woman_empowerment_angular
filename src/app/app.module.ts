@@ -43,9 +43,19 @@ import { NgologinService } from './ngologin.service';
 import { RegisterngoService } from './registerngo.service';
 
 
+import{ ViewCourseBySectorService } from './view-course-by-sector.service';
+import { NgoorganizationsComponent } from './ngoorganizations/ngoorganizations.component';
+import { NgoaddcourseformComponent } from './ngoaddcourseform/ngoaddcourseform.component';
+import { NgoeditcourseComponent } from './ngoeditcourse/ngoeditcourse.component';
+import { NgodeletecourseComponent } from './ngodeletecourse/ngodeletecourse.component' ;
+import { NgoaddcourseService } from './ngoaddcourse.service';
+import { NgoeditcourseService } from './ngoeditcourse.service';
+import { NgodeletecourseService } from './ngodeletecourse.service';
+import { NgoregisterstatusComponent } from './ngoregisterstatus/ngoregisterstatus.component';
+import { ViewallcoursesComponent } from './viewallcourses/viewallcourses.component';
 import { AdminService } from './admin.service';
 import { ChangepasswordComponent } from './changepassword/changepassword.component';
-import{ ViewCourseBySectorService } from './view-course-by-sector.service';
+
 import { EnrollForCourseComponent } from './enroll-for-course/enroll-for-course.component' ;
 import { ViewNGOsService } from './view-ngos.service';
 import { WeEmpowerHomeComponent } from './we-empower-home/we-empower-home.component';
@@ -95,6 +105,12 @@ import { GenerateNVerifyOtpAdminComponent } from './generate-nverify-otp-admin/g
     NgoaddcoursesComponent,
     StepAboutUsComponent,
     StepTrainingSectorsComponent,
+    NgoorganizationsComponent,
+    NgoaddcourseformComponent,
+    NgoeditcourseComponent,
+    NgodeletecourseComponent,
+    NgoregisterstatusComponent,
+    ViewallcoursesComponent,
     ChangepasswordComponent,
     NgoRegisterComponent,
     EnrollForCourseComponent,
@@ -120,7 +136,8 @@ import { GenerateNVerifyOtpAdminComponent } from './generate-nverify-otp-admin/g
     FormsModule,
     HttpClientModule
   ],
-  providers: [UserloginService, RegisteruserService , ViewCourseBySectorService,NgologinService,RegisterngoService, ViewNGOsService,AdminService],
+  providers: [UserloginService, RegisteruserService , ViewCourseBySectorService,NgologinService,
+    RegisterngoService, ViewNGOsService,AdminService,NgoaddcourseService,NgoeditcourseService,NgodeletecourseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

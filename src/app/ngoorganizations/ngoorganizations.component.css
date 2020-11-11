@@ -25,7 +25,7 @@
 }
 
 .ngo-navbar ul li {
-    width: 124px ;
+    width: 123px ;
     margin: 5px;
     padding: 5px 10px;
 }
@@ -43,8 +43,8 @@
 }
 
 div.img{
-    background-image: url("/assets/images/ngoFaq.jpg");
-    height: 112vh;
+    background-image: url("/assets/images/ngoOrg.jpg");
+    height: 100vh;
     width: 97.3vw;
     background-position: center;
     background-repeat: no-repeat;
@@ -53,29 +53,52 @@ div.img{
 
 
 h1{
-    color: solid black;
-    padding: 0px 400px;
+    color: floralwhite;
+    padding: 0px 150px;
     
 }
 
-span{
-    font-weight: bolder;
-    font-size: 25px;
-    color: black;
-}
 
 
 p{
-    color:olive;
+    color: solid black;
     font-family: 'Montserrat',sans-serif;
     border: 1px ;
-    width: 900px;
+    width: 500px;
     float: left;
-    font-size: 18px;
-    padding-left: 20px;
-    font-weight: bold;
+    font-size: 28px;
+    padding-left: 15px;
 }
 
-.p1{
-    padding-top: 20px;
+.list{
+    padding-left: 700px;
+    font-size: 29px;
+    color: rebeccapurple;
+}
+
+.viewAllNgos{
+    background-color: blueviolet;
+    max-width: 120px;
+    padding: 3.5px;
+    color: cornsilk;
+    border-width: 1.5px;
+    margin-left: 250px;
+    margin-top: 20px;
+}
+
+.viewAllNgos:hover{
+    background-color: teal;
+}
+
+div.table{
+    padding-left: 600px;
+    
+}
+
+.ngo{
+    background-color: aliceblue;
+    border-spacing: 2px;
+    border-style: dashed;
+    text-align: center;
+    width: 400px;
 }
