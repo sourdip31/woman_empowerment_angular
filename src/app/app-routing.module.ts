@@ -86,8 +86,6 @@ const routes: Routes = [
 {path:'adminFPLink',component:AdminforgotpasswordComponent},
   {path:'ngoRegisterLink',component:NgoRegisterComponent},
  
- ,
- 
   {path:'ngofaqLink',component:NgofaqComponent},
   {path:'adminloginLink',component:AdminloginComponent},
  

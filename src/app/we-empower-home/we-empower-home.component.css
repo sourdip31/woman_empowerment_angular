@@ -31,8 +31,44 @@
 .col-11{width: 91.66%;}
 .col-12{width: 100%;}
 
-img{
+/*img{
     background-repeat: no-repeat;
 	background-size: auto;
     background-position: center;
+}*/
+
+/*img{
+    max-width: 100%;
+    height: auto;
+    background-size: auto;
+    background-position: center;
+}*/
+
+#slider{
+    overflow: hidden;
+}
+#slider figure{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+.image-box{
+    position:relative;
+    text-align: center;
+    color: black;
+}
+
+.top-left{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+p{
+    padding-top: 30px;
+    font-size: 19px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
