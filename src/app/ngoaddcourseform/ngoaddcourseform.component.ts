@@ -18,7 +18,7 @@ export class NgoaddcourseformComponent implements OnInit {
   addcourse(){
     //alert(JSON.stringify(this.customer));
     this.ngoaddcourseService.ngoaddcourse(this.course).subscribe(data => {
-      alert(JSON.stringify(data));
+      //alert(JSON.stringify(data));
       if(data.status == 'SUCCESS') {
         this.router.navigate(['addcoursesLink'])
       }

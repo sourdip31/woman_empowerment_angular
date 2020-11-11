@@ -61,7 +61,7 @@ h1{
     outline: none;
     height: 40px;
     background: #1c8adb;
-    color: grey;
+    color: white;
     font-size: 18px;
     border-radius: 20px;
 }
@@ -70,4 +70,12 @@ h1{
     cursor: pointer;
     background: #39dc79;
     color: #000;
+}
+select{
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    height: 30px;
+    color: grey;
+    font-size: 16px;
 }

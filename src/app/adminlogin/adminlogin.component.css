@@ -29,18 +29,19 @@
     border-radius: 50%;
 }
 
+
+
+
 .userimage {
-    background-image: url(../images/face.png);
     background-repeat: no-repeat;
-	border-radius: 50%;
-    width: 100px;
+
+
+	width: 100px;
     height: 100px;
-    border-radius: 50%;
-    position: absolute;
-    top: -50px;
-    left: 110px
-	
-   
+    margin-left: 125px;
+    margin-right: 125px;
+    margin-top: -120px ;
+    margin-bottom: 30px;
 }
 
 

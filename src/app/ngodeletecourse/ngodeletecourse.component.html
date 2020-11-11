@@ -3,11 +3,11 @@
       <li><a [routerLink] = "['/ngoaboutusLink']">About Us</a></li>
       <li><a [routerLink] = "['/ngocriteriaLink']">Criteria</a></li>
       <li><a [routerLink] = "['/ngoOrganizationsLink']">Organizations</a></li>
-      <li><a [routerLink] = "['/ngoregisterstatusLink']">Register Status</a></li>
-      <li><a [routerLink] = "['/ngologinLink']">NGO Dashboard</a></li>
+      
+      
       <li><a [routerLink] = "['/ngoRegisterLink']">Register</a></li>
       <li><a [routerLink] = "['/ngofaqLink']">FAQ</a></li>
-      
+      <li><a [routerLink] = "['/ngoaboutusLink']">Logout</a></li>
     </ul>
 
 </div>
@@ -21,10 +21,18 @@
 
                     <p>Course ID</p>
                     <input type="number" #courseId="ngModel" name="courseId" placeholder="Enter Course ID" [(ngModel)]=delcourse.courseId required>
+                    <div *ngIf = "courseId.invalid && (courseId.dirty || courseId.touched)">
+                        <div *ngIf = "courseId.errors.required" style="color: red;">Course ID is required</div>
+                       
+                    </div>
                     
                     <p>Course Providing NGO Email </p>
                     <input type="email"  name="ngoemail" #ngoEmail="ngModel"   placeholder="Enter NGO Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" [(ngModel)]=delcourse.ngoEmail required>
-                   
+                    <div *ngIf = "ngoEmail.invalid && (ngoEmail.dirty || ngoEmail.touched)">
+                        <div *ngIf = "ngoEmail.errors.required" style="color: red;"> Email is required</div>
+                        <div *ngIf = "ngoEmail.errors.pattern" style="color: red;"> Invalid Email</div>
+                    </div>
+
                     <input type="submit" name="submit" [disabled] = "!deletecourseform.valid?true:false" value="Delete Course">
                 </form>
     

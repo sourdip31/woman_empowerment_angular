@@ -1,7 +1,7 @@
 .tablediv{
-    padding-top: 80px;
+    padding-top: 30px;
     padding-bottom: 80px;
-    padding-left: 120px;
+    padding-left:400px;
     padding-right: 120px;
 }
 
@@ -34,3 +34,45 @@ div.img{
     background-repeat: no-repeat;
     background-size: 140%,100%;
 }
+*{
+    margin:0;
+    padding:0; 
+}
+
+.admin-navbar{
+    background : #B7B9B9;
+    text-align: center;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+
+
+.admin-navbar ul{
+
+    display: inline-flex;
+    list-style: none;
+    color :  #050404;
+}
+
+.admin-navbar ul li {
+    width: 150px ;
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+.admin-navbar ul li a {
+    text-decoration: none;
+    color: #050404;
+
+}
+
+
+.admin-navbar ul li:hover{
+    background: #6F7878;
+    border-radius: 3px;
+}
+h1{
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+  }

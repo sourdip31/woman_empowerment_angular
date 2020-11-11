@@ -18,15 +18,16 @@ export class NgologinComponent  {
 
  
   checkLoginNgo() {
-    alert(JSON.stringify(this.login1));
+    //alert(JSON.stringify(this.login1));
     this.ngoLoginService.login1(this.login1).subscribe(data1 => {
-      alert(JSON.stringify(data1));
+     // alert(JSON.stringify(data1));
       if(data1.status == 'SUCCESS') {
-        let ngoId = data1.ngoId;
-        let ngoName = data1.ngoName;
-        //let obj = {id : customerId, name : customerName};
-       // sessionStorage.setItem('ngoId', String(ngoId));
-        //sessionStorage.setItem('ngoName', ngoName);
+        console.log(data1.id);
+        let ngoId = data1.id;
+        let ngoName = data1.name;
+        console.log(ngoId);
+       sessionStorage.setItem('ngoIdOrg', String(ngoId));
+        sessionStorage.setItem('ngoNameOrg', ngoName);
         this.router.navigate(['addcoursesLink']);
       }
       else {

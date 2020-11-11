@@ -44,8 +44,8 @@
 
 div.img{
     background-image: url("/assets/images/ngoFaq.jpg");
-    height: 112vh;
-    width: 97.3vw;
+    height: 105vh;
+    width: 97.65vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 140%,100%;
@@ -54,25 +54,26 @@ div.img{
 
 h1{
     color: solid black;
-    padding: 0px 400px;
+    padding: 0px 550px;
     
 }
 
 span{
     font-weight: bolder;
     font-size: 25px;
-    color: black;
+    color: brown;
 }
 
 
 p{
-    color:olive;
+    color:black;
     font-family: 'Montserrat',sans-serif;
     border: 1px ;
-    width: 900px;
+    width: 1200px;
     float: left;
     font-size: 18px;
-    padding-left: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     font-weight: bold;
 }
 

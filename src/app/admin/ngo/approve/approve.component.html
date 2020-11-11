@@ -1,1 +1,66 @@
-<p>approve works!</p>
+<div class="admin-navbar">
+
+    <ul>
+      <li><a [routerLink]="['/adminhomeLink']">NGO</a></li>
+     
+      <li><a [routerLink]="'/admin/courses'">Courses</a></li>
+      <li><a [routerLink]="'/admin/users'">Users</a></li>
+      <li><a [routerLink]="'/admin/accomodation'">Accomodation</a></li>
+     
+      <li><a [routerLink]="['/adminloginLink']">Logout</a></li>
+    </ul>
+    </div>
+    <div class="img">
+        <h1>NGO DETAILS</h1>
+               <div class="tablediv">
+        <table class="tablecourse" border = 1>
+            <tr>
+                
+            <th> NGO_Id </th>
+            <th>NGO Application Status </th>
+            <th> NGO Name </th>
+            <th> NGO Registration Number </th>
+            <th> NGO Username </th>
+            <th> NGO Password </th>
+            <th>NGO Location</th>
+            <th>NGO Email</th>
+
+           
+            </tr>
+            
+        <tr *ngFor = 'let n of ngo;' >
+            <td> {{n.ngoId}} </td>
+            <td> {{n.ngoApplicationStatus}} </td>
+            <td> {{n.ngoName}} </td>
+            <td> {{n.ngoRegistrationNumber}} </td>
+            <td> {{n.ngoUserName}} </td>
+            <td> {{n.ngoPassword}} </td>
+            <td> {{n.ngoLocation}} </td>
+            <td> {{n.ngoEmail}} </td>
+           
+            </tr>
+        
+            </table>
+  </div>
+    <div class="input-id" style="text-align:center;">
+        <form #inputNGOform="ngForm" (ngSubmit)="approveNGO()">
+            <input class="ngo-input" type="email" name="ngoemail" #ngoEmail="ngModel" placeholder="Enter NGO Email" [(ngModel)]= NGO.ngoemail required>  
+            <input type="submit" name="submit" [disabled] = "!inputNGOform.valid?true:false" value="Approve" (click)="approveNGO()">
+        </form>
+    </div>
+
+<div class="row">
+    <div class="col-12">
+        <div *ngIf = "isApproved then thenBlock ">
+        </div>
+        <ng-template #thenBlock> 
+             <div><h2>{{message}}</h2></div> 
+             <!--<div>{{status}}</div> 
+             <div>{{ngoEmail}}</div> 
+             <div>{{ngoName}}</div> -->
+        </ng-template>
+
+</div>
+</div>
+
+

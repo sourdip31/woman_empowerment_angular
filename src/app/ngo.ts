@@ -4,7 +4,7 @@ export class ViewNGO{
 
     ngoUserName:string;
     ngoApplicationStatus:string;
-  
+    
     ngoRegistrationNumber:number;
  
     ngoPassword:string;
