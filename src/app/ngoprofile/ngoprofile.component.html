@@ -1,0 +1,44 @@
+<div class="ngo-navbar">
+    <ul>
+      <li><a [routerLink] = "['/ngoaboutusLink']">About Us</a></li>
+      <li><a [routerLink] = "['/ngocriteriaLink']">Criteria</a></li>
+      <li><a [routerLink] = "['/ngoOrganizationsLink']">Organizations</a></li>
+      
+      <li><a [routerLink] = "['/ngoRegisterLink']">Register</a></li>
+      <li><a [routerLink] = "['/ngofaqLink']">FAQ</a></li>
+      <li><a [routerLink] = "['/ngoaboutusLink']">Logout</a></li>
+    </ul>
+  
+  </div>
+    
+  <div class="img">
+    <p class="pro">My Profile</p>
+    <div class="table">
+        <table class="ngo" border="1">
+            <tr class="tr">
+                <th>NGO ID</th>
+                <th>Application Status</th>
+                <th>NGO Email</th>
+                <th>NGO Location</th>
+                <th>NGO Name</th>
+                <th>NGO Password</th>
+                <th>NGO Reg No.</th>
+                <th>NGO User Name</th>
+            </tr>
+            <tr>
+                <td>{{ngo.ngoId}}</td>
+                <td>{{ngo.ngoApplicationStatus}}</td>
+                <td>{{ngo.ngoEmail}}</td>
+                <td>{{ngo.ngoLocation}}</td>
+                <td>{{ngo.ngoName}}</td>
+                <td>{{ngo.ngoPassword}}</td>
+                <td>{{ngo.ngoRegistrationNumber}}</td>
+                <td>{{ngo.ngoUserName}}</td>
+            </tr>
+        </table>
+    </div>
+  </div>
+
+  <div>
+      <router-outlet></router-outlet>
+  </div>

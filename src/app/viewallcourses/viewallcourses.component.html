@@ -1,0 +1,42 @@
+<div class="ngo-navbar">
+    <ul>
+      <li><a [routerLink] = "['/ngoaboutusLink']">About Us</a></li>
+      <li><a [routerLink] = "['/ngocriteriaLink']">Criteria</a></li>
+      <li><a [routerLink] = "['/ngoOrganizationsLink']">Organizations</a></li>
+      
+      
+      <li><a [routerLink] = "['/ngoRegisterLink']">Register</a></li>
+      <li><a [routerLink] = "['/ngofaqLink']">FAQ</a></li>
+      <li><a [routerLink] = "['/ngoaboutusLink']">Logout</a></li>
+      
+    </ul>
+
+</div>
+
+<div class="img">
+    <p class="my">My Courses</p>
+    <div class="table">
+        <table class="ngo" border="1">
+            <tr class="tr">
+                <th>Course ID</th>
+                <th>Course Benefits</th>
+                <th>Course Name</th>
+                <th>Course Start Date</th>
+                <th>Course End Date</th>
+                <th>Training Sector</th>
+            </tr>
+            <tr *ngFor='let c of course;'>
+                <td>{{c.courseId}}</td>
+                <td>{{c.courseBenefits}}</td>
+                <td>{{c.courseName}}</td>
+                <td>{{c.courseStartDate}}</td>
+                <td>{{c.courseEndDate}}</td>
+                <td>{{c.trainingSector}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div>
+    <router-outlet></router-outlet>
+</div>

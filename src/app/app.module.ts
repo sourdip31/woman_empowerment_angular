@@ -43,9 +43,19 @@ import { NgologinService } from './ngologin.service';
 import { RegisterngoService } from './registerngo.service';
 
 
+import{ ViewCourseBySectorService } from './view-course-by-sector.service';
+import { NgoorganizationsComponent } from './ngoorganizations/ngoorganizations.component';
+import { NgoaddcourseformComponent } from './ngoaddcourseform/ngoaddcourseform.component';
+import { NgoeditcourseComponent } from './ngoeditcourse/ngoeditcourse.component';
+import { NgodeletecourseComponent } from './ngodeletecourse/ngodeletecourse.component' ;
+import { NgoaddcourseService } from './ngoaddcourse.service';
+import { NgoeditcourseService } from './ngoeditcourse.service';
+import { NgodeletecourseService } from './ngodeletecourse.service';
+import { NgoregisterstatusComponent } from './ngoregisterstatus/ngoregisterstatus.component';
+import { ViewallcoursesComponent } from './viewallcourses/viewallcourses.component';
 import { AdminService } from './admin.service';
 import { ChangepasswordComponent } from './changepassword/changepassword.component';
-import{ ViewCourseBySectorService } from './view-course-by-sector.service';
+
 import { EnrollForCourseComponent } from './enroll-for-course/enroll-for-course.component' ;
 import { ViewNGOsService } from './view-ngos.service';
 import { WeEmpowerHomeComponent } from './we-empower-home/we-empower-home.component';
@@ -56,6 +66,13 @@ import { SukanyayojnaComponent } from './sukanyayojna/sukanyayojna.component';
 import { SukanyaYojanaComponent } from './sukanya-yojana/sukanya-yojana.component';
 import { StepcriteriaComponent } from './stepcriteria/stepcriteria.component';
 import { StepfaqComponent } from './stepfaq/stepfaq.component' ;
+import { NgoprofileComponent } from './ngoprofile/ngoprofile.component' ;
+import { UserUpdatePasswordComponent } from './user-update-password/user-update-password.component';
+import { NgoUpdatePasswordComponent } from './ngo-update-password/ngo-update-password.component';
+import { AdminUpdatePasswordComponent } from './admin-update-password/admin-update-password.component';
+import { GenerateNVerifyOtpComponent } from './generate-nverify-otp/generate-nverify-otp.component';
+import { GenerateNVerifyOtpNgoComponent } from './generate-nverify-otp-ngo/generate-nverify-otp-ngo.component';
+import { GenerateNVerifyOtpAdminComponent } from './generate-nverify-otp-admin/generate-nverify-otp-admin.component' ;
 @NgModule({
   declarations: [
     AppComponent,
@@ -85,12 +102,18 @@ import { StepfaqComponent } from './stepfaq/stepfaq.component' ;
     UpdateaccomodationComponent,
     AdminforgotpasswordComponent,
    StepAboutUsComponent,
-    NgoRegisterComponent,
+    
     NgocriteriaComponent,
     NgofaqComponent,
     NgoaddcoursesComponent,
     StepAboutUsComponent,
     StepTrainingSectorsComponent,
+    NgoorganizationsComponent,
+    NgoaddcourseformComponent,
+    NgoeditcourseComponent,
+    NgodeletecourseComponent,
+    NgoregisterstatusComponent,
+    ViewallcoursesComponent,
     ChangepasswordComponent,
     NgoRegisterComponent,
     EnrollForCourseComponent,
@@ -102,6 +125,13 @@ import { StepfaqComponent } from './stepfaq/stepfaq.component' ;
     SukanyaYojanaComponent,
     StepcriteriaComponent,
     StepfaqComponent,
+    NgoprofileComponent,
+    UserUpdatePasswordComponent,
+    NgoUpdatePasswordComponent,
+    AdminUpdatePasswordComponent,
+    GenerateNVerifyOtpComponent,
+    GenerateNVerifyOtpNgoComponent,
+    GenerateNVerifyOtpAdminComponent,
    
  
   ],
@@ -112,7 +142,9 @@ import { StepfaqComponent } from './stepfaq/stepfaq.component' ;
     FormsModule,
     HttpClientModule
   ],
-  providers: [UserloginService, RegisteruserService , ViewCourseBySectorService,NgologinService,RegisterngoService, ViewNGOsService,AdminService],
+  providers: [UserloginService, RegisteruserService , ViewCourseBySectorService,NgologinService,
+    RegisterngoService, ViewNGOsService,AdminService,NgoaddcourseService,NgoeditcourseService,
+    NgodeletecourseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

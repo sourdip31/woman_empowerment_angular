@@ -13,6 +13,8 @@
   </div>
 
 
+
+
   <div class="registerdiv">
     <div class="registercontainer">
         <div class="register-box">
@@ -30,9 +32,11 @@
                 <input type="text" name="employmentStatus" #employmentStatus="ngModel" placeholder="Enter Employment Status" [(ngModel)]=enrolldata.employmentStatus required>
                 
                 <input type="submit" name="submit" [disabled] = "!userEnrollForm.valid?true:false" value="Enroll">
-                
+              
             </form>
-
+            <div>
+              {{enrollmessage}}
+            </div>
 
         </div>
     </div>

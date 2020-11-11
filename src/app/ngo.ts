@@ -1,9 +1,12 @@
 export class ViewNGO{
     ngoId:number;
-    ngoApplicationStatus:string;
     ngoName:string;
-    ngoRegistrationNumber:number;
+
     ngoUserName:string;
+    ngoApplicationStatus:string;
+    
+    ngoRegistrationNumber:number;
+ 
     ngoPassword:string;
     ngoLocation:string;
     ngoEmail:string;

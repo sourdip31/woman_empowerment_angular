@@ -14,7 +14,7 @@
 
 
                 <p> Date Of Birth </p>
-                <input type="date"  name="userdob" placeholder="Enter Date of Birth"  #userDOB="ngModel" [(ngModel)]=user.userDOB required>
+                <input type="date"  name="userdob" placeholder="Enter Date of Birth"  #userDOB="ngModel" [(ngModel)]=user.userDateOfBirth required>
 
                 <p class="nationality"> 
                 <label class="nationalitylabel">  Nationality </label>
@@ -46,9 +46,17 @@
 
                 <p>  Email </p>
                 <input type="text"  name="useremail" #userEmail="ngModel"   placeholder="Enter Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" [(ngModel)]=user.userEmail required>
+                <div *ngIf = "userEmail.invalid && (userEmail.dirty || userEmail.touched)">
+                    <div *ngIf = "userEmail.errors.required" style="color: red;"> Email is required</div>
+                    <div *ngIf = "userEmail.errors.pattern" style="color: red;"> Invalid Email</div>
+                </div>
                
                 <p>  Password </p>
-                <input type="password" name="password" #userPassword="ngModel"  placeholder="Enter Password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" [(ngModel)]=user.userPassword required>
+                <input type="password" name="password" #password="ngModel"  placeholder="Enter Password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" [(ngModel)]=user.userPassword required>
+                <div *ngIf = "password.invalid && (password.dirty || password.touched)">
+                    <div *ngIf = "password.errors.required" style="color: red;"> Password is required</div>
+                    <div *ngIf = "password.errors.pattern" style="color: red;"> Invalid Password</div>
+                    </div>
                 
                 <input type="submit" name="submit" [disabled] = "!userregform.valid?true:false" value="Register">
                 

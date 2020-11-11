@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,100&display=swap');
+
+*{
+    margin:0;
+    padding:0; 
+    
+}
+
+
+
+.ngo-navbar{
+    background : #B7B9B9;
+    text-align: center;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+
+
+.ngo-navbar ul{
+
+    display: inline-flex;
+    list-style: none;
+    color :  #050404;
+}
+
+.ngo-navbar ul li {
+    width: 124px ;
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+.ngo-navbar ul li a {
+    text-decoration: none;
+    color: #050404;
+
+}
+
+
+.ngo-navbar ul li:hover{
+    background: #6F7878;
+    border-radius: 3px;
+}
+
+div.img{
+    background-image: url("/assets/images/ngoRegisterStatus.jpg");
+    height: 100vh;
+    width: 97.3vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 140%,100%;
+}

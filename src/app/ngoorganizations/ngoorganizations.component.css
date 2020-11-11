@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,100&display=swap');
+
+*{
+    margin:0;
+    padding:0; 
+    
+}
+
+
+
+.ngo-navbar{
+    background : #B7B9B9;
+    text-align: center;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+
+
+.ngo-navbar ul{
+
+    display: inline-flex;
+    list-style: none;
+    color :  #050404;
+}
+
+.ngo-navbar ul li {
+    width: 123px ;
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+.ngo-navbar ul li a {
+    text-decoration: none;
+    color: #050404;
+
+}
+
+
+.ngo-navbar ul li:hover{
+    background: #6F7878;
+    border-radius: 3px;
+}
+
+div.img{
+    background-image: url("/assets/images/ngoOrg.jpg");
+    height: 100vh;
+    width: 97.65vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 140%,100%;
+}
+
+
+h1{
+    color: floralwhite;
+    padding: 0px 520px;
+    
+}
+
+
+
+p{
+    color: solid black;
+    font-family: 'Montserrat',sans-serif;
+    border: 1px ;
+    padding-right: 30px;
+    float: left;
+    font-size: 28px;
+    padding-left: 35px;
+    padding-bottom: 35px;
+    font-weight: 550;
+}
+
+
+
+.viewAllNgos{
+    background-color: blueviolet;
+    max-width: 120px;
+    padding: 3.5px;
+    color: cornsilk;
+    border-width: 1.5px;
+    margin-left: 250px;
+    margin-top: 20px;
+}
+
+.viewAllNgos:hover{
+    background-color: teal;
+}
+
+div.table{
+    padding-left: 200px;
+    
+}
+
+.ngo{
+    background-color: lightgray;
+    border-spacing: 2px;
+    border-style: dashed;
+    
+    text-align: center;
+    width: 850px;
+    color: #050404;
+}

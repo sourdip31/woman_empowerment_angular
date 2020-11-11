@@ -25,7 +25,7 @@
 }
 
 .ngo-navbar ul li {
-    width: 380px ;
+    width: 124px ;
     margin: 5px;
     padding: 5px 10px;
 }
@@ -40,4 +40,88 @@
 .ngo-navbar ul li:hover{
     background: #6F7878;
     border-radius: 3px;
+}
+
+div.img{
+    background-image: url("/assets/images/course.jpg");
+    height: 75vh;
+    width: 97.65vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 140%,100%;
+}
+
+.view{
+    padding-left: 130px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.add{
+    padding-left: 150px;
+    text-decoration: none;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+.edit{
+    padding-left: 150px;
+    text-decoration: none;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: bold;
+    border-color: lightslategray;
+}
+
+.delete{
+    padding-left: 150px;
+    margin-top: 40px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.viewlink{
+    float: right;
+    padding-top: 0px;
+}
+
+.span{
+    background-color: blueviolet;
+    color: cornsilk;
+    border:2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-decoration: none;
+}
+
+span:hover{
+    background-color: darkcyan;
+}
+
+.profile{
+    background-color:blueviolet;
+    color: cornsilk;
+    border:2px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+.profile:hover{
+    background-color: darkcyan;
+}
+
+.mypro{
+    padding-left: 565px;
+    text-decoration: none;
+    font-size: 20px;
+    
 }

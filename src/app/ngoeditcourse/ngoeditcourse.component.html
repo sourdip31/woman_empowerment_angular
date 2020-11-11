@@ -1,0 +1,105 @@
+<div class="ngo-navbar">
+    <ul>
+      <li><a [routerLink] = "['/ngoaboutusLink']">About Us</a></li>
+      <li><a [routerLink] = "['/ngocriteriaLink']">Criteria</a></li>
+      <li><a [routerLink] = "['/ngoOrganizationsLink']">Organizations</a></li>
+      
+     
+      <li><a [routerLink] = "['/ngoRegisterLink']">Register</a></li>
+      <li><a [routerLink] = "['/ngofaqLink']">FAQ</a></li>
+      <li><a [routerLink] = "['/ngoaboutusLink']">Logout</a></li>
+    </ul>
+
+</div>
+
+
+<div class="img">
+    <div class="registerdiv">
+        <div class="registercontainer">
+            <div class="register-box">
+                <h1>Edit Course</h1>
+                <form  #editcourseform="ngForm" (ngSubmit)="editcourse()">
+
+                    <p>Course ID</p>
+                    <input type="number" #courseId="ngModel" name="courseId" placeholder="Enter Course ID" [(ngModel)]=edcourse.courseId required>
+                    <div *ngIf = "courseId.invalid && (courseId.dirty || courseId.touched)">
+                        <div *ngIf = "courseId.errors.required" style="color: red;">Course ID is required</div>
+                       
+                    </div>
+
+                    <p>Course Name</p>
+                    <input class="nameinput" type="text"  #courseName="ngModel" name="coursename" placeholder="Enter Course Name" [(ngModel)]=edcourse.courseName required>
+                    <div *ngIf = "courseName.invalid && (courseName.dirty || courseName.touched)">
+                        <div *ngIf = "courseName.errors.required" style="color: red;">Course Name is required</div>
+                       
+                    </div>
+
+                    <p>Course Benefits</p>
+                    <input class="text" type="text"  #courseBenefits="ngModel" name="coursebenefits" placeholder="Enter Course Benefits" [(ngModel)]=edcourse.courseBenefits required>
+                    <div *ngIf = "courseBenefits.invalid && (courseBenefits.dirty || courseBenefits.touched)">
+                        <div *ngIf = "courseBenefits.errors.required" style="color: red;">Course Benefits is required</div>
+                       
+                    </div>
+
+                    <p> Course Start Date </p>
+                    <input type="date"  name="courseStartdate" placeholder="Enter Start Date"  #courseStartDate="ngModel" [(ngModel)]=edcourse.courseStartDate required>
+                    <div *ngIf = "courseStartDate.invalid && (courseStartDate.dirty || courseStartDate.touched)">
+                        <div *ngIf = "courseStartDate.errors.required" style="color: red;">Start Date is required</div>
+                       
+                    </div>
+
+                    <p> Course End Date</p>
+                    <input type="date"  name="courseEnddate" placeholder="Enter End Date"  #courseEndDate="ngModel" [(ngModel)]=edcourse.courseEndDate required>
+                    <div *ngIf = "courseEndDate.invalid && (courseEndDate.dirty || courseEndDate.touched)">
+                        <div *ngIf = "courseEndDate.errors.required" style="color: red;">End Date is required</div>
+                       
+                    </div>
+    
+                   
+                    <div class="ngoLoc"> 
+                        <label class="ngoLocationLabel">Training Sector </label>
+                        <div>
+                            <select class="location" name="loc" #trainingSector="ngModel"  [(ngModel)]=edcourse.trainingSector required>
+                                <option  disabled="disabled" selected="selected">--Choose City--</option>
+                                <option  value="kolkata">Kolkata</option>
+                                <option  value="mumbai">Mumbai</option>
+                                <option  value="hyderabad">Hyderabad</option>
+                                <option  value="bangalore">Bangalore</option>
+                                <option  value="pune">Pune</option>
+                                
+                              </select>
+                        </div>
+                    </div>
+                    <div *ngIf = "trainingSector.invalid && (trainingSector.dirty || trainingSector.touched)">
+                        <div *ngIf = "trainingSector.errors.required" style="color: red;">Location is required</div>
+                       
+                    </div>
+
+                    <p>Course Providing NGO Name </p>
+                    <input type="text"  name="ngoname" #courseProvidingNGO="ngModel"   placeholder="Enter NGO Name"  [(ngModel)]=edcourse.courseProvidingNGO required>
+                    <div *ngIf = "courseProvidingNGO.invalid && (courseProvidingNGO.dirty || courseProvidingNGO.touched)">
+                        <div *ngIf = "courseProvidingNGO.errors.required" style="color: red;">NGO Name is required</div>
+                       
+                    </div>
+
+                    <p>Course Providing NGO Email </p>
+                    <input type="email"  name="ngoemail" #ngoEmail="ngModel"   placeholder="Enter NGO Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" [(ngModel)]=edcourse.ngoEmail required>
+                    <div *ngIf = "ngoEmail.invalid && (ngoEmail.dirty || ngoEmail.touched)">
+                        <div *ngIf = "ngoEmail.errors.required" style="color: red;"> Email is required</div>
+                        <div *ngIf = "ngoEmail.errors.pattern" style="color: red;"> Invalid Email</div>
+                    </div>
+
+                    <input type="submit" name="submit" [disabled] = "!editcourseform.valid?true:false" value="Edit Course">
+                </form>
+    
+    
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+<div>
+    <router-outlet></router-outlet>
+</div>
