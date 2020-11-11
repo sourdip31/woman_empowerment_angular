@@ -18,7 +18,7 @@ export class NgoUpdatePasswordComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  updateUserPassword(){
+  updateNGOPassword(){
     if(this.newPassInput.password != this.confirmPass){
       this.confirmPassCheckMessage = "New Password does not match with Confirm Password " ;
     }

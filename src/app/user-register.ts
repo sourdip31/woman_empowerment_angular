@@ -2,7 +2,7 @@ export class UserRegister {
     userId: number;
     userName: string;
     userGender: string ;
-    userDOB: string ;
+    userDateOfBirth: Date ;
     userNationality : string ;
     userAddress : string ;
     userMaritalStatus : string ;

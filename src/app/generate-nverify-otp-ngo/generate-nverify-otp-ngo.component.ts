@@ -23,7 +23,7 @@ export class GenerateNVerifyOtpNgoComponent implements OnInit {
   generateOTPnumberNgo(){
     this.generateOtpService.generateOtpNgo(this.getEmailId).subscribe(data=>{
         if(data.status == 'SUCCESS'){
-          this.otpGenerateMessage = "OTP Sent to your Mail Id" ;
+          this.otpGenerateMessage = "NGO OTP Sent to your Mail Id" ;
         }
     })
     
@@ -34,7 +34,7 @@ export class GenerateNVerifyOtpNgoComponent implements OnInit {
       console.log(this.getOTP.otp) ;
       console.log(data2.status) ;
       if(data2.status == 'SUCCESS'){
-        this.router.navigate(['stepAboutUsLink']) ;
+        this.router.navigate(['ngoUpdatePasswordLink']) ;
       }
     })
   }
