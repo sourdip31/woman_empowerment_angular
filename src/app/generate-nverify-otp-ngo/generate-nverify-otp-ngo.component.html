@@ -1,0 +1,34 @@
+<div class="img">
+    <div class="registerdiv">
+        <div class="registercontainer">
+            <div class="register-box">
+       
+				<h1>Forgot Password</h1>
+	
+		<form #generateOTPformNgo="ngForm" (ngSubmit)="generateOTPnumberNgo()">
+			<p>Email</p>
+              <input type="text" #ngoEmail="ngModel" name="useremail" placeholder="Enter NGO Email" [(ngModel)]=getEmailId.email pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+              
+                
+			
+				<button type="submit" class="login-button">Generate OTP</button>
+        </form>
+    
+        <form #verifyOTPformNgo="ngForm" (ngSubmit)="verifyOTPnumberNgo()">
+
+				<br>
+
+				<p>Enter OTP</p>
+              <input type="text"  #ngoOTP="ngModel" name="ngoOTP"   placeholder="Enter OTP" [(ngModel)]=getOTP.otp required>
+			
+	
+			<button type="submit" class="login-button"> Verify </button>
+				
+		</form>	
+		{{otpGenerateMessage}}
+		
+</div>
+</div>
+</div>
+
+

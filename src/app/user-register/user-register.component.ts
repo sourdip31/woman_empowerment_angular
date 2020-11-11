@@ -21,6 +21,8 @@ export class UserRegisterComponent implements OnInit {
 
   registerUser() {
     //alert(JSON.stringify(this.customer));
+    //console.log(this.user.userDOB) ;
+
     this.userRegisterService.userregister(this.user).subscribe(data => {
       //alert(JSON.stringify(data));
       if(data.status == 'SUCCESS') {

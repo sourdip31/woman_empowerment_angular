@@ -65,6 +65,12 @@ import { WelfareSchemeComponent } from './welfare-scheme/welfare-scheme.componen
 import { SukanyayojnaComponent } from './sukanyayojna/sukanyayojna.component';
 import { SukanyaYojanaComponent } from './sukanya-yojana/sukanya-yojana.component';
 import { NgoprofileComponent } from './ngoprofile/ngoprofile.component' ;
+import { UserUpdatePasswordComponent } from './user-update-password/user-update-password.component';
+import { NgoUpdatePasswordComponent } from './ngo-update-password/ngo-update-password.component';
+import { AdminUpdatePasswordComponent } from './admin-update-password/admin-update-password.component';
+import { GenerateNVerifyOtpComponent } from './generate-nverify-otp/generate-nverify-otp.component';
+import { GenerateNVerifyOtpNgoComponent } from './generate-nverify-otp-ngo/generate-nverify-otp-ngo.component';
+import { GenerateNVerifyOtpAdminComponent } from './generate-nverify-otp-admin/generate-nverify-otp-admin.component' ;
 @NgModule({
   declarations: [
     AppComponent,
@@ -116,6 +122,12 @@ import { NgoprofileComponent } from './ngoprofile/ngoprofile.component' ;
     SukanyayojnaComponent,
     SukanyaYojanaComponent,
     NgoprofileComponent,
+    UserUpdatePasswordComponent,
+    NgoUpdatePasswordComponent,
+    AdminUpdatePasswordComponent,
+    GenerateNVerifyOtpComponent,
+    GenerateNVerifyOtpNgoComponent,
+    GenerateNVerifyOtpAdminComponent,
    
  
   ],

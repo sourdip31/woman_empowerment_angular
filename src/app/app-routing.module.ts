@@ -51,13 +51,22 @@ import { ViewallcoursesComponent } from './viewallcourses/viewallcourses.compone
 import { ChangepasswordComponent } from './changepassword/changepassword.component';
 import { NgoprofileComponent } from './ngoprofile/ngoprofile.component';
 
+
+import { GenerateNVerifyOtpComponent } from './generate-nverify-otp/generate-nverify-otp.component';
+import { AdminUpdatePasswordComponent } from './admin-update-password/admin-update-password.component';
+import { UserUpdatePasswordComponent } from './user-update-password/user-update-password.component';
+import { NgoUpdatePasswordComponent } from './ngo-update-password/ngo-update-password.component';
+import { GenerateNVerifyOtpNgoComponent } from './generate-nverify-otp-ngo/generate-nverify-otp-ngo.component';
+import { GenerateNVerifyOtpAdminComponent } from './generate-nverify-otp-admin/generate-nverify-otp-admin.component';
+
 const routes: Routes = [
-  {path: '',component: StephomeComponent},
-  {path:'failLink',component:AdminloginfailComponent},
+
+  {path: '',component: WeEmpowerHomeComponent},
+ {path:'failLink',component:AdminloginfailComponent},
   {path:'stephomeLink', component: StephomeComponent},
   {path: 'userloginLink', component: UserloginComponent},
 
-  {path: '',component: WeEmpowerHomeComponent},
+ 
   {path: 'weEmpowerHomeLink' , component: WeEmpowerHomeComponent } ,
   {path:'ngohomeLink', component:NgohomeComponent},
   {path:'adminhomeLink',component:AdminhomeComponent},
@@ -68,7 +77,6 @@ const routes: Routes = [
 
   
   {path:'ngologinLink',component:NgologinComponent},
-  {path: 'userRegister',component: UserRegisterComponent},
   {path:'admin/ngo/view',component:ViewComponent},
   {path:'admin/ngo/approve',component:ApproveComponent},
   {path:'admin/courses',component:CoursesComponent},
@@ -93,10 +101,10 @@ const routes: Routes = [
   {path:'adminloginLink',component:AdminloginComponent},
  
   {path:'ngocriteriaLink',component:NgocriteriaComponent},
-  {path:'ngoaboutusLink',component:NgoAboutusComponent},
+  
   {path:'addcoursesLink',component:NgoaddcoursesComponent},
   {path: 'userRegister',component: UserRegisterComponent},
-  {path: 'ngologinLink',component:NgologinComponent},
+  
   {path:'ngoOrganizationsLink',component:NgoorganizationsComponent},
   {path:'ngoaddcourseformLink',component:NgoaddcourseformComponent},
   {path:'ngoeditcourseLink',component:NgoeditcourseComponent},
@@ -106,18 +114,21 @@ const routes: Routes = [
  
   {path:'ngoviewallcoursesLink',component:ViewallcoursesComponent},
 
-  {path:'addcoursesLink',component:NgoaddcoursesComponent},
  
   {path:'changepwdLink',component:ChangepasswordComponent},
   {path:'ngoprofileLink',component:NgoprofileComponent},
 
-  {path:'stepAboutUsLink' , component:StepAboutUsComponent},
-  {path: 'trainingSectorsLink' , component:StepTrainingSectorsComponent},
   {path : 'stepEnrollLink' , component:EnrollForCourseComponent},
   {path : 'couserEnrollFormLink' , component : CourseEnrollmentFormComponent },
   {path: 'welfareSchemesLink' , component:WelfareSchemeComponent},
   {path: 'accomodationLink' , component:ApplyAccomodationComponent},
-  {path: 'sukanyaLink' , component:SukanyaYojanaComponent}
+  {path: 'sukanyaLink' , component:SukanyaYojanaComponent},
+  {path : 'generateNVerifyLink' , component : GenerateNVerifyOtpComponent},
+  {path: 'userUpdatePasswordLink',component : UserUpdatePasswordComponent},
+  {path : 'generateNVerifyNgoLink', component : GenerateNVerifyOtpNgoComponent},
+  {path: 'ngoUpdatePasswordLink' , component: NgoUpdatePasswordComponent},
+  {path: 'adminUpdatePasswordLink' , component : AdminUpdatePasswordComponent},
+  {path: 'generateNVerifyAdminLink' , component : GenerateNVerifyOtpAdminComponent}
 
 ];
 

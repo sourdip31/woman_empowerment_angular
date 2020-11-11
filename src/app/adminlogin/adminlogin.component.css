@@ -30,7 +30,6 @@
 }
 
 .userimage {
-    background-image: url(../images/face.png);
     background-repeat: no-repeat;
 	border-radius: 50%;
     width: 100px;
