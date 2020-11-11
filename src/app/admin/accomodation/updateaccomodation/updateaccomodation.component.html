@@ -1,4 +1,16 @@
-<div class="img">
+<div class="admin-navbar">
+
+    <ul>
+      <li><a [routerLink]="['/adminhomeLink']">NGO</a></li>
+     
+      <li><a [routerLink]="'/admin/courses'">Courses</a></li>
+      <li><a [routerLink]="'/admin/users'">Users</a></li>
+      <li><a [routerLink]="'/admin/accomodation'">Accomodation</a></li>
+     
+      <li><a [routerLink]="['/adminloginLink']">Logout</a></li>
+    </ul>
+    </div>
+    <div class="img">
     <div class="registerdiv">
         <div class="registercontainer">
             <div class="register-box">
@@ -7,14 +19,22 @@
             <form  #form="ngForm" (ngSubmit)="update()">
                 <p> City ID </p>
                 <input type="number" name="cityId" #cityId="ngModel"  placeholder="Enter City ID"   [(ngModel)]=updateaccomodation.cityId required>
-                 <p>City</p>
-                <input type="text"  name="city" #city="ngModel"   placeholder="Enter City" [(ngModel)]=updateaccomodation.city required>
+                <!--<p>City</p>
+                <input type="text"  name="city" #city="ngModel"   placeholder="Enter City" [(ngModel)]=updateaccomodation.city required>--> 
                
                 <p> Number of Rooms </p>
                 <input type="number" name="numberOfRooms" #noOfRooms="ngModel"  placeholder="Enter Number of rooms"   [(ngModel)]=updateaccomodation.numberOfRooms required>
                 
+               
+            
+                <p>Add/Delete</p>
+               
+                <select #delete="ngModel" [(ngModel)]=updateaccomodation.delete required>
+                    <option  disabled="disabled" selected="selected">--Choose Option--</option>
+                    <option  value=delete>1</option>
+                    <option  value=add>0</option>
+                </select>
                 <input type="submit" name="submit" [disabled] = "!form.valid?true:false" value="Update">
-                
                
             </form>
 </div>

@@ -11,6 +11,8 @@ import {ViewNGO} from './ngo';
 import {ViewSY} from './admin/users/viewsy/sukanyayojna';
 import { Users } from './users';
 import{EnrollmentStatus} from './enrollmentstatus';
+import {NgoStatus} from './ngostatus';
+import {NgoApproval} from './ngoapproval';
 @Injectable({
   providedIn: 'root'
 })
@@ -27,9 +29,9 @@ export class AdminService {
     return this.http.post<AccomodationStatus>(url,accomodation);
   }
 
-  viewAccomodation():Observable<UpdateAccomodation[]>{
-    let url='http://localhost:8080/viewAllHomes';
-    return this.http.get<UpdateAccomodation[]>(url);
+  viewAccomodation():Observable<ViewAccomodation[]>{
+    let url='http://localhost:8080/viewAllAccomodations';
+    return this.http.get<ViewAccomodation[]>(url);
   }
 
   viewCourses():Observable<Course[]>{
@@ -62,6 +64,26 @@ approveEnrollments():Observable<EnrollmentStatus>{
   return this.http.get<EnrollmentStatus>(url);
 
   
+}
+
+approveAccomodation():Observable<EnrollmentStatus>{
+  let url='http://localhost:8080/approveAccomodation';
+  return this.http.get<EnrollmentStatus>(url);
+
+  
+}
+
+approveSY():Observable<EnrollmentStatus>{
+  let url='http://localhost:8080/approveSukanya';
+  return this.http.get<EnrollmentStatus>(url);
+
+  
+}
+
+approveNGO(approve:NgoApproval):Observable<NgoStatus>{
+  let url='http://localhost:8080/approveNGO';
+  return this.http.post<NgoStatus>(url,approve);
+
 }
 
 }

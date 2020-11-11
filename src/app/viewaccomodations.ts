@@ -1,17 +1,17 @@
 export class ViewAccomodation{
-    constructor(
-      public accomodationId:number,
-     public areaOfResidence:string,
-    public grossIncomePerMonth:number,
-    public caste:string,
-    public husbandResidenceName:string,
-    public userResidenceName:string,
-    public numberOfGirlChildBelow18:number,
-    public numberOfBoyChildBelow5:number,
-    public anyPhysicalChallenges:string,
-    public dayCareRequirements:string,
-    public applicationStatus:string,
-    public employmentStatus:string
+   
+       accomodationId:number;
+      areaOfResidence:string;
+     grossIncomePerMonth:number;
+     caste:string;
+    husbandResidenceName:string;
+   userResidenceName:string;
+     numberOfGirlChildBelow18:number;
+     numberOfBoyChildBelow5:number;
+    anyPhysicalChallenges:string;
+     dayCareRequirements:string;
+     applicationStatus:string;
+     employmentStatus:string
 
-    ){}
+    
 }

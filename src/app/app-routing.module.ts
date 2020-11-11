@@ -49,6 +49,11 @@ import { NgodeletecourseComponent } from './ngodeletecourse/ngodeletecourse.comp
 import { NgoregisterstatusComponent } from './ngoregisterstatus/ngoregisterstatus.component';
 import { ViewallcoursesComponent } from './viewallcourses/viewallcourses.component';
 import { ChangepasswordComponent } from './changepassword/changepassword.component';
+import { StepcriteriaComponent } from './stepcriteria/stepcriteria.component';
+import { StepfaqComponent } from './stepfaq/stepfaq.component';
+import { NgoprofileComponent } from './ngoprofile/ngoprofile.component';
+
+
 import { GenerateNVerifyOtpComponent } from './generate-nverify-otp/generate-nverify-otp.component';
 import { AdminUpdatePasswordComponent } from './admin-update-password/admin-update-password.component';
 import { UserUpdatePasswordComponent } from './user-update-password/user-update-password.component';
@@ -61,7 +66,7 @@ const routes: Routes = [
   {path: '',component: WeEmpowerHomeComponent},
  {path:'failLink',component:AdminloginfailComponent},
   {path:'stephomeLink', component: StephomeComponent},
-{path: 'userloginLink', component: UserloginComponent},
+  {path: 'userloginLink', component: UserloginComponent},
 
  
   {path: 'weEmpowerHomeLink' , component: WeEmpowerHomeComponent } ,
@@ -70,49 +75,53 @@ const routes: Routes = [
 
  
   
-{path:'ngoaboutusLink',component:NgoAboutusComponent},
+  {path:'ngoaboutusLink',component:NgoAboutusComponent},
 
   
   {path:'ngologinLink',component:NgologinComponent},
   {path:'admin/ngo/view',component:ViewComponent},
   {path:'admin/ngo/approve',component:ApproveComponent},
-{path:'admin/courses',component:CoursesComponent},
- {path:'admin/courses/coursesview',component:CoursesviewComponent},
- {path:'admin/courses/viewenrollments',component:ViewenrollmentsComponent},
- {path:'admin/courses/approveenrollments',component:ApproveenrollmentsComponent},
-{path:'admin/users',component:UsersComponent},
- {path:'admin/users/usersview',component:UsersviewComponent},
+  {path:'admin/courses',component:CoursesComponent},
+  {path:'admin/courses/coursesview',component:CoursesviewComponent},
+  {path:'admin/courses/viewenrollments',component:ViewenrollmentsComponent},
+  {path:'admin/courses/approveenrollments',component:ApproveenrollmentsComponent},
+  {path:'admin/users',component:UsersComponent},
+  {path:'admin/users/usersview',component:UsersviewComponent},
   {path:'admin/users/approve-sy',component:ApproveSYComponent},
   {path:'admin/users/viewsy',component:ViewsyComponent},
   {path:'admin/accomodation',component:AccomodationComponent},
   {path:'admin/accomodation/approveaccomodation',component:ApproveaccomodationComponent},
-{path:'admin/accomodation/addaccomodation',component:AddaccomodationComponent},
-{path:'admin/accomodation/updateaccomodation',component:UpdateaccomodationComponent},
-{path:'admin/accomodation/viewaccomodation',component:ViewaccomodationComponent},
-{path:'adminFPLink',component:AdminforgotpasswordComponent},
+  {path:'admin/accomodation/addaccomodation',component:AddaccomodationComponent},
+  {path:'admin/accomodation/updateaccomodation',component:UpdateaccomodationComponent},
+  {path:'admin/accomodation/viewaccomodation',component:ViewaccomodationComponent},
+  {path:'adminFPLink',component:AdminforgotpasswordComponent},
   {path:'ngoRegisterLink',component:NgoRegisterComponent},
+ {path:'guidelinesLink',component:StepcriteriaComponent},
+ 
  
  
   {path:'ngofaqLink',component:NgofaqComponent},
   {path:'adminloginLink',component:AdminloginComponent},
  
   {path:'ngocriteriaLink',component:NgocriteriaComponent},
-  {path:'ngoaboutusLink',component:NgoAboutusComponent},
+  
   {path:'addcoursesLink',component:NgoaddcoursesComponent},
   {path: 'userRegister',component: UserRegisterComponent},
-  {path: 'ngologinLink',component:NgologinComponent},
+  
   {path:'ngoOrganizationsLink',component:NgoorganizationsComponent},
   {path:'ngoaddcourseformLink',component:NgoaddcourseformComponent},
   {path:'ngoeditcourseLink',component:NgoeditcourseComponent},
   {path:'ngodeletecourseLink',component:NgodeletecourseComponent},
   {path:'ngoregisterstatusLink',component:NgoregisterstatusComponent},
-  {path:'stepAboutUsLink' , component:StepAboutUsComponent},
-  {path: 'trainingSectorsLink' , component:StepTrainingSectorsComponent},
+  
+ 
+
+{path:'stepfaqLink',component:StepfaqComponent},
   {path:'ngoviewallcoursesLink',component:ViewallcoursesComponent},
 
  
-{path:'changepwdLink',component:ChangepasswordComponent},
-
+  {path:'changepwdLink',component:ChangepasswordComponent},
+  {path:'ngoprofileLink',component:NgoprofileComponent},
 
   {path : 'stepEnrollLink' , component:EnrollForCourseComponent},
   {path : 'couserEnrollFormLink' , component : CourseEnrollmentFormComponent },

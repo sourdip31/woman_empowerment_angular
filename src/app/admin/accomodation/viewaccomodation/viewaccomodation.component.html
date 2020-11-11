@@ -1,21 +1,51 @@
-<div class ="img">
+<div class="admin-navbar">
+
+    <ul>
+      <li><a [routerLink]="['/adminhomeLink']">NGO</a></li>
+     
+      <li><a [routerLink]="'/admin/courses'">Courses</a></li>
+      <li><a [routerLink]="'/admin/users'">Users</a></li>
+      <li><a [routerLink]="'/admin/accomodation'">Accomodation</a></li>
+     
+      <li><a [routerLink]="['/adminloginLink']">Logout</a></li>
+    </ul>
+    </div>
+    <div class ="img"><br>
+        <h1>ACCOMODATION DETAILS</h1>
     <div class="tablediv">
     <table class="tablecourse" border = 1>
         <tr>
-        <th> City ID </th>
-        <th> City </th>
-        <th> Number Of Rooms </th>
+        <th> Accomodation ID </th>
+        <th> Area of Residence </th>
+        <th> Gross Income per month </th>
+        <th> Caste</th>
+        <th> Husband Residence Name</th>
+        <th>User Residence Name</th>
+        <th> Number Of GirlChild Below-18</th>
+        <th> Number Of BoyChild Below-5</th>
+        <th>Any Physical Challenges</th>
+        <th> Day Care Requirements</th>
+        <th> Application Status</th>
+        <th>Employment Status</th>
         
 
        
         </tr>
-      
-        
+       
     
-        <tr *ngFor = 'let ua of updateaccomodation;' >
-        <td> {{ua. cityId}} </td>
-        <td> {{ua. city }} </td>
-        <td> {{ua. numberOfRooms}} </td>
+        <tr *ngFor = 'let va of viewaccomodation;' >
+        <td> {{va.accomodationId}} </td>
+        <td> {{va.areaOfResidence }} </td>
+        <td> {{va.grossIncomePerMonth}} </td>
+        <td> {{va.caste}} </td>
+        <td> {{va.husbandResidenceName}} </td>
+        <td> {{va.userResidenceName}} </td>
+        <td> {{va.numberOfGirlChildBelow18}} </td>
+        <td> {{va.numberOfBoyChildBelow5}} </td>
+        <td> {{va.anyPhysicalChallenges}} </td>
+        <td> {{va.dayCareRequirements}} </td>
+        <td> {{va.applicationStatus}} </td>
+        <td> {{va.employmentStatus}} </td>
         
         </tr>
     

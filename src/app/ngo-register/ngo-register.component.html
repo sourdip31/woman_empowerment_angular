@@ -5,13 +5,26 @@
             <form  #ngoregform="ngForm" (ngSubmit)="registerNgo()">
                 <p>NGO Name</p>
                 <input class="nameinput" type="text"  #ngoName="ngModel" name="ngoname" placeholder="Enter NGO Name" [(ngModel)]=ngo.ngoName required>
-                
+                <div *ngIf = "ngoName.invalid && (ngoName.dirty || ngoName.touched)">
+                    <div *ngIf = "ngoPassword.errors.required" style="color: red;"> NGO Name is required</div>
+                    
+                </div>
+
                 <p class="ngoRegNo"> <label class="reglabel"> NGO Registration No. </label>
+               
                 <input type="number"  name="ngoReg"  #ngoRegistrationNumber="ngModel" placeholder="Enter NGO Registration No." [(ngModel)]=ngo.ngoRegistrationNumber required > 
                 </p>
-  <p> NGO User Name </p>
-                <input type="text"  name="ngoUserName" placeholder="Enter NGO User Name"  #ngoUserName="ngModel" [(ngModel)]=ngo.ngoUserName required>
+                <div *ngIf = "ngoRegistrationNumber.invalid && (ngoRegistrationNumber.dirty || ngoRegistrationNumber.touched)">
+                    <div *ngIf = "ngoRegistrationNumber.errors.required" style="color: red;"> Registration No. is required</div>
+                    
+                </div>
 
+                <p> NGO User Name </p>
+                <input type="text"  name="ngoUserName" placeholder="Enter NGO User Name"  #ngoUserName="ngModel" [(ngModel)]=ngo.ngoUserName required>
+                <div *ngIf = "ngoUserName.invalid && (ngoUserName.dirty || ngoUserName.touched)">
+                    <div *ngIf = "ngoUserName.errors.required" style="color: red;"> NGO User Name is required</div>
+                    
+                </div>
                
                 <div class="ngoLoc"> 
                     <label class="ngoLocationLabel"> NGO Location </label>
@@ -27,13 +40,24 @@
                           </select>
                     </div>
                 </div>
-
+                <div *ngIf = "ngoLocation.invalid && (ngoLocation.dirty || ngoLocation.touched)">
+                    <div *ngIf = "ngoLocation.errors.required" style="color: red;"> NGO Location is required</div>
+                    
+                </div>
                 <p> NGO Email </p>
                 <input type="email"  name="ngoemail" #ngoEmail="ngModel"   placeholder="Enter NGO Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" [(ngModel)]=ngo.ngoEmail required>
-               
+                <div *ngIf = "ngoEmail.invalid && (ngoEmail.dirty || ngoEmail.touched)">
+                    <div *ngIf = "ngoEmail.errors.required" style="color: red;"> Email is required</div>
+                    <div *ngIf = "ngoEmail.errors.pattern" style="color: red;"> Invalid Email</div>
+                </div>
+
                 <p>  Password </p>
                 <input type="password" name="password" #ngoPassword="ngModel"  placeholder="Enter Password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" [(ngModel)]=ngo.ngoPassword required>
-                
+                <div *ngIf = "ngoPassword.invalid && (ngoPassword.dirty || ngoPassword.touched)">
+                  <div *ngIf = "ngoPassword.errors.required" style="color: red;"> Password is required</div>
+                  <div *ngIf = "ngoPassword.errors.pattern" style="color: red;"> Invalid Password</div>
+                  </div>
+
                 <input type="submit" name="submit" [disabled] = "!ngoregform.valid?true:false" value="Register">
                 
             </form>

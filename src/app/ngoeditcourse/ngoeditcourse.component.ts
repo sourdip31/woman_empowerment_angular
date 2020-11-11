@@ -19,7 +19,7 @@ export class NgoeditcourseComponent implements OnInit {
   editcourse(){
     //alert(JSON.stringify(this.customer));
     this.ngoeditcourseService.ngoeditcourse(this.edcourse).subscribe(data => {
-      alert(JSON.stringify(data));
+      //alert(JSON.stringify(data));
       if(data.status == 'SUCCESS') {
         this.router.navigate(['addcoursesLink'])
       }

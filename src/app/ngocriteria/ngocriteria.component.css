@@ -45,7 +45,7 @@
 div.img{
     background-image: url("/assets/images/ngoCriteria.jpg");
     height: 100vh;
-    width: 97.3vw;
+    width: 97.65vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 140%,100%;
@@ -54,7 +54,7 @@ div.img{
 
 h1{
     color: floralwhite;
-    padding: 0px 290px;
+    padding: 0px 550px;
     
 }
 
@@ -65,8 +65,9 @@ p{
    
     font-family: 'Montserrat',sans-serif;
     border: 1px ;
-    width: 800px;
+    text-align: center;
     float: left;
     font-size: 23px;
-    padding-left: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
 }

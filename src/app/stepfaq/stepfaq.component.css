@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0; 
+}
+
+.step-navbar{
+    background : #B7B9B9;
+    text-align: center;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+
+
+.step-navbar ul{
+
+    display: inline-flex;
+    list-style: none;
+    color :  #050404;
+}
+
+.step-navbar ul li {
+    width: 130px ;
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+.step-navbar ul li a {
+    text-decoration: none;
+    color: #050404;
+
+}
+
+.step-navbar ul li:hover{
+    background: #6F7878;
+    border-radius: 3px;
+}
+
+
+.stepAboutUs{
+    padding: 5px;
+	background-color:#fff;
+   
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+
+.row{
+    width: 150%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+div.stepabout-box{
+    background-color: #fff;
+    box-sizing: border-box;
+    margin: 24px;
+    padding: 2px 2px 2px 2px;
+    height: 250px;
+}
+
+.divlabel{
+    border-top: 1px solid #C5C8CE;
+    border-bottom: 1px solid #C5C8CE;
+    padding : 5px 0px 5px 0px ;
+
+}
+
+
+label{
+    text-align: center;
+    font-size: 28px ;
+    font-weight: 500;
+
+}
+
+p{
+    padding-top: 30px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5cm;
+   
+}
+
+.imagediv{
+    padding-top: 90px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+
+
+
+
+
+
+
+
+

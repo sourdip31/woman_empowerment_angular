@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Philosopher&display=swap');
+
+.tablediv{
+    padding-top: 30px;
+    padding-bottom: 80px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.tablecourse{
+    border: 3px solid #BDC0C4;
+}
+.tablecourse th{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #BDC0C4;
+    color:black;
+    text-align: center;
+}
+
+.tablecourse td{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+div.img{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS3Jy4PfAjkpQOGxpjj9I74rbiVRHtHm-wq6Q&usqp=CAU");
+    height: 100vh;
+    width: 97.8vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 140%,100%;
+}
+*{
+    margin:0;
+    padding:0; 
+}
+
+.admin-navbar{
+    background : #B7B9B9;
+    text-align: center;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+
+
+.admin-navbar ul{
+
+    display: inline-flex;
+    list-style: none;
+    color :  #050404;
+}
+
+.admin-navbar ul li {
+    width: 150px ;
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+.admin-navbar ul li a {
+    text-decoration: none;
+    color: #050404;
+
+}
+
+
+.admin-navbar ul li:hover{
+    background: #6F7878;
+    border-radius: 3px;
+}
+h1{
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+  }
+  .input-id{
+    padding-top: 10px;
+    padding-bottom: 80px;
+    padding-left: 650px;
+    padding-right: 120px;
+  }
+  .input-id input[type="submit"]
+{
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+   
+}
+.input-id input{
+    width: 30%;
+    margin-bottom: 20px;
+    height: 40px;
+   display:block;
+   position: relative;
+  
+}
+.login-box input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+ng-template{
+    padding-left: 100px;
+}
+ng-template div h2{
+    font-family: 'Acme', sans-serif;
+    font-family: 'Philosopher', sans-serif;
+    text-align: center;
+}

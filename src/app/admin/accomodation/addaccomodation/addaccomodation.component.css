@@ -61,7 +61,7 @@ h1{
     outline: none;
     height: 40px;
     background: #1c8adb;
-    color: grey;
+    color: white;
     font-size: 18px;
     border-radius: 20px;
 }
@@ -70,4 +70,42 @@ h1{
     cursor: pointer;
     background: #39dc79;
     color: #000;
+}
+*{
+    margin:0;
+    padding:0; 
+}
+
+.admin-navbar{
+    background : #B7B9B9;
+    text-align: center;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+
+
+.admin-navbar ul{
+
+    display: inline-flex;
+    list-style: none;
+    color :  #050404;
+}
+
+.admin-navbar ul li {
+    width: 150px ;
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+.admin-navbar ul li a {
+    text-decoration: none;
+    color: #050404;
+
+}
+
+
+.admin-navbar ul li:hover{
+    background: #6F7878;
+    border-radius: 3px;
 }

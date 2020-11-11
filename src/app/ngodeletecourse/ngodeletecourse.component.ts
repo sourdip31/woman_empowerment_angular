@@ -17,7 +17,7 @@ export class NgodeletecourseComponent implements OnInit {
   deletecourse(){
     //alert(JSON.stringify(this.customer));
     this.ngodeletecourseService.ngodeletecourse(this.delcourse).subscribe(data => {
-      alert(JSON.stringify(data));
+      //alert(JSON.stringify(data));
       if(data.status == 'SUCCESS') {
         this.router.navigate(['addcoursesLink'])
       }
