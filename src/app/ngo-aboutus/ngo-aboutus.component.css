@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,100&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,100&display=swap');*/
 
 *{
     margin:0;
@@ -54,7 +54,9 @@ div.img{
 
 h1{
     color: floralwhite;
-    padding: 0px 150px;
+    padding-top : 80px;
+    padding-left: 150px;
+    padding-right: 150px;
     
 }
 

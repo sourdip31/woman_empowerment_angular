@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StephomeComponent } from './stephome/stephome.component';
@@ -15,7 +14,25 @@ import { UserRegisterComponent } from './user-register/user-register.component';
 import { RegisteruserService } from './registeruser.service';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { NgologinComponent } from './ngologin/ngologin.component';
+import { AdminloginfailComponent } from './adminloginfail/adminloginfail.component';
 import { NgoAboutusComponent } from './ngo-aboutus/ngo-aboutus.component';
+import { ViewComponent } from './admin/ngo/view/view.component';
+import { ApproveComponent } from './admin/ngo/approve/approve.component';
+import { ApproveSYComponent } from './admin/users/approve-sy/approve-sy.component';
+import { CoursesComponent } from './admin/courses/courses.component';
+import { UsersComponent } from './admin/users/users.component';
+import { UsersviewComponent } from './admin/users/usersview/usersview.component';
+import { CoursesviewComponent } from './admin/courses/coursesview/coursesview.component';
+import { ViewsyComponent } from './admin/users/viewsy/viewsy.component';
+import { ViewenrollmentsComponent } from './admin/courses/viewenrollments/viewenrollments.component';
+import { ApproveenrollmentsComponent } from './admin/courses/approveenrollments/approveenrollments.component';
+import { AccomodationComponent } from './admin/accomodation/accomodation.component';
+import{ApplyAccomodationComponent} from './apply-accomodation/accomodation.component' ;
+import { AddaccomodationComponent } from './admin/accomodation/addaccomodation/addaccomodation.component';
+import { ApproveaccomodationComponent } from './admin/accomodation/approveaccomodation/approveaccomodation.component';
+import { ViewaccomodationComponent } from './admin/accomodation/viewaccomodation/viewaccomodation.component';
+import { UpdateaccomodationComponent } from './admin/accomodation/updateaccomodation/updateaccomodation.component';
+import { AdminforgotpasswordComponent } from './adminforgotpassword/adminforgotpassword.component';
 import { StepAboutUsComponent } from './step-about-us/step-about-us.component';
 import { StepTrainingSectorsComponent } from './step-training-sectors/step-training-sectors.component';
 import { NgoRegisterComponent } from './ngo-register/ngo-register.component';
@@ -36,6 +53,17 @@ import { NgoeditcourseService } from './ngoeditcourse.service';
 import { NgodeletecourseService } from './ngodeletecourse.service';
 import { NgoregisterstatusComponent } from './ngoregisterstatus/ngoregisterstatus.component';
 import { ViewallcoursesComponent } from './viewallcourses/viewallcourses.component';
+import { AdminService } from './admin.service';
+import { ChangepasswordComponent } from './changepassword/changepassword.component';
+
+import { EnrollForCourseComponent } from './enroll-for-course/enroll-for-course.component' ;
+import { ViewNGOsService } from './view-ngos.service';
+import { WeEmpowerHomeComponent } from './we-empower-home/we-empower-home.component';
+import { CourseEnrollmentFormComponent } from './course-enrollment-form/course-enrollment-form.component';
+import { WelfareSchemeComponent } from './welfare-scheme/welfare-scheme.component';
+
+import { SukanyayojnaComponent } from './sukanyayojna/sukanyayojna.component';
+import { SukanyaYojanaComponent } from './sukanya-yojana/sukanya-yojana.component' ;
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,7 +74,25 @@ import { ViewallcoursesComponent } from './viewallcourses/viewallcourses.compone
     UserRegisterComponent,
     AdminloginComponent,
     NgologinComponent,
+    AdminloginfailComponent,
     NgoAboutusComponent,
+    ViewComponent,
+    ApproveComponent,
+   ApproveSYComponent,
+ CoursesComponent,
+    UsersComponent,
+    UsersviewComponent,
+   CoursesviewComponent,
+  ViewsyComponent,
+    ViewenrollmentsComponent,
+    ApproveenrollmentsComponent,
+    AccomodationComponent,
+    AddaccomodationComponent,
+     ApproveaccomodationComponent,
+    ViewaccomodationComponent,
+    UpdateaccomodationComponent,
+    AdminforgotpasswordComponent,
+   StepAboutUsComponent,
     NgoRegisterComponent,
     NgocriteriaComponent,
     NgofaqComponent,
@@ -59,6 +105,15 @@ import { ViewallcoursesComponent } from './viewallcourses/viewallcourses.compone
     NgodeletecourseComponent,
     NgoregisterstatusComponent,
     ViewallcoursesComponent,
+    ChangepasswordComponent,
+    NgoRegisterComponent,
+    EnrollForCourseComponent,
+    WeEmpowerHomeComponent,
+    CourseEnrollmentFormComponent,
+    WelfareSchemeComponent,
+    ApplyAccomodationComponent,
+    SukanyayojnaComponent,
+    SukanyaYojanaComponent,
    
  
   ],
@@ -70,7 +125,7 @@ import { ViewallcoursesComponent } from './viewallcourses/viewallcourses.compone
     HttpClientModule
   ],
   providers: [UserloginService, RegisteruserService , ViewCourseBySectorService,NgologinService,
-    RegisterngoService,NgoaddcourseService,NgoeditcourseService,NgodeletecourseService],
+    RegisterngoService, ViewNGOsService,AdminService,NgoaddcourseService,NgoeditcourseService,NgodeletecourseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

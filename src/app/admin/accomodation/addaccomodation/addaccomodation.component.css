@@ -1,0 +1,73 @@
+.registerdiv{
+    padding: 10px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS3Jy4PfAjkpQOGxpjj9I74rbiVRHtHm-wq6Q&usqp=CAU");
+font-family: sans-serif;
+    height: 100vh;
+    width: 97.8vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 140%,100%;
+   
+}
+
+.registercontainer{
+	width: 100%;
+	margin-top: auto;
+}
+.register-box{
+    width: 450px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.7);
+	color: #fff;
+    box-sizing: border-box;
+	padding: 70px 30px;
+	margin: auto;
+}
+
+.register-box p{
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    font-weight: bold;
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    color: silver;
+}
+
+.register-box input[type="text"],input[type="number"],input[type="submit"]  {
+    width: 100% ;
+    margin-bottom: 20px;
+}
+.register-box input[type="text"],input[type="number"]
+{
+    margin: 10px 0px 10px 0px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-radius: 5px;
+    outline: none;
+    height: 30px;
+    color: grey;
+    font-size: 16px;
+}
+.register-box input[type="submit"]
+{
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: grey;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.register-box input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}

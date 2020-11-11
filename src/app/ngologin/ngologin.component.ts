@@ -16,6 +16,7 @@ export class NgologinComponent  {
   constructor(private ngoLoginService: NgologinService, private router: Router) { }
 
 
+ 
   checkLoginNgo() {
     alert(JSON.stringify(this.login1));
     this.ngoLoginService.login1(this.login1).subscribe(data1 => {

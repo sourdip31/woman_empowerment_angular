@@ -11,6 +11,9 @@ import { Router } from '@angular/router';
 export class UserRegisterComponent implements OnInit {
 
   user : UserRegister = new UserRegister() ;
+  
+
+
   constructor(private userRegisterService : RegisteruserService , private router:Router ) { }
 
   ngOnInit(): void {

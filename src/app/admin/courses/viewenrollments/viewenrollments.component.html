@@ -1,0 +1,27 @@
+<div class="img">
+    <div class="tablediv">
+        <table class="tablecourse" border = 1>
+            <tr>
+                
+            <th> Enrollment_Id </th>
+            <th>User Employment Status </th>
+            <th>Enrollment Date </th>
+            <th> User Enrollment Status</th>
+            
+
+           
+            </tr>
+            
+        <tr *ngFor = 'let en of enroll;' >
+            <td> {{en.enrollmentId}} </td>
+            <td> {{en.userEmploymentStatus}} </td>
+            <td> {{en. enrollmentDate}} </td>
+            <td> {{en.userEnrollmentStatus}} </td>
+           
+            </tr>
+        
+            </table>
+    </div>
+</div>
+
+    

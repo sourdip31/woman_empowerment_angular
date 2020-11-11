@@ -1,0 +1,372 @@
+<div class="step-navbar">
+    <ul>
+        <li><a [routerLink]="['/stepAboutUsLink']">About Us</a></li>
+        <li><a href="#">Guidelines</a></li>
+        <li><a href="#">Registration</a></li>
+        <li><a href="#">NGOs</a></li>
+        <li><a [routerLink]="['/trainingSectorsLink']">Training Sectors</a></li>
+        <li><a href="#">Welfare Schemes</a></li>
+        <li><a href="#">Status</a></li>
+        <li><a href="#">FAQ</a></li>
+
+
+    </ul>
+</div>
+
+<div class="trainingSectors">
+    <div class="heading">
+        <h1>Welfare Schemes</h1>
+    </div>
+    <div class="row">
+        <div class="col-7">
+            <div class="sector-box">
+
+                <div class="divlabel">
+                    <label>Accomodation : </label>
+                </div>
+                <div class="contentdiv">
+                    <p>Indian is an agriculture based country, where more than 50% of
+                        population is depend on agriculture. This structures the main source
+                        of income. The commitment of agribusiness in the national income in
+                        India is all the more, subsequently, it is said that agriculture in India
+                        is a backbone for Indian Economy.Indian
+                        agriculture sector accounts for 18 per cent of India's gross domestic
+                        product (GDP) and provides employment to 50% of the countries
+                        workforce. India is the world’s largest producer of pulses, rice, wheat,
+                        spices and spice products. 
+                    </p>
+                    <div class="accdiv">
+                           <br> <a [routerLink]="['/accomodationLink']">Apply for Accomodation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-5">
+            <div class="imagediv">
+                <img src="../../assets/images/slider_2_9884_74zdfv67ny_3.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-7">
+            <div class="sector-box">
+
+                <div class="divlabel">
+                    <label>Sukanya Yojana Scheme : </label>
+                </div>
+                <div class="contentdiv">
+                    <p>India has made vast progress overtime in
+                        providing food security for its people and has become
+                        largely self-reliant in agriculture. Accordingly, the
+                        policy focus has shifted from attaining self-sufficiency
+                        to generating higher and stable income for the farming
+                        population. Food processing industry (FPI) is one area
+                        which has the potential to add value to farm output,
+                        create alternate employment opportunities, improve
+                        exports and strengthen the domestic supply chain.
+                     </p>
+                </div>
+                <div class="accdiv2">
+                    <a [routerLink]="['/sukanyaLink']">Apply for Sukanya Yojana</a>
+                 </div>
+            </div>
+
+
+        </div>
+        <div class="col-5">
+            <div class="imagediv">
+                <img src="../../assets/images/Girl-Child-Education-through-UMEED-1000-Cyclothon-2019.jpeg">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+   <!--<div class="row">
+        <div class="col-7">
+            <div class="sector-box">
+
+                <div class="divlabel">
+                    <label>Handicrafts : </label>
+                </div>
+                <div class="contentdiv">
+                    <p>According to the Indian handicrafts census, 56.13 per cent of artisans are women. 
+                        The pioneering work of organisations such as SEWA, Dasra and Kudumbashree – in addition 
+                        to microfinance and self help group (SHG) movements in states like Andhra Pradesh and Kerala – have timelessly
+                         recognised the economic wisdom of women. Be it natural dyes, basketry from bambo and cane,
+                          crafts carved out of vegetables, grains, pottery, practising embroidery or spinning the
+                           loom – rural women in India are contributing to rural transformation, 
+                           building a rich cultural capital. These ecological weaves provide insights 
+                           on how rural women along with agriculture and farming specialise in natural 
+                           resource management, while exercising a symbiotic relationship with culture,
+                            heritage and nature. </p>
+
+                    <button  class="viewCoursesBtn" (click)= "viewCoursesHandicrafts()">View Courses</button>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-5">
+            <div class="imagediv">
+                <img src="../../assets/images/handicrafts2.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div *ngIf = "isHandicrafts then thenBlock">
+            </div>
+          
+          
+            <ng-template #thenBlock>
+                <div>
+                    <table class="tablecourse" border = 1>
+                        <tr>
+                        <th> Course ID </th>
+                        <th> Course Name </th>
+                        <th> Course Start Date </th>
+                        <th> Course End Date </th>
+                        <th> Course Providing NGO </th>
+                        <th> Course Benifits </th>
+                        <th>Training Sector</th>
+
+                       
+                        </tr>
+                    
+                    
+                        <tr *ngFor = 'let cour of courses;' >
+
+                        <td> {{cour.courseId}} </td>
+                        <td> {{cour.courseName}} </td>
+                        <td> {{cour.courseStartDate}} </td>
+                        <td> {{cour.courseEndDate}} </td>
+                        <td> {{cour.courseProvidingNGO}} </td>
+                        <td> {{cour.courseBenefits}} </td>
+                        <td> {{cour.trainingSector}} </td>
+                       
+                        </tr>
+                    
+                        </table>
+                </div>
+            </ng-template> 
+        </div>
+    </div>
+
+
+
+
+
+    <div class="row">
+        <div class="col-7">
+            <div class="sector-box">
+
+                <div class="divlabel">
+                    <label>Embroidery : </label>
+                </div>
+                <div class="contentdiv">
+                    <p>India is a land of amazement with its infinite rich cultural heritage, rituals, customs, religions and more.
+                         The legacy of the country is further intensified with its rich architecture, art forms and crafts. 
+                         One such mesmerizing art form is Indian embroidery, which has not just survived the tolls of time and innumerable invasions, in fact more than this.
+                          As a result, Indian embroidery has been influenced by various rich cultures and every Indian region has a different flavor of its own.
+                          Our NGOs works with thousands of women embroidery artisans in different regions of India, 
+                          and each one is a member of an embroidery collective or non-profit organization. 
+                          The women do the embroidery work in their homes, and this gives them the freedom to earn a sustainable livelihood through 
+                          their craft whenever they have free time throughout the day.  </p>
+
+                    <button  class="viewCoursesBtn" (click)= "viewCoursesEmbroidery()">View Courses</button>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-5">
+            <div class="imagediv">
+                <img src="../../assets/images/women-embroidery.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div *ngIf = "isEmbroidery then thenBlock">
+            </div>
+          
+          
+            <ng-template #thenBlock>
+                <div>
+                    <table class="tablecourse" border = 1>
+                        <tr>
+                        <th> Course ID </th>
+                        <th> Course Name </th>
+                        <th> Course Start Date </th>
+                        <th> Course End Date </th>
+                        <th> Course Providing NGO </th>
+                        <th> Course Benifits </th>
+                        <th>Training Sector</th>
+
+                       
+                        </tr>
+                    
+                    
+                        <tr *ngFor = 'let cour of courses;' >
+
+                        <td> {{cour.courseId}} </td>
+                        <td> {{cour.courseName}} </td>
+                        <td> {{cour.courseStartDate}} </td>
+                        <td> {{cour.courseEndDate}} </td>
+                        <td> {{cour.courseProvidingNGO}} </td>
+                        <td> {{cour.courseBenefits}} </td>
+                        <td> {{cour.trainingSector}} </td>
+                       
+                        </tr>
+                    
+                        </table>
+                </div>
+            </ng-template> 
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-7">
+            <div class="sector-box">
+
+                <div class="divlabel">
+                    <label>Computer & IT : </label>
+                </div>
+                <div class="contentdiv">
+                    <p>In today’s world of rapid developments in technology, there are still hundreds and thousands of marginalized in India 
+                        that neither have access nor afford computer literacy and skills to better their lives. The government schemes are
+                         mostly available online, which people from under-served communities are unable to access. 
+                         IDRF is funding to continue a unique program in partnership with our NGOs to impart free and quality 
+                         computer knowledge and skills to the underprivileged womens, who can use technology for the betterment of their lives in every possible way. </p>
+
+                    <button  class="viewCoursesBtn" (click)= "viewCoursesComputerIT()">View Courses</button>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-5">
+            <div class="imagediv">
+                <img src="../../assets/images/computerskill.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div *ngIf = "isComputerIT then thenBlock">
+            </div>
+          
+          
+            <ng-template #thenBlock>
+                <div>
+                    <table class="tablecourse" border = 1>
+                        <tr>
+                        <th> Course ID </th>
+                        <th> Course Name </th>
+                        <th> Course Start Date </th>
+                        <th> Course End Date </th>
+                        <th> Course Providing NGO </th>
+                        <th> Course Benifits </th>
+                        <th>Training Sector</th>
+
+                       
+                        </tr>
+                    
+                    
+                        <tr *ngFor = 'let cour of courses;' >
+
+                        <td> {{cour.courseId}} </td>
+                        <td> {{cour.courseName}} </td>
+                        <td> {{cour.courseStartDate}} </td>
+                        <td> {{cour.courseEndDate}} </td>
+                        <td> {{cour.courseProvidingNGO}} </td>
+                        <td> {{cour.courseBenefits}} </td>
+                        <td> {{cour.trainingSector}} </td>
+                       
+                        </tr>
+                    
+                        </table>
+                </div>
+            </ng-template> 
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-7">
+            <div class="sector-box">
+
+                <div class="divlabel">
+                    <label>Soft Skill : </label>
+                </div>
+                <div class="contentdiv">
+                    <p>Women and girls are trapped in a cycle of poverty by a lack of diverse and market responsive education
+                         and skill building opportunities. Many girls are pulled out of school to take over household responsibilities 
+                         and never develop the skills to enter the job market.In soft skill sessions, our NGOs has been practising the best and organised sessions on etiquettes,
+                         on how to talk, carrying a pleasing personality, sitting and walking with a proper posture. 
+                         Personal counselling, goal setting are the other themes that are worked upon. Beneficiaries are trained 
+                         to face the job market as well the competitive world outside. All the courses offered by our NGOs develop soft skills and provide
+                          personality development, leadership building, spoken English and team-work experience.</p>
+
+                    <button  class="viewCoursesBtn" (click)= "viewCoursesSoftSkill()">View Courses</button>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-5">
+            <div class="imagediv">
+                <img src="../../assets/images/softskill-women.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div *ngIf = "isSoftSkill then thenBlock">
+            </div>
+          
+          
+            <ng-template #thenBlock>
+                <div>
+                    <table class="tablecourse" border = 1>
+                        <tr>
+                        <th> Course ID </th>
+                        <th> Course Name </th>
+                        <th> Course Start Date </th>
+                        <th> Course End Date </th>
+                        <th> Course Providing NGO </th>
+                        <th> Course Benifits </th>
+                        <th>Training Sector</th>
+
+                       
+                        </tr>
+                    
+                    
+                        <tr *ngFor = 'let cour of courses;' >
+
+                        <td> {{cour.courseId}} </td>
+                        <td> {{cour.courseName}} </td>
+                        <td> {{cour.courseStartDate}} </td>
+                        <td> {{cour.courseEndDate}} </td>
+                        <td> {{cour.courseProvidingNGO}} </td>
+                        <td> {{cour.courseBenefits}} </td>
+                        <td> {{cour.trainingSector}} </td>
+                       
+                        </tr>
+                    
+                        </table>
+                </div>
+            </ng-template> 
+        </div>
+    </div>
+</div> -->
