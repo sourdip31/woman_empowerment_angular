@@ -43,9 +43,16 @@ import { NgocriteriaComponent } from './ngocriteria/ngocriteria.component';
 import { NgofaqComponent } from './ngofaq/ngofaq.component';
 import { NgoaddcoursesComponent } from './ngoaddcourses/ngoaddcourses.component';
 import { ChangepasswordComponent } from './changepassword/changepassword.component';
+import { GenerateNVerifyOtpComponent } from './generate-nverify-otp/generate-nverify-otp.component';
+import { AdminUpdatePasswordComponent } from './admin-update-password/admin-update-password.component';
+import { UserUpdatePasswordComponent } from './user-update-password/user-update-password.component';
+import { NgoUpdatePasswordComponent } from './ngo-update-password/ngo-update-password.component';
+import { GenerateNVerifyOtpNgoComponent } from './generate-nverify-otp-ngo/generate-nverify-otp-ngo.component';
+import { GenerateNVerifyOtpAdminComponent } from './generate-nverify-otp-admin/generate-nverify-otp-admin.component';
 
 const routes: Routes = [
-  {path: '',component: StephomeComponent},
+
+  {path: '',component: WeEmpowerHomeComponent},
  {path:'failLink',component:AdminloginfailComponent},
   {path:'stephomeLink', component: StephomeComponent},
 {path: 'userloginLink', component: UserloginComponent},
@@ -80,7 +87,6 @@ const routes: Routes = [
 {path:'adminFPLink',component:AdminforgotpasswordComponent},
   {path:'ngoRegisterLink',component:NgoRegisterComponent},
  
- ,
  
   {path:'ngofaqLink',component:NgofaqComponent},
   {path:'adminloginLink',component:AdminloginComponent},
@@ -98,7 +104,13 @@ const routes: Routes = [
   {path : 'couserEnrollFormLink' , component : CourseEnrollmentFormComponent },
   {path: 'welfareSchemesLink' , component:WelfareSchemeComponent},
   {path: 'accomodationLink' , component:ApplyAccomodationComponent},
-  {path: 'sukanyaLink' , component:SukanyaYojanaComponent}
+  {path: 'sukanyaLink' , component:SukanyaYojanaComponent},
+  {path : 'generateNVerifyLink' , component : GenerateNVerifyOtpComponent},
+  {path: 'userUpdatePasswordLink',component : UserUpdatePasswordComponent},
+  {path : 'generateNVerifyNgoLink', component : GenerateNVerifyOtpNgoComponent},
+  {path: 'ngoUpdatePasswordLink' , component: NgoUpdatePasswordComponent},
+  {path: 'adminUpdatePasswordLink' , component : AdminUpdatePasswordComponent},
+  {path: 'generateNVerifyAdminLink' , component : GenerateNVerifyOtpAdminComponent}
 
 ];
 
