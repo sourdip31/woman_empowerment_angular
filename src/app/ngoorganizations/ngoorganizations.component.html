@@ -1,0 +1,55 @@
+<div class="ngo-navbar">
+    <ul>
+      <li><a [routerLink] = "['/ngoaboutusLink']">About Us</a></li>
+      <li><a [routerLink] = "['/ngocriteriaLink']">Criteria</a></li>
+      <li><a [routerLink] = "['/ngoOrganizationsLink']">Organizations</a></li>
+      <li><a [routerLink] = "['/ngoregisterstatusLink']">Register Status</a></li>
+      <li><a [routerLink] = "['/ngologinLink']">NGO Dashboard</a></li>
+      <li><a [routerLink] = "['/ngoRegisterLink']">Register</a></li>
+      <li><a [routerLink] = "['/ngofaqLink']">FAQ</a></li>
+      
+    </ul>
+
+</div>
+
+<div class="img"><br/>
+
+    <h1>Organizations</h1> <br/><br/>
+    <p>
+        We've a variety of NGOs working under us from across India to help
+        us in our mission to provide women the necessary support they need.
+        Choose from the one which you find most suitable for you.
+    </p>
+
+    <div class="list">
+        LIST of NGOs
+    </div>
+
+    <!--<button class="viewAllNgos" (click)= "viewAllNgos()">View NGOs</button>-->
+
+    
+        <div class="table">
+            <table class="ngo" border="1">
+                <tr>
+                    <th>NGO ID</th>
+                    <th>NGO Location</th>
+                    <th>NGO Registration No.</th>
+                    <th>NGO User Name</th>
+                    <th>NGO Name</th>
+                </tr>
+                <tr *ngFor='let n of ngo;'>
+                    <td>{{n.ngoId}}</td>
+                    <td>{{n.ngoLocation}}</td>
+                    <td>{{n.ngoRegistrationNumber}}</td>
+                    <td>{{n.ngoUserName}}</td>
+                    <td>{{n.ngoName}}</td>
+                </tr>
+            </table>
+        </div>
+    
+        
+</div>
+
+<div>
+    <router-outlet> </router-outlet>
+</div>

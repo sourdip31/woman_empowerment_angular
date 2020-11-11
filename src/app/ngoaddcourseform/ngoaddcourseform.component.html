@@ -1,0 +1,70 @@
+<div class="ngo-navbar">
+    <ul>
+      <li><a [routerLink] = "['/ngoaboutusLink']">About Us</a></li>
+      <li><a [routerLink] = "['/ngocriteriaLink']">Criteria</a></li>
+      <li><a [routerLink] = "['/ngoOrganizationsLink']">Organizations</a></li>
+      <li><a [routerLink] = "['/ngoregisterstatusLink']">Register Status</a></li>
+      <li><a [routerLink] = "['/ngologinLink']">NGO Dashboard</a></li>
+      <li><a [routerLink] = "['/ngoRegisterLink']">Register</a></li>
+      <li><a [routerLink] = "['/ngofaqLink']">FAQ</a></li>
+      
+    </ul>
+
+</div>
+
+
+<div class="img">
+    <div class="registerdiv">
+        <div class="registercontainer">
+            <div class="register-box">
+                <h1>Add Course</h1>
+                <form  #addcourseform="ngForm" (ngSubmit)="addcourse()">
+                    <p>Course Name</p>
+                    <input class="nameinput" type="text"  #courseName="ngModel" name="coursename" placeholder="Enter Course Name" [(ngModel)]=course.courseName required>
+                    
+                    <p>Course Benefits</p>
+                    <input class="text" type="text"  #courseBenefits="ngModel" name="coursebenefits" placeholder="Enter Course Benefits" [(ngModel)]=course.courseBenefits required>
+                    
+                    <p> Course Start Date </p>
+                    <input type="date"  name="courseStartdate" placeholder="Enter Start Date"  #courseStartDate="ngModel" [(ngModel)]=course.courseStartDate required>
+
+                    <p> Course End Date</p>
+                    <input type="date"  name="courseEnddate" placeholder="Enter End Date"  #courseEndDate="ngModel" [(ngModel)]=course.courseEndDate required>
+
+    
+                   
+                    <div class="ngoLoc"> 
+                        <label class="ngoLocationLabel">Training Sector </label>
+                        <div>
+                            <select class="location" name="loc" #trainingSector="ngModel"  [(ngModel)]=course.trainingSector required>
+                                <option  disabled="disabled" selected="selected">--Choose City--</option>
+                                <option  value="kolkata">Kolkata</option>
+                                <option  value="mumbai">Mumbai</option>
+                                <option  value="hyderabad">Hyderabad</option>
+                                <option  value="bangalore">Bangalore</option>
+                                <option  value="pune">Pune</option>
+                                
+                              </select>
+                        </div>
+                    </div>
+    
+                    <p>Course Providing NGO Name </p>
+                    <input type="text"  name="ngoname" #courseProvidingNGO="ngModel"   placeholder="Enter NGO Name"  [(ngModel)]=course.courseProvidingNGO required>
+                   
+                    <p>Course Providing NGO Email </p>
+                    <input type="email"  name="ngoemail" #ngoEmail="ngModel"   placeholder="Enter NGO Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" [(ngModel)]=course.ngoEmail required>
+                   
+                    <input type="submit" name="submit" [disabled] = "!addcourseform.valid?true:false" value="Add Course">
+                </form>
+    
+    
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+<div>
+    <router-outlet></router-outlet>
+</div>

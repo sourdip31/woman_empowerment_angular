@@ -26,7 +26,16 @@ import { NgologinService } from './ngologin.service';
 import { RegisterngoService } from './registerngo.service';
 
 
-import{ ViewCourseBySectorService } from './view-course-by-sector.service' ;
+import{ ViewCourseBySectorService } from './view-course-by-sector.service';
+import { NgoorganizationsComponent } from './ngoorganizations/ngoorganizations.component';
+import { NgoaddcourseformComponent } from './ngoaddcourseform/ngoaddcourseform.component';
+import { NgoeditcourseComponent } from './ngoeditcourse/ngoeditcourse.component';
+import { NgodeletecourseComponent } from './ngodeletecourse/ngodeletecourse.component' ;
+import { NgoaddcourseService } from './ngoaddcourse.service';
+import { NgoeditcourseService } from './ngoeditcourse.service';
+import { NgodeletecourseService } from './ngodeletecourse.service';
+import { NgoregisterstatusComponent } from './ngoregisterstatus/ngoregisterstatus.component';
+import { ViewallcoursesComponent } from './viewallcourses/viewallcourses.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,6 +53,12 @@ import{ ViewCourseBySectorService } from './view-course-by-sector.service' ;
     NgoaddcoursesComponent,
     StepAboutUsComponent,
     StepTrainingSectorsComponent,
+    NgoorganizationsComponent,
+    NgoaddcourseformComponent,
+    NgoeditcourseComponent,
+    NgodeletecourseComponent,
+    NgoregisterstatusComponent,
+    ViewallcoursesComponent,
    
  
   ],
@@ -54,7 +69,8 @@ import{ ViewCourseBySectorService } from './view-course-by-sector.service' ;
     FormsModule,
     HttpClientModule
   ],
-  providers: [UserloginService, RegisteruserService , ViewCourseBySectorService,NgologinService,RegisterngoService],
+  providers: [UserloginService, RegisteruserService , ViewCourseBySectorService,NgologinService,
+    RegisterngoService,NgoaddcourseService,NgoeditcourseService,NgodeletecourseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

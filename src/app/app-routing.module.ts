@@ -24,6 +24,12 @@ import{NgoRegisterComponent} from './ngo-register/ngo-register.component';
 import { NgocriteriaComponent } from './ngocriteria/ngocriteria.component';
 import { NgofaqComponent } from './ngofaq/ngofaq.component';
 import { NgoaddcoursesComponent } from './ngoaddcourses/ngoaddcourses.component';
+import { NgoorganizationsComponent } from './ngoorganizations/ngoorganizations.component';
+import { NgoaddcourseformComponent } from './ngoaddcourseform/ngoaddcourseform.component';
+import { NgoeditcourseComponent } from './ngoeditcourse/ngoeditcourse.component';
+import { NgodeletecourseComponent } from './ngodeletecourse/ngodeletecourse.component';
+import { NgoregisterstatusComponent } from './ngoregisterstatus/ngoregisterstatus.component';
+import { ViewallcoursesComponent } from './viewallcourses/viewallcourses.component';
 
 const routes: Routes = [
   {path: '',component: StephomeComponent},
@@ -41,11 +47,14 @@ const routes: Routes = [
   {path:'addcoursesLink',component:NgoaddcoursesComponent},
   {path: 'userRegister',component: UserRegisterComponent},
   {path: 'ngologinLink',component:NgologinComponent},
-
-
-
+  {path:'ngoOrganizationsLink',component:NgoorganizationsComponent},
+  {path:'ngoaddcourseformLink',component:NgoaddcourseformComponent},
+  {path:'ngoeditcourseLink',component:NgoeditcourseComponent},
+  {path:'ngodeletecourseLink',component:NgodeletecourseComponent},
+  {path:'ngoregisterstatusLink',component:NgoregisterstatusComponent},
   {path:'stepAboutUsLink' , component:StepAboutUsComponent},
-  {path: 'trainingSectorsLink' , component:StepTrainingSectorsComponent}
+  {path: 'trainingSectorsLink' , component:StepTrainingSectorsComponent},
+  {path:'ngoviewallcoursesLink',component:ViewallcoursesComponent},
 
 ];
 
