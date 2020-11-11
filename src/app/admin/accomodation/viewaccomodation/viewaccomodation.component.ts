@@ -1,18 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import {AdminService} from '../../../admin.service';
-import {UpdateAccomodation} from '../../../updateaccomodation';
+import {ViewAccomodation} from '../../../viewaccomodations';
 @Component({
   selector: 'app-viewaccomodation',
   templateUrl: './viewaccomodation.component.html',
   styleUrls: ['./viewaccomodation.component.css']
 })
 export class ViewaccomodationComponent implements OnInit {
-  updateaccomodation: Array<UpdateAccomodation>=[];
+  viewaccomodation: Array<ViewAccomodation>=[];
   constructor(private adminService:AdminService) { }
 
   ngOnInit(): void {
     this.adminService.  viewAccomodation().subscribe(data=>{
-      this.updateaccomodation = data;
+      this.viewaccomodation = data;
     })
   }
 

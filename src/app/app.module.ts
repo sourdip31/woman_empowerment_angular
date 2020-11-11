@@ -53,7 +53,9 @@ import { CourseEnrollmentFormComponent } from './course-enrollment-form/course-e
 import { WelfareSchemeComponent } from './welfare-scheme/welfare-scheme.component';
 
 import { SukanyayojnaComponent } from './sukanyayojna/sukanyayojna.component';
-import { SukanyaYojanaComponent } from './sukanya-yojana/sukanya-yojana.component' ;
+import { SukanyaYojanaComponent } from './sukanya-yojana/sukanya-yojana.component';
+import { StepcriteriaComponent } from './stepcriteria/stepcriteria.component';
+import { StepfaqComponent } from './stepfaq/stepfaq.component' ;
 @NgModule({
   declarations: [
     AppComponent,
@@ -98,6 +100,8 @@ import { SukanyaYojanaComponent } from './sukanya-yojana/sukanya-yojana.componen
     ApplyAccomodationComponent,
     SukanyayojnaComponent,
     SukanyaYojanaComponent,
+    StepcriteriaComponent,
+    StepfaqComponent,
    
  
   ],

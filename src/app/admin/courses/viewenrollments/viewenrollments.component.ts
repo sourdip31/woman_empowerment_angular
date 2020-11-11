@@ -12,7 +12,7 @@ export class ViewenrollmentsComponent implements OnInit {
   constructor(private adminService:AdminService) { }
 
   ngOnInit(): void {
-    this.adminService.  viewEnrollments().subscribe(data=>{
+    this.adminService.viewEnrollments().subscribe(data=>{
       this.enroll = data;
     })
   }

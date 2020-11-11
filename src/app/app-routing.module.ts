@@ -43,6 +43,8 @@ import { NgocriteriaComponent } from './ngocriteria/ngocriteria.component';
 import { NgofaqComponent } from './ngofaq/ngofaq.component';
 import { NgoaddcoursesComponent } from './ngoaddcourses/ngoaddcourses.component';
 import { ChangepasswordComponent } from './changepassword/changepassword.component';
+import { StepcriteriaComponent } from './stepcriteria/stepcriteria.component';
+import { StepfaqComponent } from './stepfaq/stepfaq.component';
 
 const routes: Routes = [
   {path: '',component: StephomeComponent},
@@ -79,8 +81,8 @@ const routes: Routes = [
 {path:'admin/accomodation/viewaccomodation',component:ViewaccomodationComponent},
 {path:'adminFPLink',component:AdminforgotpasswordComponent},
   {path:'ngoRegisterLink',component:NgoRegisterComponent},
+ {path:'guidelinesLink',component:StepcriteriaComponent},
  
- ,
  
   {path:'ngofaqLink',component:NgofaqComponent},
   {path:'adminloginLink',component:AdminloginComponent},
@@ -90,7 +92,7 @@ const routes: Routes = [
   {path:'addcoursesLink',component:NgoaddcoursesComponent},
  
 {path:'changepwdLink',component:ChangepasswordComponent},
-
+{path:'stepfaqLink',component:StepfaqComponent},
 
   {path:'stepAboutUsLink' , component:StepAboutUsComponent},
   {path: 'trainingSectorsLink' , component:StepTrainingSectorsComponent},
