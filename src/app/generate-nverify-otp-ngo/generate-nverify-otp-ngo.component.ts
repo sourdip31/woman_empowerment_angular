@@ -35,6 +35,7 @@ export class GenerateNVerifyOtpNgoComponent implements OnInit {
       console.log(data2.status) ;
       if(data2.status == 'SUCCESS'){
         this.router.navigate(['ngoUpdatePasswordLink']) ;
+        
       }
     })
   }
