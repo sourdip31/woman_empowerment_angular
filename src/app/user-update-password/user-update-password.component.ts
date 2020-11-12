@@ -28,6 +28,7 @@ export class UserUpdatePasswordComponent implements OnInit {
           this.router.navigate(['userloginLink']) ;
         } 
       })
+      
     }
   }
 
