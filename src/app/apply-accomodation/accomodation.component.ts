@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./accomodation.component.css']
 })
 export class ApplyAccomodationComponent implements OnInit {
+  message : string ;
   accomodation : Accomodation = new Accomodation() ;
   constructor(private accomodationService : AccomodationServiceService , private router:Router) { }
 
@@ -17,14 +18,14 @@ export class ApplyAccomodationComponent implements OnInit {
 
   applyAccomodation() {
     this.accomodation.userId=Number(sessionStorage.getItem('userId'));
-    alert(JSON.stringify(this.accomodation));
+    //alert(JSON.stringify(this.accomodation));
     this.accomodationService.useraccomodation(this.accomodation).subscribe(data => {
       //alert(JSON.stringify(data));
       if(data.status == 'SUCCESS') {
         this.router.navigate(['welfareSchemesLink'])
       }
       else {
-        //missing code right now
+        this.message = data.message ;
       }
     })
   }
