@@ -23,10 +23,14 @@
                 <p> Number of Rooms </p>
                 <input type="number" name="numberOfRooms" #noOfRooms="ngModel"  placeholder="Enter Number of rooms"   [(ngModel)]=addaccomodation.numberOfRooms required>
                 
-                <input type="submit" name="submit" [disabled] = "!form.valid?true:false" value="Add">
+                <input type="submit" name="submit" [disabled] = "!form.valid?true:false" value="Add" >
                 
                
-            </form>
+           
+                       <div><h2>{{message}}</h2></div> 
+                       
+                </form> 
+          
 </div>
 </div>
 </div>

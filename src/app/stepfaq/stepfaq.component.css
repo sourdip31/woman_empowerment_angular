@@ -104,8 +104,11 @@ p{
     padding-top: 30px;
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5cm;
+  line-height: 1.2cm;
    
+}
+span{
+    font-weight: bold;
 }
 
 .imagediv{
