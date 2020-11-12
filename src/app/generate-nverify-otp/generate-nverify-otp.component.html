@@ -9,7 +9,10 @@
 		<form #generateOTPform="ngForm" (ngSubmit)="generateOTPnumber()">
 			<p>Email</p>
               <input type="text" #userEmail="ngModel" name="useremail" placeholder="Enter User Email" [(ngModel)]=getEmailId.email pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-              
+              <div *ngIf = "userEmail.invalid && (userEmail.dirty || userEmail.touched)">
+				<div *ngIf = "userEmail.errors.required" style="color: red;"> Email is required</div>
+				<div *ngIf = "userEmail.errors.pattern" style="color: red;"> Invalid Email</div>
+			</div>
                 
 			
 				<button type="submit" class="login-button">Generate OTP</button>

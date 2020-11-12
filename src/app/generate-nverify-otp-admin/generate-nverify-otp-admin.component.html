@@ -8,7 +8,10 @@
 		<form #generateOTPformAdmin="ngForm" (ngSubmit)="generateOTPnumberAdmin()">
 			<p>Email</p>
               <input type="text" #adminEmail="ngModel" name="Adminemail" placeholder="Enter Admin Email" [(ngModel)]=getEmailId.email pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-              
+              <div *ngIf = "adminEmail.invalid && (adminEmail.dirty || adminEmail.touched)">
+				<div *ngIf = "adminEmail.errors.required" style="color: red;"> Email is required</div>
+				<div *ngIf = "adminEmail.errors.pattern" style="color: red;"> Invalid Email</div>
+			</div>
                 
 			
 				<button type="submit" class="login-button">Generate OTP</button>
