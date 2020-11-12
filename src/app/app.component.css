@@ -78,9 +78,7 @@ body {
     border-radius: 5px;
 }
 
-.topnav-bar .fa{
-    margin-right: 10px;
-}
+
 
 .row{
     width: 100%;
@@ -107,12 +105,12 @@ body {
 .col-11{width: 91.66%;}
 .col-12{width: 100%;}
 
-footer.foot{
+div.foot{
     background-color: #666;
     padding-left:7%;
    
 }
-footer.foot h1{
+div.foot h1{
     color:white;
     font-size: 20px;
     font-family: 'Tajawal', sans-serif;
@@ -120,12 +118,12 @@ footer.foot h1{
     padding-bottom: 8px;
 
 }
-footer.foot ul{
+div.foot ul{
     list-style-type: none;
     text-align:left;
     padding-left: 0;
 }
-footer.foot ul li{
+div.foot ul li{
     color:white;
     font-size:16px;
     font-family: 'Tajawal', sans-serif;
