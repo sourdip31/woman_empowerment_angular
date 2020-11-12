@@ -73,7 +73,16 @@
                     <div *ngIf = "password.errors.required" style="color: red;"> Password is required</div>
                     <div *ngIf = "password.errors.pattern" style="color: red;"> Invalid Password</div>
                     </div>
+
+                    <p> Confirm  Password </p>
+                    <input type="password" name="confirmpassword" #confirmpassword="ngModel"  placeholder="Enter Confirm Password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" [(ngModel)]='confirmPass' required>
+                    <div *ngIf = "confirmpassword.invalid && (confirmpassword.dirty || confirmpassword.touched)">
+                        <div *ngIf = "confirmpassword.errors.required" style="color: red;"> Confirm Password is required</div>
+                        <div *ngIf = "confirmpassword.errors.pattern" style="color: red;"> Invalid Confirm Password</div>
+                        </div>
                 
+                        <div class="confirmMessageDiv">{{confirmPassCheckMessage}}  </div>
+
                 <input type="submit" name="submit" [disabled] = "!userregform.valid?true:false" value="Register">
                 
             </form>

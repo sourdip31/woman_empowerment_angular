@@ -151,3 +151,16 @@ ol li {
     padding-bottom: 5px;
     text-align: center;
 }
+
+button{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: green;
+    padding: 5px 30px;
+    border-radius: 5px ;
+    color: white;
+}
+
+form{
+    text-align: center;
+}

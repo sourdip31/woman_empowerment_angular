@@ -29,15 +29,10 @@
                 <div class="ngoLoc"> 
                     <label class="ngoLocationLabel"> NGO Location </label>
                     <div>
-                        <select class="location" name="loc" #ngoLocation="ngModel"  [(ngModel)]=ngo.ngoLocation required>
-                            <option  disabled="disabled" selected="selected">--Choose City--</option>
-                            <option  value="kolkata">Kolkata</option>
-                            <option  value="mumbai">Mumbai</option>
-                            <option  value="hyderabad">Hyderabad</option>
-                            <option  value="bangalore">Bangalore</option>
-                            <option  value="pune">Pune</option>
+                        <input type="text" name="loc" #ngoLocation="ngModel" placeholder="Enter NGO Location" [(ngModel)]=ngo.ngoLocation required>
                             
-                          </select>
+                            
+                          
                     </div>
                 </div>
                 <div *ngIf = "ngoLocation.invalid && (ngoLocation.dirty || ngoLocation.touched)">
@@ -57,6 +52,18 @@
                   <div *ngIf = "ngoPassword.errors.required" style="color: red;"> Password is required</div>
                   <div *ngIf = "ngoPassword.errors.pattern" style="color: red;"> Invalid Password</div>
                   </div>
+
+
+                  <p> Confirm Password </p>
+                  <input type="password" name="confirmpassword" #ngoConfirmPassword="ngModel"  placeholder="Enter Confirm Password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" [(ngModel)]='confirmPass' required>
+                  <div *ngIf = "ngoConfirmPassword.invalid && (ngoConfirmPassword.dirty || ngoConfirmPassword.touched)">
+                    <div *ngIf = "ngoConfirmPassword.errors.required" style="color: red;">Confirm Password is required</div>
+                    <div *ngIf = "ngoConfirmPassword.errors.pattern" style="color: red;"> Invalid Confirm Password</div>
+                    </div>
+
+                    <div class="confirmMessageDiv">{{confirmPassCheckMessage}}  </div>
+
+                  
 
                 <input type="submit" name="submit" [disabled] = "!ngoregform.valid?true:false" value="Register">
                 

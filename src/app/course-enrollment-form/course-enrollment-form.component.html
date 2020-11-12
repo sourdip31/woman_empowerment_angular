@@ -1,41 +1,45 @@
 <div class="step-navbar">
-    <ul>
-      <li><a [routerLink] = "['/stepAboutUsLink']">About Us</a></li>
-      <li><a [routerLink] = "['/guidelinesLink']">Guidelines</a></li>
-      <li><a [routerLink] = "['/stepEnrollLink']">Enroll</a></li>
-      <li><a [routerLink] = "['/trainingSectorsLink']">Training Sectors</a></li>
-      <li><a [routerLink]="['/welfareSchemesLink']">Welfare Schemes</a></li>
-      <li><a [routerLink]="['/stepfaqLink']">FAQ</a></li>
-  
-    </ul>
-  </div>
+  <ul>
+    <li><a [routerLink]="['/stepAboutUsLink']">About Us</a></li>
+    <li><a [routerLink]="['/guidelinesLink']">Guidelines</a></li>
+    <li><a [routerLink]="['/stepEnrollLink']">Enroll</a></li>
+    <li><a [routerLink]="['/trainingSectorsLink']">Training Sectors</a></li>
+    <li><a [routerLink]="['/welfareSchemesLink']">Welfare Schemes</a></li>
+    <li><a [routerLink]="['/stepfaqLink']">FAQ</a></li>
+    <li><a [routerLink]="['/userloginLink']">Logout</a></li>
+
+
+  </ul>
+</div>
 
 
 
 
-  <div class="registerdiv">
-    <div class="registercontainer">
-        <div class="register-box">
-            <h1>Enrollment Form</h1>
-            
-            <form  #userEnrollForm="ngForm" (ngSubmit)="enrollForCourse()">
-                <p>User ID</p>
-                <input class="fixed-input" type="text"  #userid="ngModel" name="userid" [(ngModel)]='sessionUserId' readonly>
+<div class="registerdiv">
+  <div class="registercontainer">
+    <div class="register-box">
+      <h1>Enrollment Form</h1>
+
+      <form #userEnrollForm="ngForm" (ngSubmit)="enrollForCourse()">
+        <p>User ID</p>
+        <input class="fixed-input" type="text" #userid="ngModel" name="userid" [(ngModel)]='sessionUserId' readonly>
 
 
-                <p>Course ID </p>
-                <input class="fixed-input" type="text"  name="courseid" #courseid="ngModel" [(ngModel)]='sessionCourseId' readonly>
-               
-                <p> Employment Status </p>
-                <input type="text" name="employmentStatus" #employmentStatus="ngModel" placeholder="Enter Employment Status" [(ngModel)]=enrolldata.employmentStatus required>
-                
-                <input type="submit" name="submit" [disabled] = "!userEnrollForm.valid?true:false" value="Enroll">
-              
-            </form>
-            <div>
-              {{enrollmessage}}
-            </div>
+        <p>Course ID </p>
+        <input class="fixed-input" type="text" name="courseid" #courseid="ngModel" [(ngModel)]='sessionCourseId'
+          readonly>
 
-        </div>
+        <p> Employment Status </p>
+        <input type="text" name="employmentStatus" #employmentStatus="ngModel" placeholder="Enter Employment Status"
+          [(ngModel)]=enrolldata.employmentStatus required>
+
+        <input type="submit" name="submit" [disabled]="!userEnrollForm.valid?true:false" value="Enroll">
+
+      </form>
+      <div>
+        {{enrollmessage}}
+      </div>
+
     </div>
+  </div>
 </div>
