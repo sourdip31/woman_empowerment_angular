@@ -109,3 +109,7 @@ h1{
     background: #6F7878;
     border-radius: 3px;
 }
+h2{
+    font-family: 'Acme', sans-serif;
+    font-family: 'Philosopher', sans-serif;
+}

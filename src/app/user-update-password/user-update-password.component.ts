@@ -9,7 +9,7 @@ import{UserChangePassService} from '../user-change-pass.service';
   styleUrls: ['./user-update-password.component.css']
 })
 export class UserUpdatePasswordComponent implements OnInit {
-
+message:string;
   confirmPass : string ;
   confirmPassCheckMessage : string ;
   newPassInput : PasswordChange = new PasswordChange() ;
@@ -27,6 +27,9 @@ export class UserUpdatePasswordComponent implements OnInit {
         if(data.status == 'SUCCESS'){
           this.router.navigate(['userloginLink']) ;
         } 
+        else{
+          this.message=data.message;
+        }
       })
       
     }

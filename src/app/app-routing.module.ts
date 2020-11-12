@@ -60,6 +60,8 @@ import { UserUpdatePasswordComponent } from './user-update-password/user-update-
 import { NgoUpdatePasswordComponent } from './ngo-update-password/ngo-update-password.component';
 import { GenerateNVerifyOtpNgoComponent } from './generate-nverify-otp-ngo/generate-nverify-otp-ngo.component';
 import { GenerateNVerifyOtpAdminComponent } from './generate-nverify-otp-admin/generate-nverify-otp-admin.component';
+import { Ngoaddcourse } from './ngoaddcourse';
+import { ViewhomesComponent } from './admin/accomodation/viewhomes/viewhomes.component';
 
 const routes: Routes = [
 
@@ -97,14 +99,14 @@ const routes: Routes = [
   {path:'adminFPLink',component:AdminforgotpasswordComponent},
   {path:'ngoRegisterLink',component:NgoRegisterComponent},
  {path:'guidelinesLink',component:StepcriteriaComponent},
- 
+
  
  
   {path:'ngofaqLink',component:NgofaqComponent},
   {path:'adminloginLink',component:AdminloginComponent},
  
   {path:'ngocriteriaLink',component:NgocriteriaComponent},
-  
+
   {path:'addcoursesLink',component:NgoaddcoursesComponent},
   {path: 'userRegister',component: UserRegisterComponent},
   
@@ -115,10 +117,10 @@ const routes: Routes = [
   {path:'ngoregisterstatusLink',component:NgoregisterstatusComponent},
   
  
-
+{path:'admin/accomodation/viewhomes',component:ViewhomesComponent},
 {path:'stepfaqLink',component:StepfaqComponent},
   {path:'ngoviewallcoursesLink',component:ViewallcoursesComponent},
-
+{path:'enrollLink',component:EnrollForCourseComponent},
  
   {path:'changepwdLink',component:ChangepasswordComponent},
   {path:'ngoprofileLink',component:NgoprofileComponent},
@@ -136,7 +138,8 @@ const routes: Routes = [
   {path: 'generateNVerifyAdminLink' , component : GenerateNVerifyOtpAdminComponent},
   
   {path: 'stepAboutUsLink' , component:StepAboutUsComponent},
-  {path: 'trainingSectorsLink',component:StepTrainingSectorsComponent}
+  {path: 'trainingSectorsLink',component:StepTrainingSectorsComponent},
+  {path:'ngoUpdatePasswordLink',component:NgoUpdatePasswordComponent},
 
 ];
 

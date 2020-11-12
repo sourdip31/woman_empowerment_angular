@@ -5,7 +5,7 @@
           </div>
           <h1>NGO Login</h1>
           <form  #form="ngForm" (ngSubmit)="checkLoginNgo()">
-              <p>Email</p>
+              <p>Email</p> 
               <input type="text" #ngoEmail="ngModel" name="ngoemail" placeholder="Enter Username" [(ngModel)]=login1.email pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
               <div *ngIf = "ngoEmail.invalid && (ngoEmail.dirty || ngoEmail.touched)">
                   <div *ngIf = "ngoEmail.errors.required" style="color: red;"> Email is required</div>

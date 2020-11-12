@@ -9,10 +9,14 @@
 		<form #generateOTPform="ngForm" (ngSubmit)="generateOTPnumber()">
 			<p>Email</p>
               <input type="text" #userEmail="ngModel" name="useremail" placeholder="Enter User Email" [(ngModel)]=getEmailId.email pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-              
+              <div *ngIf = "userEmail.invalid && (userEmail.dirty || userEmail.touched)">
+				<div *ngIf = "userEmail.errors.required" style="color: red;"> Email is required</div>
+				<div *ngIf = "userEmail.errors.pattern" style="color: red;"> Invalid Email</div>
+			</div>
                 
 			
-				<button type="submit" class="login-button">Generate OTP</button>
+				<button type="submit" class="login-button">Generate OTP</button><br>
+				<h2>{{otpGenerateMessage}}</h2>
         </form>
     
         <form #verigyOTPform="ngForm" (ngSubmit)="verifyOTPnumber()">
@@ -23,7 +27,8 @@
               <input type="text"  #userOTP="ngModel" name="userOTP"   placeholder="Enter OTP" [(ngModel)]=getOTP.otp required>
 			
 	
-			<button type="submit" class="login-button"> Verify </button>
+			<button type="submit" class="login-button"> Verify </button><br>
+			<h2>{{verifyOtpMessage}}</h2>
 				
 		</form>	
 		

@@ -44,7 +44,7 @@
 
 div.img{
     background-image: url("/assets/images/ngoAdd.jpg");
-    height: 100vh;
+    height: 165vh;
     width: 97.65vw;
     background-position: center;
     background-repeat: no-repeat;
@@ -53,6 +53,7 @@ div.img{
 
 .registerdiv{
     padding: 10px;
+    
     background-image: url(/assets/images/ngoReg2.jpg);
     background-repeat: no-repeat;
 	background-size: auto;
@@ -62,7 +63,8 @@ div.img{
 
 .registercontainer{
 	width: 100%;
-	margin-top: auto;
+    margin-top: auto;
+    
 }
 .register-box{
     width: 450px;

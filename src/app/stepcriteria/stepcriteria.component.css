@@ -87,7 +87,8 @@ div.stepabout-box{
     box-sizing: border-box;
     margin: 24px;
     padding: 2px 2px 2px 2px;
-    height: 350px;
+    height: 300px;
+
 }
 
 .divlabel{
@@ -109,6 +110,7 @@ p{
     padding-top: 30px;
     font-size: 19px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
 }
 
 .imagediv{

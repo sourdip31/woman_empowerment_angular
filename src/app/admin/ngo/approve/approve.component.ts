@@ -26,7 +26,7 @@ export class ApproveComponent implements OnInit {
   approveNGO(){
     this.isApproved=true;
     this.adminService.approveNGO(this.NGO).subscribe(data=>{
-      alert(JSON.stringify(data));
+     // alert(JSON.stringify(data));
       if(data.status == 'SUCCESS'){
         this.message=data.message;
       }

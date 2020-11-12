@@ -72,7 +72,8 @@ import { NgoUpdatePasswordComponent } from './ngo-update-password/ngo-update-pas
 import { AdminUpdatePasswordComponent } from './admin-update-password/admin-update-password.component';
 import { GenerateNVerifyOtpComponent } from './generate-nverify-otp/generate-nverify-otp.component';
 import { GenerateNVerifyOtpNgoComponent } from './generate-nverify-otp-ngo/generate-nverify-otp-ngo.component';
-import { GenerateNVerifyOtpAdminComponent } from './generate-nverify-otp-admin/generate-nverify-otp-admin.component' ;
+import { GenerateNVerifyOtpAdminComponent } from './generate-nverify-otp-admin/generate-nverify-otp-admin.component';
+import { ViewhomesComponent } from './admin/accomodation/viewhomes/viewhomes.component' ;
 @NgModule({
   declarations: [
     AppComponent,
@@ -132,6 +133,7 @@ import { GenerateNVerifyOtpAdminComponent } from './generate-nverify-otp-admin/g
     GenerateNVerifyOtpComponent,
     GenerateNVerifyOtpNgoComponent,
     GenerateNVerifyOtpAdminComponent,
+    ViewhomesComponent,
    
  
   ],
