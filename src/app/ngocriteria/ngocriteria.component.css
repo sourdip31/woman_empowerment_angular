@@ -62,12 +62,12 @@ h1{
 
 p{
     color:snow;
-   
+    text-align: justify;
     font-family: 'Montserrat',sans-serif;
     border: 1px ;
     text-align: center;
     float: left;
     font-size: 23px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 55px;
+    padding-right: 55px;
 }

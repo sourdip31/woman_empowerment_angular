@@ -47,12 +47,13 @@
 }
 
 .applycontainer{
-	width: 100%;
+    width: 100%;
+    
     margin-top: auto;
 }
 .apply-box{
     width: 450px;
-    height: 1400px;
+    height: 1700px;
     background: rgba(0, 0, 0, 0.7);
 	color: #fff;
     box-sizing: border-box;

@@ -82,7 +82,8 @@ div.stepabout-box{
     box-sizing: border-box;
     margin: 24px;
     padding: 2px 2px 2px 2px;
-    height: 250px;
+    
+    height: 350px;
 }
 
 .divlabel{

@@ -5,6 +5,10 @@
             <form  #userregform="ngForm" (ngSubmit)="registerUser()">
                 <p>Name</p>
                 <input class="nameinput" type="text"  #userName="ngModel" name="username" placeholder="Enter Name" [(ngModel)]=user.userName required>
+                <div *ngIf = "userName.invalid && (userName.dirty || userName.touched)">
+                    <div *ngIf = "userName.errors.required" style="color: red;"> Name is required</div>
+                   
+                </div>
 
                 <p class="gender"> <label class="genderlabel"> Gender </label>
                 <input type="radio"  name="usergender" value="Female" #userGender="ngModel" [(ngModel)]=user.userGender checked > <span>Female</span>
@@ -15,7 +19,11 @@
 
                 <p> Date Of Birth </p>
                 <input type="date"  name="userdob" placeholder="Enter Date of Birth"  #userDOB="ngModel" [(ngModel)]=user.userDateOfBirth required>
-
+                <div *ngIf = "userDOB.invalid && (userDOB.dirty || userDOB.touched)">
+                    <div *ngIf = "userDOB.errors.required" style="color: red;"> Date Of Birth is required</div>
+                   
+                </div>
+                
                 <p class="nationality"> 
                 <label class="nationalitylabel">  Nationality </label>
               
@@ -27,12 +35,16 @@
                
 
                 <p>Address</p>
-                <textarea name="address"  #userAddress="ngModel" [(ngModel)]=user.userAddress></textarea>
+                <textarea name="address"  #userAddress="ngModel" [(ngModel)]=user.userAddress required></textarea>
+                <div *ngIf = "userAddress.invalid && (userAddress.dirty || userAddress.touched)">
+                    <div *ngIf = "userAddress.errors.required" style="color: red;"> Address is required</div>
+                   
+                </div>
 
                 <div class="marital"> 
                     <label class="maritallabel"> Marital Status </label>
                     <div>
-                        <select class="maritalstatus" name="m-status" #userMaritalStatus="ngModel"  [(ngModel)]=user.userMaritalStatus>
+                        <select class="maritalstatus" name="m-status" #userMaritalStatus="ngModel"  [(ngModel)]=user.userMaritalStatus required>
                             <option  disabled="disabled" selected="selected">--Choose Option--</option>
                             <option  value="Unmarried">Single</option>
                             <option  value="Married">Married</option>
@@ -42,6 +54,10 @@
                             
                           </select>
                     </div>
+                </div>
+                <div *ngIf = "userMaritalStatus.invalid && (userMaritalStatus.dirty || userMaritalStatus.touched)">
+                    <div *ngIf = "userMaritalStatus.errors.required" style="color: red;"> Marital Status is required</div>
+                   
                 </div>
 
                 <p>  Email </p>
@@ -57,7 +73,16 @@
                     <div *ngIf = "password.errors.required" style="color: red;"> Password is required</div>
                     <div *ngIf = "password.errors.pattern" style="color: red;"> Invalid Password</div>
                     </div>
+
+                    <p> Confirm  Password </p>
+                    <input type="password" name="confirmpassword" #confirmpassword="ngModel"  placeholder="Enter Confirm Password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" [(ngModel)]='confirmPass' required>
+                    <div *ngIf = "confirmpassword.invalid && (confirmpassword.dirty || confirmpassword.touched)">
+                        <div *ngIf = "confirmpassword.errors.required" style="color: red;"> Confirm Password is required</div>
+                        <div *ngIf = "confirmpassword.errors.pattern" style="color: red;"> Invalid Confirm Password</div>
+                        </div>
                 
+                        <div class="confirmMessageDiv">{{confirmPassCheckMessage}}  </div>
+
                 <input type="submit" name="submit" [disabled] = "!userregform.valid?true:false" value="Register">
                 
             </form>

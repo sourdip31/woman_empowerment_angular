@@ -22,10 +22,10 @@ export class NgologinComponent  {
     this.ngoLoginService.login1(this.login1).subscribe(data1 => {
      // alert(JSON.stringify(data1));
       if(data1.status == 'SUCCESS') {
-        console.log(data1.id);
+        //console.log(data1.id);
         let ngoId = data1.id;
         let ngoName = data1.name;
-        console.log(ngoId);
+        //console.log(ngoId);
        sessionStorage.setItem('ngoIdOrg', String(ngoId));
         sessionStorage.setItem('ngoNameOrg', ngoName);
         this.router.navigate(['addcoursesLink']);

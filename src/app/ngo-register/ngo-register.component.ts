@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {NgoRegister } from '../ngo-register';
-import{RegisterngoService} from '../registerngo.service';
-import{Router} from '@angular/router';
+import { NgoRegister } from '../ngo-register';
+import { RegisterngoService } from '../registerngo.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-ngo-register',
@@ -10,23 +10,29 @@ import{Router} from '@angular/router';
 })
 export class NgoRegisterComponent implements OnInit {
 
-  ngo : NgoRegister = new NgoRegister() ;
-  constructor(private ngoRegisterService : RegisterngoService , private router:Router ) { }
+  ngo: NgoRegister = new NgoRegister();
+  confirmPass: string;
+  confirmPassCheckMessage: string;
+  constructor(private ngoRegisterService: RegisterngoService, private router: Router) { }
 
   ngOnInit(): void {
   }
 
   registerNgo() {
-    //alert(JSON.stringify(this.customer));
-    this.ngoRegisterService.ngoregister(this.ngo).subscribe(data => {
-      //alert(JSON.stringify(data));
-      if(data.status == 'SUCCESS') {
-        this.router.navigate(['ngologinLink'])
-      }
-      else {
-        //missing code right now
-      }
-    })
+    if (this.ngo.ngoPassword != this.confirmPass) {
+      this.confirmPassCheckMessage = "Password does not match with Confirm Password" ;
+    }
+
+    else {
+      this.ngoRegisterService.ngoregister(this.ngo).subscribe(data => {
+        //alert(JSON.stringify(data));
+        if (data.status == 'SUCCESS') {
+          this.router.navigate(['ngologinLink'])
+        }
+
+      })
+
+    }
   }
 
 }

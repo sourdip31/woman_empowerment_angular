@@ -31,6 +31,7 @@ message:string;
           this.message=data.message;
         }
       })
+      
     }
   }
 

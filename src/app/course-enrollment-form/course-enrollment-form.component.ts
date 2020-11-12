@@ -23,7 +23,6 @@ export class CourseEnrollmentFormComponent implements OnInit {
   }
 
   enrollForCourse() {
-    //alert(JSON.stringify(this.customer));
     this.enrolldata.userId = Number(sessionStorage.getItem('userId'));
     this.enrolldata.courseId = Number(sessionStorage.getItem('courseId')) ;
     
@@ -33,7 +32,7 @@ export class CourseEnrollmentFormComponent implements OnInit {
       if(data.status == 'SUCCESS') {
         this.enrollmessage = data.message ;
         this.router.navigate(['stepAboutUsLink']) ; 
-        //redirect to a sucesspage
+
       }
       else {
         this.enrollmessage = data.message ;

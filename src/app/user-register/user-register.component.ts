@@ -11,6 +11,8 @@ import { Router } from '@angular/router';
 export class UserRegisterComponent implements OnInit {
 
   user : UserRegister = new UserRegister() ;
+  confirmPass: string;
+  confirmPassCheckMessage: string;
   
 
 
@@ -20,18 +22,23 @@ export class UserRegisterComponent implements OnInit {
   }
 
   registerUser() {
-    //alert(JSON.stringify(this.customer));
+  
     //console.log(this.user.userDOB) ;
 
+    if (this.user.userPassword != this.confirmPass) {
+      this.confirmPassCheckMessage = "Password does not match with Confirm Password" ;
+    }
+
+    else{
     this.userRegisterService.userregister(this.user).subscribe(data => {
       //alert(JSON.stringify(data));
       if(data.status == 'SUCCESS') {
         this.router.navigate(['userloginLink'])
       }
-      else {
-        //missing code right now
-      }
+      
     })
+  }
+
   }
 
 

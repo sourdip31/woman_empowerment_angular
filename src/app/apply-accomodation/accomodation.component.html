@@ -2,13 +2,12 @@
     <ul>
         <li><a [routerLink] = "['/stepAboutUsLink']">About Us</a></li>
         <li><a [routerLink] = "['/guidelinesLink']">Guidelines</a></li>
-        <li><a href="#">Registration</a></li>
-        <li><a href="#">Enroll</a></li>
+        <li><a [routerLink]="['/stepEnrollLink']">Enroll</a></li>
         <li><a [routerLink] = "['/trainingSectorsLink']">Training Sectors</a></li>
         <li><a [routerLink]="['/welfareSchemesLink']">Welfare Schemes</a></li>
-        <li><a href="#">Status</a></li>
+    
         <li><a [routerLink]="['/stepfaqLink']">FAQ</a></li>
-  
+        <li><a [routerLink]="['/userloginLink']">Logout</a></li>
     </ul>
 </div>
 <div class="applydiv">
@@ -20,7 +19,7 @@
                 <div class="area"> 
                     <label class="arealabel"> Area of Residence </label>
                     <div>
-                        <select class="areastatus" name="a-status" #areaOfResidence="ngModel"  [(ngModel)]=accomodation.areaOfResidence>
+                        <select class="areastatus" name="a-status" #areaOfResidence="ngModel"  [(ngModel)]=accomodation.areaOfResidence required>
                             <option  disabled="disabled" selected="selected">--Choose Option--</option>
                             <option  value="Metropolitan">Metropolitan</option>
                             <option  value="Urban">Urban</option>
@@ -30,8 +29,18 @@
                         </select>
                     </div>
                 </div>
+                <div *ngIf = "areaOfResidence.invalid && (areaOfResidence.dirty || areaOfResidence.touched)">
+                    <div *ngIf = "areaOfResidence.errors.required" style="color: red;"> Area of Residence is required</div>
+                    
+                </div>
+
                 <p>Gross Income Per Month</p>
                 <input class="grossincomeinput" type="text"  #grossIncome="ngModel" name="grossincome" placeholder="Enter Per Month Income" [(ngModel)]=accomodation.grossIncomePerMonth required>
+                <div *ngIf = "grossIncome.invalid && (grossIncome.dirty || grossIncome.touched)">
+                    <div *ngIf = "grossIncome.errors.required" style="color: red;"> Gross Income is required</div>
+                    
+                </div>
+
                 <div class="caste"> 
                     <label class="castelabel"> Caste </label>
                     <div>
@@ -45,14 +54,38 @@
                         </select>
                     </div>
                 </div>
+                <div *ngIf = "caste.invalid && (caste.dirty || caste.touched)">
+                    <div *ngIf = "caste.errors.required" style="color: red;"> Caste is required</div>
+                    
+                </div>
+
                 <p>Husband Residence City</p>
                 <input class="husbandcity" type="text"  #husbandResidenceName="ngModel" name="husbandresidencename" placeholder="Enter Husband Residence City" [(ngModel)]=accomodation.husbandResidenceName required>
+                <div *ngIf = "husbandResidenceName.invalid && (husbandResidenceName.dirty || husbandResidenceName.touched)">
+                    <div *ngIf = "husbandResidenceName.errors.required" style="color: red;"> Husband Residence City is required</div>
+                    
+                </div>
+
                 <p>User Residence City</p>
                 <input class="usercity" type="text"  #userResidenceName="ngModel" name="userresidencename" placeholder="Enter User Residence City" [(ngModel)]=accomodation.userResidenceName required>
+                <div *ngIf = "userResidenceName.invalid && (userResidenceName.dirty || userResidenceName.touched)">
+                    <div *ngIf = "userResidenceName.errors.required" style="color: red;"> User Residence City is required</div>
+                    
+                </div>
+
                 <p>Number Of Daughter Below 18 years</p>
                 <input class="daughternum" type="number"  #numberOfGirlChildBelow18="ngModel" name="daughternum" placeholder="Enter number of daughters" [(ngModel)]=accomodation.numberOfGirlChildBelow18 required>
+                <div *ngIf = "numberOfGirlChildBelow18.invalid && (numberOfGirlChildBelow18.dirty || numberOfGirlChildBelow18.touched)">
+                    <div *ngIf = "numberOfGirlChildBelow18.errors.required" style="color: red;"> Number Of Daughter Below 18 years is required</div>
+                    
+                </div>
+
                 <p>Number Of Son Below 5 years</p>
                 <input class="sonnum" type="number"  #numberOfBoyChildBelow5="ngModel" name="sonnum" placeholder="Enter number of sons" [(ngModel)]=accomodation.numberOfBoyChildBelow5 required>
+                <div *ngIf = "numberOfBoyChildBelow5.invalid && (numberOfBoyChildBelow5.dirty || numberOfBoyChildBelow5.touched)">
+                    <div *ngIf = "numberOfBoyChildBelow5.errors.required" style="color: red;"> Number Of Son Below 5 years is required</div>
+                    
+                </div>
 
                 <div class="phychallenge"> 
                     <label class="phychallengelabel"> Any Physical Challenges? </label>
@@ -63,6 +96,10 @@
                             <option  value="No">No</option>   
                         </select>
                     </div>
+                </div>
+                <div *ngIf = "phychallenge.invalid && (phychallenge.dirty || phychallenge.touched)">
+                    <div *ngIf = "phychallenge.errors.required" style="color: red;"> This Field is required</div>
+                    
                 </div>
 
                 <div class="daycare"> 
@@ -75,6 +112,10 @@
                         </select>
                     </div>
                 </div>
+                <div *ngIf = "daycare.invalid && (daycare.dirty || daycare.touched)">
+                    <div *ngIf = "daycare.errors.required" style="color: red;">  Day-Care Requirements is required</div>
+                    
+                </div>
 
                 <div class="employment"> 
                     <label class="employmentlabel"> Employment Status </label>
@@ -86,13 +127,22 @@
                         </select>
                     </div>
                 </div>
+                <div *ngIf = "employment.invalid && (employment.dirty || employment.touched)">
+                    <div *ngIf = "employment.errors.required" style="color: red;">  Employment Status is required</div>
+                    
+                </div>
 
                 <p>Required Accomodation City</p>
                 <input class="accomodationcity" type="text"  #accomodationCity="ngModel" name="accomodationcity" placeholder="Enter Accomodation City" [(ngModel)]=accomodation.accomodationCity required>
-                
+                <div *ngIf = "accomodationCity.invalid && (accomodationCity.dirty || accomodationCity.touched)">
+                    <div *ngIf = "accomodationCity.errors.required" style="color: red;">  Accomodation City is required</div>
+                    
+                </div>
+
                 <input type="submit" name="submit" [disabled] = "!applyaccform.valid?true:false" value="Apply">
                 
             </form>
         </div>
+        {{message}}
     </div>
 </div>

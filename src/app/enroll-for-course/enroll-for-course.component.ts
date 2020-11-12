@@ -42,15 +42,15 @@ export class EnrollForCourseComponent implements OnInit {
 
   registerWithAnNGO(){
     this.registerUserWithNgo.userId = Number(sessionStorage.getItem('userId'));
-    alert(JSON.stringify(this.registerUserWithNgo));
+    //alert(JSON.stringify(this.registerUserWithNgo));
     this.registerwithngoService.registerWithNgo(this.registerUserWithNgo).subscribe(data=>{
-      alert(JSON.stringify(data));
+      //alert(JSON.stringify(data));
       if(data.status == 'SUCCESS'){
-        console.log(data.ngoId) ;
+        //console.log(data.ngoId) ;
         let ngoID = this.registerUserWithNgo.ngoId ;
         sessionStorage.setItem('ngoId', String(ngoID));
         this.isShowCousebyNGO = true ;
-        console.log(sessionStorage.getItem('ngoId')) ;
+        //console.log(sessionStorage.getItem('ngoId')) ;
         this.ngoid.ngoId = this.registerUserWithNgo.ngoId;
         this.viewCourseByNgoid.viewCourseByNgoId(this.ngoid).subscribe(data1=>{
           this.courses = data1 ; 
