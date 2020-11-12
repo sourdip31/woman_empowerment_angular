@@ -133,7 +133,9 @@ const routes: Routes = [
   {path : 'generateNVerifyNgoLink', component : GenerateNVerifyOtpNgoComponent},
   {path: 'ngoUpdatePasswordLink' , component: NgoUpdatePasswordComponent},
   {path: 'adminUpdatePasswordLink' , component : AdminUpdatePasswordComponent},
-  {path: 'generateNVerifyAdminLink' , component : GenerateNVerifyOtpAdminComponent}
+  {path: 'generateNVerifyAdminLink' , component : GenerateNVerifyOtpAdminComponent},
+  {path: 'stepAboutUsLink' , component:StepAboutUsComponent},
+  {path: 'trainingSectorsLink',component:StepTrainingSectorsComponent}
 
 ];
 
