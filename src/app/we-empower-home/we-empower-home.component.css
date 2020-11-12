@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 .container{
     width: 100%;
     margin: auto;
@@ -56,19 +60,33 @@
 }
 
 .image-box{
+    background-image: url(../../assets/images/womenemoCopy.jpg);
     position:relative;
     text-align: center;
     color: black;
 }
 
-.top-left{
-    position: absolute;
-    top: 8px;
-    right: 16px;
-}
 
 p{
-    padding-top: 30px;
-    font-size: 19px;
+    padding-top: 25px;
+    font-size: 18px;
+    color : black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.box{
+
+    margin: 30px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow:  0 0 0 1px rgba(0,0,0,.15), 0 2px 3px 0 rgba(0,0,0,0.1);
+    border-radius: 8px ;
+    box-sizing: border-box;
+}
+
+label{
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+}
+
