@@ -19,7 +19,7 @@ export class UserloginComponent {
 
 
   checkLoginUser() {
-    alert(JSON.stringify(this.login));
+   // alert(JSON.stringify(this.login));
     this.userLoginService.login(this.login).subscribe(data => {
       alert(JSON.stringify(data));
       //this.ls = data ;

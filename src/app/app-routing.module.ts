@@ -117,7 +117,7 @@ const routes: Routes = [
  
   {path:'changepwdLink',component:ChangepasswordComponent},
   {path:'ngoprofileLink',component:NgoprofileComponent},
-
+  {path:'stepAboutUsLink',component:StepAboutUsComponent},
   {path : 'stepEnrollLink' , component:EnrollForCourseComponent},
   {path : 'couserEnrollFormLink' , component : CourseEnrollmentFormComponent },
   {path: 'welfareSchemesLink' , component:WelfareSchemeComponent},
@@ -128,7 +128,8 @@ const routes: Routes = [
   {path : 'generateNVerifyNgoLink', component : GenerateNVerifyOtpNgoComponent},
   {path: 'ngoUpdatePasswordLink' , component: NgoUpdatePasswordComponent},
   {path: 'adminUpdatePasswordLink' , component : AdminUpdatePasswordComponent},
-  {path: 'generateNVerifyAdminLink' , component : GenerateNVerifyOtpAdminComponent}
+  {path: 'generateNVerifyAdminLink' , component : GenerateNVerifyOtpAdminComponent},
+  {path:'trainingSectorsLink',component:StepTrainingSectorsComponent},
 
 ];
 
