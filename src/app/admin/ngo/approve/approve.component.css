@@ -75,7 +75,7 @@ div.img{
     background: #6F7878;
     border-radius: 3px;
 }
-h1{
+h1,h2{
     font-family: 'Acme', sans-serif;
     text-align: center;
   }
@@ -111,11 +111,15 @@ h1{
     background: #39dc79;
     color: #000;
 }
-ng-template{
-    padding-left: 100px;
-}
-ng-template div h2{
+
+ng-template {
     font-family: 'Acme', sans-serif;
     font-family: 'Philosopher', sans-serif;
     text-align: center;
+}
+.msg{
+    text-align: center;
+    margin-left: -30px;
+    position: relative;
+    display:block;
 }
