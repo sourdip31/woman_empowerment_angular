@@ -4,6 +4,7 @@
             <div class="userimage">
             </div>
             <h1>User Login</h1>
+            
             <form  #form="ngForm" (ngSubmit)="checkLoginUser()">
                 <p>Email</p>
                 <input type="text" #userEmail="ngModel" name="useremail" placeholder="Enter Username" [(ngModel)]=login.email pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
@@ -19,6 +20,11 @@
                     </div>
 
                 <input type="submit" name="submit" value="Login">
+                
+                <div class="errordiv">
+                    <label>{{message}}</label>
+                </div>
+
                 <div class="forgotpass">
                 <a [routerLink]="['/generateNVerifyLink']">Forget Password ?</a>
                 </div>

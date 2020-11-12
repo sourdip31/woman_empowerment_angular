@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 })
 export class SukanyaYojanaComponent implements OnInit {
   sukanya : SukanyaYojana = new SukanyaYojana() ;
+  message : string ;
   constructor(private sukanyaService : ApplySukanyaYojanaService , private router:Router) { }
 
   ngOnInit(): void {
@@ -17,14 +18,14 @@ export class SukanyaYojanaComponent implements OnInit {
 
   applySukanya() {
     this.sukanya.userId=Number(sessionStorage.getItem('userId'));
-    alert(JSON.stringify(this.sukanya));
+    //alert(JSON.stringify(this.sukanya));
     this.sukanyaService.usersukanya(this.sukanya).subscribe(data => {
       alert(JSON.stringify(data));
       if(data.status == 'SUCCESS') {
         this.router.navigate(['welfareSchemesLink'])
       }
       else {
-        //missing code right now
+        this.message = data.message ;
       }
     })
   }
