@@ -7,9 +7,9 @@
                 <input class="nameinput" type="text"  #userName="ngModel" name="username" placeholder="Enter Name" [(ngModel)]=user.userName required>
 
                 <p class="gender"> <label class="genderlabel"> Gender </label>
-                <input type="radio"  name="usergender" value="female" #userGender="ngModel" [(ngModel)]=user.userGender checked > <span>Female</span>
-                <input type="radio"  name="usergender" value="male"  #userGender="ngModel" [(ngModel)]=user.userGender > <span>Male</span>
-                <input type="radio"  name="usergender" value="other"  #userGender="ngModel" [(ngModel)]=user.userGender > <span>Other</span>
+                <input type="radio"  name="usergender" value="Female" #userGender="ngModel" [(ngModel)]=user.userGender checked > <span>Female</span>
+                <input type="radio"  name="usergender" value="Male"  #userGender="ngModel" [(ngModel)]=user.userGender > <span>Male</span>
+                <input type="radio"  name="usergender" value="Other"  #userGender="ngModel" [(ngModel)]=user.userGender > <span>Other</span>
                 </p>
 
 
@@ -20,7 +20,7 @@
                 <label class="nationalitylabel">  Nationality </label>
               
                 <input type="radio"  name="usernationality" value="Indian"  #userNationality="ngModel" checked [(ngModel)]=user.userNationality> <span>Indian</span>
-                <input type="radio"  name="usernationality" value="othercontry" #userNationality="ngModel"  [(ngModel)]=user.userNationality > <span>Other</span>
+                <input type="radio"  name="usernationality" value="Other Country" #userNationality="ngModel"  [(ngModel)]=user.userNationality > <span>Other</span>
                 
                 </p>
 
@@ -34,11 +34,11 @@
                     <div>
                         <select class="maritalstatus" name="m-status" #userMaritalStatus="ngModel"  [(ngModel)]=user.userMaritalStatus>
                             <option  disabled="disabled" selected="selected">--Choose Option--</option>
-                            <option  value="single">Single</option>
-                            <option  value="married">Married</option>
-                            <option  value="widowed">Widowed</option>
-                            <option  value="divorced">Divorced</option>
-                            <option  value="seperated">Seperated</option>
+                            <option  value="Unmarried">Single</option>
+                            <option  value="Married">Married</option>
+                            <option  value="Widowed">Widowed</option>
+                            <option  value="Divorced">Divorced</option>
+                            <option  value="Seperated">Seperated</option>
                             
                           </select>
                     </div>
