@@ -11,6 +11,7 @@
                 </div>
 
                 <p class="ngoRegNo"> <label class="reglabel"> NGO Registration No. </label>
+               
                 <input type="number"  name="ngoReg"  #ngoRegistrationNumber="ngModel" placeholder="Enter NGO Registration No." [(ngModel)]=ngo.ngoRegistrationNumber required > 
                 </p>
                 <div *ngIf = "ngoRegistrationNumber.invalid && (ngoRegistrationNumber.dirty || ngoRegistrationNumber.touched)">

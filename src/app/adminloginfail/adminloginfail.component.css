@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Philosopher&display=swap');
+
+body{
+    background-color: grey;
+}
+
+h1{
+  
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+    padding-top: 100px;
+  }
+  .img{
+    background-image: url("/assets/images/adminfail.jpg");
+    background-repeat: no-repeat;
+   height: 80vh;
+   width:97.3vw;
+   
+    background-repeat: no-repeat;
+    background-size: 100px,100px;
+    background-position: center;
+   
+	
+      
+  }

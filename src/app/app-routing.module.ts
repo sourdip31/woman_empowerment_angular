@@ -49,6 +49,8 @@ import { NgodeletecourseComponent } from './ngodeletecourse/ngodeletecourse.comp
 import { NgoregisterstatusComponent } from './ngoregisterstatus/ngoregisterstatus.component';
 import { ViewallcoursesComponent } from './viewallcourses/viewallcourses.component';
 import { ChangepasswordComponent } from './changepassword/changepassword.component';
+import { StepcriteriaComponent } from './stepcriteria/stepcriteria.component';
+import { StepfaqComponent } from './stepfaq/stepfaq.component';
 import { NgoprofileComponent } from './ngoprofile/ngoprofile.component';
 
 
@@ -94,6 +96,7 @@ const routes: Routes = [
   {path:'admin/accomodation/viewaccomodation',component:ViewaccomodationComponent},
   {path:'adminFPLink',component:AdminforgotpasswordComponent},
   {path:'ngoRegisterLink',component:NgoRegisterComponent},
+ {path:'guidelinesLink',component:StepcriteriaComponent},
  
  
  
@@ -112,6 +115,8 @@ const routes: Routes = [
   {path:'ngoregisterstatusLink',component:NgoregisterstatusComponent},
   
  
+
+{path:'stepfaqLink',component:StepfaqComponent},
   {path:'ngoviewallcoursesLink',component:ViewallcoursesComponent},
 
  
@@ -129,7 +134,9 @@ const routes: Routes = [
   {path: 'ngoUpdatePasswordLink' , component: NgoUpdatePasswordComponent},
   {path: 'adminUpdatePasswordLink' , component : AdminUpdatePasswordComponent},
   {path: 'generateNVerifyAdminLink' , component : GenerateNVerifyOtpAdminComponent},
-  {path:'trainingSectorsLink',component:StepTrainingSectorsComponent},
+  
+  {path: 'stepAboutUsLink' , component:StepAboutUsComponent},
+  {path: 'trainingSectorsLink',component:StepTrainingSectorsComponent}
 
 ];
 

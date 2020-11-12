@@ -64,6 +64,8 @@ import { WelfareSchemeComponent } from './welfare-scheme/welfare-scheme.componen
 
 import { SukanyayojnaComponent } from './sukanyayojna/sukanyayojna.component';
 import { SukanyaYojanaComponent } from './sukanya-yojana/sukanya-yojana.component';
+import { StepcriteriaComponent } from './stepcriteria/stepcriteria.component';
+import { StepfaqComponent } from './stepfaq/stepfaq.component' ;
 import { NgoprofileComponent } from './ngoprofile/ngoprofile.component' ;
 import { UserUpdatePasswordComponent } from './user-update-password/user-update-password.component';
 import { NgoUpdatePasswordComponent } from './ngo-update-password/ngo-update-password.component';
@@ -121,6 +123,8 @@ import { GenerateNVerifyOtpAdminComponent } from './generate-nverify-otp-admin/g
     ApplyAccomodationComponent,
     SukanyayojnaComponent,
     SukanyaYojanaComponent,
+    StepcriteriaComponent,
+    StepfaqComponent,
     NgoprofileComponent,
     UserUpdatePasswordComponent,
     NgoUpdatePasswordComponent,

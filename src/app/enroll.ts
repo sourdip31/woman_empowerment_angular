@@ -3,4 +3,5 @@ export class ViewEnrollments{
 	userEmploymentStatus:string;
 	 enrollmentDate:string ;
      userEnrollmentStatus :string;
+    
 }
