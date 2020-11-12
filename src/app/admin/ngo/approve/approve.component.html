@@ -46,21 +46,11 @@
         <form #inputNGOform="ngForm" (ngSubmit)="approveNGO()">
             <input class="ngo-input" type="email" name="ngoemail" #ngoEmail="ngModel" placeholder="Enter NGO Email" [(ngModel)]= NGO.ngoemail required>  
             <input type="submit" name="submit" [disabled] = "!inputNGOform.valid?true:false" value="Approve" (click)="approveNGO()">
+           
         </form>
     </div>
+    <h2>{{message}}</h2>
 
-<div class="row">
-    <div class="col-12">
-        <div *ngIf = "isApproved then thenBlock ">
-        </div>
-        <ng-template #thenBlock> 
-             <div><h2>{{message}}</h2></div> 
-             <!--<div>{{status}}</div> 
-             <div>{{ngoEmail}}</div> 
-             <div>{{ngoName}}</div> -->
-        </ng-template>
 
-</div>
-</div>
 
 

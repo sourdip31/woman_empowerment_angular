@@ -20,7 +20,7 @@ export class SukanyaYojanaComponent implements OnInit {
     this.sukanya.userId=Number(sessionStorage.getItem('userId'));
     //alert(JSON.stringify(this.sukanya));
     this.sukanyaService.usersukanya(this.sukanya).subscribe(data => {
-      alert(JSON.stringify(data));
+     // alert(JSON.stringify(data));
       if(data.status == 'SUCCESS') {
         this.router.navigate(['welfareSchemesLink'])
       }
