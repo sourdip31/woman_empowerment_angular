@@ -13,6 +13,7 @@ import { VerifyOTPService } from '../verify-otp.service';
 })
 export class GenerateNVerifyOtpNgoComponent implements OnInit {
   otpGenerateMessage : string ;
+  verifyOtpMessage:string;
   getEmailId : GetEmail = new GetEmail() ;
   getOTP : GetOtp = new GetOtp() ;
   constructor(private generateOtpService : GenerateOTPService , private verifyOtpService : VerifyOTPService , private router : Router ) { }
@@ -36,6 +37,9 @@ export class GenerateNVerifyOtpNgoComponent implements OnInit {
       if(data2.status == 'SUCCESS'){
         this.router.navigate(['ngoUpdatePasswordLink']) ;
         
+      }
+      else{
+        this.verifyOtpMessage="Incorrect OTP!"
       }
     })
   }

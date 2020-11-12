@@ -12,8 +12,9 @@ import { Router } from '@angular/router';
 })
 export class GenerateNVerifyOtpComponent implements OnInit {
   otpGenerateMessage : string ;
+  verifyOtpMessage:string;
   getEmailId : GetEmail = new GetEmail() ;
-  getOTP : GetOtp = new GetOtp() ;
+  getOTP : GetOtp = new GetOtp() 
   constructor(private generateOtpService : GenerateOTPService , private verifyOtpService : VerifyOTPService , private router : Router  ) { }
   
   ngOnInit(): void {
@@ -32,6 +33,10 @@ export class GenerateNVerifyOtpComponent implements OnInit {
     this.verifyOtpService.verifyOtp(this.getOTP).subscribe(data1 =>{
       if(data1.status == 'SUCCESS'){
         this.router.navigate(['userUpdatePasswordLink']) ;
+      }
+      else{
+        this.verifyOtpMessage="Incorrect OTP!"
+
       }
     })
   }

@@ -9,7 +9,7 @@ import{NgoChangePassService} from '../ngo-change-pass.service' ;
   styleUrls: ['./ngo-update-password.component.css']
 })
 export class NgoUpdatePasswordComponent implements OnInit {
-
+message:string;
   confirmPass : string ;
   confirmPassCheckMessage : string ;
   newPassInput : PasswordChange = new PasswordChange() ;
@@ -27,7 +27,11 @@ export class NgoUpdatePasswordComponent implements OnInit {
         if(data.status == 'SUCCESS'){
           this.router.navigate(['ngologinLink']) ;
         } 
+        else{
+          this.message=data.message;
+        }
       })
+     
     }
   }
 

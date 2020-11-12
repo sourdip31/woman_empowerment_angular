@@ -15,7 +15,8 @@
 			</div>
                 
 			
-				<button type="submit" class="login-button">Generate OTP</button>
+				<button type="submit" class="login-button">Generate OTP</button><br>
+				<h2>{{otpGenerateMessage}}</h2>
         </form>
     
         <form #verigyOTPform="ngForm" (ngSubmit)="verifyOTPnumber()">
@@ -26,7 +27,8 @@
               <input type="text"  #userOTP="ngModel" name="userOTP"   placeholder="Enter OTP" [(ngModel)]=getOTP.otp required>
 			
 	
-			<button type="submit" class="login-button"> Verify </button>
+			<button type="submit" class="login-button"> Verify </button><br>
+			<h2>{{verifyOtpMessage}}</h2>
 				
 		</form>	
 		

@@ -13,6 +13,7 @@ import { Users } from './users';
 import{EnrollmentStatus} from './enrollmentstatus';
 import {NgoStatus} from './ngostatus';
 import {NgoApproval} from './ngoapproval';
+import { ViewHomes } from './viewhomes';
 @Injectable({
   providedIn: 'root'
 })
@@ -57,6 +58,11 @@ export class AdminService {
   viewUsers():Observable<Users[]>{
     let url='http://localhost:8080/viewAllUsers';
     return this.http.get<Users[]>(url);
+  }
+
+  viewHomes():Observable<ViewHomes[]>{
+    let url='http://localhost:8080/viewAllHomes';
+    return this.http.get<ViewHomes[]>(url);
   }
 
 approveEnrollments():Observable<EnrollmentStatus>{

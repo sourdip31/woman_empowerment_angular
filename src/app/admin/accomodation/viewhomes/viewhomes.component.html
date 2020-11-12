@@ -1,0 +1,38 @@
+<div class="admin-navbar">
+
+    <ul>
+      <li><a [routerLink]="['/adminhomeLink']">NGO</a></li>
+     
+      <li><a [routerLink]="'/admin/courses'">Courses</a></li>
+      <li><a [routerLink]="'/admin/users'">Users</a></li>
+      <li><a [routerLink]="'/admin/accomodation'">Accomodation</a></li>
+     
+      <li><a [routerLink]="['/adminloginLink']">Logout</a></li>
+    </ul>
+    </div>
+    <div class ="img"><br>
+        <h1>HOME DETAILS</h1>
+    <div class="tablediv">
+    <table class="tablecourse" border = 1>
+        <tr>
+        <th> City ID </th>
+        <th> City Name </th>
+        <th>Number of Rooms</th>
+    
+
+       
+        </tr>
+        
+    
+        <tr *ngFor = 'let vh of viewhome;' >
+        <td> {{vh.cityId}} </td>
+        <td> {{vh.city }} </td>
+        <td> {{vh.numberOfRooms}} </td>
+       
+        
+        </tr>
+    
+        </table>
+</div>
+</div>
+
