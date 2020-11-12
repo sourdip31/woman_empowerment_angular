@@ -27,5 +27,6 @@ export class VerifyOTPService {
     let url = 'http://localhost:8080/adminOTPverify' ;
     return this.http.post<Status> (url , getOTP) ;
 
+    
   } 
 }
